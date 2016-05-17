@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="Par1ArchitecturePag71.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML e.V.</WriterName>
+			<WriterID>AutomationML e.V.</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>1.0</WriterVersion>
+			<WriterRelease>1.0</WriterRelease>
+			<LastWritingDateTime>2012-02-20
+			</LastWritingDateTime>
+			<WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+			<WriterProjectID>AutomationML Tutorial Examples
+			</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
+	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
+	<InstanceHierarchy Name="ExampleInstanceHierarchy">
+		<InternalElement Name="AssemblyLine" RefBaseSystemUnitPath="" ID="74d0c8ef-ab53-462a-8225-306ed22dc0f3">
+			<Attribute Name="length" AttributeDataType="xs:float">
+				<Value>35.00</Value>
+				<RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAA018#004" />
+			</Attribute>
+			<InternalElement Name="Station1" ID="7a4d2568-5d4c-4161-9d27-f83631ec3e93">
+				<Attribute Name="materialarea_length" />
+				<Attribute Name="materialarea_width" />
+				<Attribute Name="transportarea_width" />
+				<Attribute Name="transportarea_length" AttributeDataType="xs:double" />
+				<Attribute Name="assemblyarea_width" AttributeDataType="xs:double" />
+				<Attribute Name="assemblyarea_length" AttributeDataType="xs:double" />
+				<InternalElement Name="Assemblyarea" ID="1a4d2568-5d4c-4161-9d27-f83631ec3e9s">
+					<RoleRequirements RefBaseRoleClassPath="ExampleRoleClassLib/GeometricData/Area" />
+					<MappingObject>
+						<AttributeNameMapping SystemUnitAttributeName="assemblyarea_width" RoleAttributeName="Width" />
+						<AttributeNameMapping SystemUnitAttributeName="assemblyarea_length" RoleAttributeName="Length" />
+					</MappingObject>
+				</InternalElement>
+				<InternalElement Name="Materialarea" ID="2a4d2567-5d4c-4161-9d27-f83631ec3e9s">
+					<RoleRequirements RefBaseRoleClassPath="ExampleRoleClassLib/GeometricData/Area" />
+					<MappingObject>
+						<AttributeNameMapping SystemUnitAttributeName="materialarea_width" RoleAttributeName="Width" />
+						<AttributeNameMapping SystemUnitAttributeName="materialarea_length" RoleAttributeName="Length" />
+					</MappingObject>
+				</InternalElement>
+				<InternalElement Name="Trasportarea" ID="3a4d2567-5d4c-4161-9d27-f83631ec3e7s">
+					<RoleRequirements RefBaseRoleClassPath="ExampleRoleClassLib/GeometricData/Area" />
+					<MappingObject>
+						<AttributeNameMapping SystemUnitAttributeName="transportarea_width" RoleAttributeName="Width" />
+						<AttributeNameMapping SystemUnitAttributeName="transportarea_length" RoleAttributeName="Length" />
+					</MappingObject>
+				</InternalElement>
+			</InternalElement>
+		</InternalElement>
+	</InstanceHierarchy>
+	<RoleClassLib Name="RoleClassLib1">
+		<Version>1.0.0</Version>
+		<RoleClass Name="GeometricData" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/PropertySet">
+			<RoleClass Name="Length" RefBaseClassPath="ExampleRoleClassLib/GeometricData">
+				<Attribute Name="LengthValue" AttributeDataType="xs:double" Unit="m"/>
+			</RoleClass>
+			<RoleClass Name="Point" RefBaseClassPath="ExampleRoleClassLib/GeometricData">
+				<Attribute Name="xAxis" AttributeDataType="xs:double" />
+				<Attribute Name="yAxis" AttributeDataType="xs:double" />
+				<Attribute Name="zAxis" AttributeDataType="xs:double" />
+			</RoleClass>
+			<RoleClass Name="Angle" RefBaseClassPath="ExampleRoleClassLib/GeometricData">
+				<Attribute Name="angleValue" AttributeDataType="xs:double" Unit="rad"/>
+			</RoleClass>
+			<RoleClass Name="Deformation" RefBaseClassPath="ExampleRoleClassLib/GeometricData">
+				<Description>Deformation of the Material is the change in Geometry when stress is applied. It is expressed by the displacement of the material</Description>
+				<Attribute Name="deformationValue" AttributeDataType="xs:double"/>
+				<RoleClass Name="Strain" RefBaseClassPath="ExampleRoleClassLib/GeometricData/Deformation">
+					<Description>Strain is the deformation per Unit length</Description>
+				</RoleClass>
+				<RoleClass Name="Deflection" RefBaseClassPath="ExampleRoleClassLib/GeometricData/Deformation">
+					<Description>Deflection is a term to describe the magnitude to which a structural element bends under load</Description>
+				</RoleClass>
+				<RoleClass Name="Area" RefBaseClassPath="ExampleRoleClassLib/GeometricData">
+					<Attribute Name="Length" AttributeDataType="xs:double" Unit="m"/>
+					<Attribute Name="Width" AttributeDataType="xs:double" Unit="kg"/>
+				</RoleClass>
+				<RoleClass Name="SpatialDimension" RefBaseClassPath="ExampleRoleClassLib/GeometricData">
+					<Attribute Name="xAxis" AttributeDataType="xs:double" Unit="m"/>
+					<Attribute Name="yAxis" AttributeDataType="xs:double" Unit="m"/>
+					<Attribute Name="zAxis" AttributeDataType="xs:double" Unit="m"/>
+				</RoleClass>
+			</RoleClass>
+		</RoleClass>
+	</RoleClassLib>
+</CAEXFile>
