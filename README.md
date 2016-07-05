@@ -5,10 +5,10 @@ AutomationML Heterogeneity are generated through GoldStandard tool. The examples
 
 AutomationML generated heterogeneity examples are classified in the following catagories:
 
-M1: Value processing
+## M1: Value processing
 
-M1.1: String processing
-This type of mapping requires using special functions on string values, e.g., “concat”, “substring”, “regex”.
+## M1.1: String processing
+* This type of mapping requires using special functions on string values, e.g., “concat”, “substring”, “regex”.
 
 M1.2: Data type transformation
 Semantically the same entities can be modeled using different data types. 
