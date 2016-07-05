@@ -4,7 +4,7 @@ Example of Heterogeneity data for different standards (AutomationML, OPC UA, ect
 AutomationML Heterogeneity are generated through GoldStandard tool. The examples contains AML gold Standard for validation purpose.
 AutomationML generated heterogeneity examples are classified in the following catagories:
 
-## M1: Value processing
+# M1: Value processing
 
 ## M1.1: String processing
 * This type of mapping requires using special functions on string values, e.g., “concat”, “substring”, “regex”.
@@ -33,4 +33,4 @@ AutomationML generated heterogeneity examples are classified in the following ca
 ## M6: Grouping and aggregation
 * In some cases it is important to group or/and aggregate objects on the source side in order to set the relation to the target model. 
 ## M7: Restrictions on values
-* In some cases it can be important to define that a certain property value is mandatory, i.e., this property must always have a value. If such a property participates in a mapping on a target side, but there is no data on a source side to generate the value, this situation must be handled. 
+* In some cases it can be important to define that a certain property value is mandatory, i.e., this property must always have a value.
