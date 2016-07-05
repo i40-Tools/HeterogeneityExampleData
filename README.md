@@ -29,6 +29,4 @@ AutomationML generated heterogeneity examples are classified in the following ca
 * An important characteristic of mappings is that they are directional [6], i.e., usually they are specified in a direction from source to target and the data flow cannot occur in the opposite direction. 
 
 #### M6: Grouping and aggregation
-* In some cases it is important to group or/and aggregate objects on the source side in order to set the relation to the target model. 
-#### M7: Restrictions on values
-* In some cases it can be important to define that a certain property value is mandatory, i.e., this property must always have a value.
+* In some cases it is important to group or/and aggregate objects on the source side in order to set the relation to the target model.
