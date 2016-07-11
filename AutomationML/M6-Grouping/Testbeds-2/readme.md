@@ -1,9 +1,9 @@
 This is an example for Grouping and Aggregation
 
-There are two heterogenity files in this example generated from "seed-24.aml".
+There are two heterogenity files in this example generated from "seed.aml".
 
-a) "seed-24-Grouping-1.aml"
-b) "seed-24-Grouping-0.aml"
+a) "seed-Grouping-1.aml"
+b) "seed-Grouping-0.aml"
 
 It contains the following conflicts:
 
@@ -48,9 +48,9 @@ optional
 
 
 
-In conflict 9 we show that "seed-24-Grouping-1.aml":InternalElement("conveyor1") equals "seed-24-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("Conveyor1")). 
+In conflict 9 we show that "seed-Grouping-1.aml":InternalElement("conveyor1") equals "seed-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("Conveyor1")). 
 
-In conflict 13 we show that "seed-24-Grouping-1.aml":InternalElement("conveyor2") equals "seed-24-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("Conveyor2")). 
+In conflict 13 we show that "seed-Grouping-1.aml":InternalElement("conveyor2") equals "seed-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("Conveyor2")). 
 
 
 If such conflict exist then this a schematic heterogeneity.

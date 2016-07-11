@@ -1,9 +1,9 @@
 This is an example for Grouping and Aggregation
 
-There are two heterogenity files in this example generated from "seed-28.aml".
+There are two heterogenity files in this example generated from "seed.aml".
 
-a) "seed-28-Grouping-1.aml"
-b) "seed-28-Grouping-0.aml"
+a) "seed-Grouping-1.aml"
+b) "seed-Grouping-0.aml"
 
 It contains the following conflicts:
 
@@ -42,13 +42,13 @@ Representation: Pair(File a, File b)
 
 
 
-In conflict 7 we show that "seed-28-Grouping-1.aml":InternalElement("LiftUpGate") equals "seed-28-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("LiftUpGate")). 
+In conflict 7 we show that "seed-Grouping-1.aml":InternalElement("LiftUpGate") equals "seed-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("LiftUpGate")). 
 
-In conflict 9 we show that "seed-28-Grouping-1.aml":InternalElement("TransferToSubAssembly") equals "seed-28-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("TransferToSubAssembly")). 
+In conflict 9 we show that "seed-Grouping-1.aml":InternalElement("TransferToSubAssembly") equals "seed-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("TransferToSubAssembly")). 
 
-In conflict 11 we show that "seed-28-Grouping-1.aml":InternalElement("SubAssembly") equals "seed-28-Grouping-0.aml":InternalElement("AssemblyStationGroup"(InternalElement("SubAssembly")). 
+In conflict 11 we show that "seed-Grouping-1.aml":InternalElement("SubAssembly") equals "seed-Grouping-0.aml":InternalElement("AssemblyStationGroup"(InternalElement("SubAssembly")). 
 
-In conflict 13 we show that "seed-28-Grouping-1.aml":InternalElement("MainAssemblyStation") equals "seed-28-Grouping-0.aml":InternalElement("AssemblyStationGroup"(InternalElement("MainAssemblyStation")). 
+In conflict 13 we show that "seed-Grouping-1.aml":InternalElement("MainAssemblyStation") equals "seed-Grouping-0.aml":InternalElement("AssemblyStationGroup"(InternalElement("MainAssemblyStation")). 
 
 
 If such conflict exist then this a schematic heterogeneity.
