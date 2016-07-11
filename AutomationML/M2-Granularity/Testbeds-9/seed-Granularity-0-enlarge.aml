@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CAEXFile FileName="file-1.aml" SchemaVersion="2.15">
+<CAEXFile FileName="seed-Granularity-0-enlarge.aml" SchemaVersion="2.15">
     <AdditionalInformation AutomationMLVersion="2.0"/>
     <AdditionalInformation>
         <WriterHeader>
@@ -9,35 +9,14 @@
             <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
             <WriterVersion>1.0</WriterVersion>
             <WriterRelease>1.0</WriterRelease>
-            <LastWritingDateTime>2012-02-20 </LastWritingDateTime>
+            <LastWritingDateTime>2012-02-20</LastWritingDateTime>
             <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
-            <WriterProjectID>AutomationML Tutorial Examples </WriterProjectID>
+            <WriterProjectID>AutomationML Tutorial Examples</WriterProjectID>
         </WriterHeader>
     </AdditionalInformation>
     <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
     <ExternalReference Alias="Alias0" Path="Path0"/>
-    <InstanceHierarchy Name="MechatronicEngineering">
-        <InternalElement ID="74d0c8ef-ab53-462a-8225-306ed22dc0f3" Name="RollerConveyor" RefBaseSystemUnitPath="">
-            <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
-                <Value>1.5</Value>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:double" Name="maxTransportationWeight" Unit="kg">
-                <Value>35.0</Value>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAI721#002"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:boolean" Name="allowsPaper">
-                <DefaultValue>true</DefaultValue>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#07-CAA016#001"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="paperType">
-                <Value>Carbon</Value>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF818#002"/>
-            </Attribute>
-            <RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"/>
-        </InternalElement>
-    </InstanceHierarchy>
     <InstanceHierarchy ID="0000-0" Name="Instance Name-0">
         <InternalElement ChangeMode="state" ID="0000-0" Name="AML Object-0" RefBaseSystemUnitPath="RefbasePath-0">
             <ExternalInterface ID="0000-1--10" Name="External Interface0" RefBaseClassPath="RefBasePath0"/>
@@ -136,6 +115,36 @@
             </RoleClass>
         </RoleClass>
     </RoleClassLib>
+    <SystemUnitClassLib Name="Connector System">
+        <Version>1.0</Version>
+        <SystemUnitClass Name="BASIC_27-44-01-05 Valve connector">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27440105</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#05-AFR414#002</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Rated current In">
+                <Description>The current value stipulated by the manufacturer that is composed of the measured values established under defined conditions and rules</Description>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAB500#006"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Combustibility class">
+                <Description>Classification of insulation in combustibility classes pursuant to UL 94 for construction element serial terminals</Description>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAC140#008"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Housing material">
+                <Description>working material from which the housing of the control and signaling devices combination in the housings primarily constructed</Description>
+                <RefSemantic CorrespondingAttributePath="0173-1#02-BAC461#010"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Rated voltage">
+                <Description>Manufacturer's value for the voltage, which is derived from measured values that have been obtained under established conditions and rules</Description>
+                <RefSemantic CorrespondingAttributePath="0173-1#02-BAH005#003"/>
+            </Attribute>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
     <SystemUnitClassLib ID="11-31-31-31-1-1-0" Name="System Unit class Lib Name 0">
         <SystemUnitClass ID="11-31-31-31-1-1-0" Name="System Unit class Name 0">
             <ExternalInterface ID="0000-1--10" Name="External Interface0" RefBaseClassPath="RefBasePath0"/>

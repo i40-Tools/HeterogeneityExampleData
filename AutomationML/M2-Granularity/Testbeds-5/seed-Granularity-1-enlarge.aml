@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CAEXFile FileName="file-1.aml" SchemaVersion="2.15">
+<CAEXFile FileName="seed-Granularity-1-enlarge.aml" SchemaVersion="2.15">
     <AdditionalInformation AutomationMLVersion="2.0"/>
     <AdditionalInformation>
         <WriterHeader>
@@ -14,8 +14,30 @@
             <WriterProjectID>AutomationML Tutorial Examples </WriterProjectID>
         </WriterHeader>
     </AdditionalInformation>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
     <ExternalReference Alias="Alias0" Path="Path0"/>
+    <InstanceHierarchy Name="MechatronicEngineering">
+        <InternalElement ID="74d0c8ef-ab53-462a-8225-306ed22dc0f3" Name="RollerConveyor" RefBaseSystemUnitPath="">
+            <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
+                <Value>1.5</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:double" Name="maxTransportationWeight" Unit="kg">
+                <Value>35.0</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAI721#002"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:boolean" Name="allowsPaper">
+                <DefaultValue>true</DefaultValue>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#07-CAA016#001"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="paperType">
+                <Value>Carbon</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF818#002"/>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"/>
+        </InternalElement>
+    </InstanceHierarchy>
     <InstanceHierarchy ID="0000-0" Name="Instance Name-0">
         <InternalElement ChangeMode="state" ID="0000-0" Name="AML Object-0" RefBaseSystemUnitPath="RefbasePath-0">
             <ExternalInterface ID="0000-1--10" Name="External Interface0" RefBaseClassPath="RefBasePath0"/>
@@ -30,40 +52,6 @@
             <InternalLink ID="0000-1--10" Name="connection0" RefPartnerSideA="connection A0" RefPartnerSideB="connection B0"/>
         </InternalElement>
     </InstanceHierarchy>
-    <InterfaceClassLib Name="DistributionTransformer">
-        <Version>1.0</Version>
-        <InterfaceClass Name="BASIC_27-03-14-02 Single-phase distribution transformer (oil-cooled)">
-            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
-                <Value>9.0</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
-                <Value>27031402</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
-                <Value>0173-1---BASIC_1_1#02-ACO096#009</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="additional link address">
-                <Description>site address where you can view information about the product or to communicate</Description>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAQ326#001"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="GTIN">
-                <Description>internationally unique and unambiguous article number for products and services (Global Trade Item Number, formerly EAN)</Description>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO663#002"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="Power loss, static, current-independent [Pls]">
-                <Description>Specification of electrical heat loss in watts for a device without a load current dependent portions</Description>
-                <RefSemantic CorrespondingAttributePath="0173-1#02-BAA303#005"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="Manufacturer name">
-                <Description> legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation</Description>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="Product type description">
-                <Description>name of the product family or variant</Description>
-                <RefSemantic CorrespondingAttributePath="0173-1#02-AAO847#002"/>
-            </Attribute>
-        </InterfaceClass>
-    </InterfaceClassLib>
     <InterfaceClassLib ID="141929fsafa-34-5-5-0" Name="interface class Lib Name 0">
         <InterfaceClass ID="141929fsafa-34-5-5-0" Name="interface class Name 0" RefBaseClassPath="Ref base path0">
             <InterfaceClass ID="141929fsafa-34-5-5-0" Name="interface class Name 0" RefBaseClassPath="Ref base path0"/>

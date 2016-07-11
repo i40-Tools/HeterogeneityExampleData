@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CAEXFile FileName="file-1.aml" SchemaVersion="2.15">
+<CAEXFile FileName="seed-Granularity-0-enlarge.aml" SchemaVersion="2.15">
     <AdditionalInformation AutomationMLVersion="2.0"/>
     <AdditionalInformation>
         <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
             <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
             <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
             <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20 </LastWritingDateTime>
             <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples </WriterProjectID>
         </WriterHeader>
     </AdditionalInformation>
-    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
-    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+    <ExternalReference Alias="AutomationMLBaseRoleClassLib" Path="Libs\RoleClass Libraries\AutomationMLBaseRoleClassLib.aml"/>
     <ExternalReference Alias="Alias0" Path="Path0"/>
     <InstanceHierarchy ID="0000-0" Name="Instance Name-0">
         <InternalElement ChangeMode="state" ID="0000-0" Name="AML Object-0" RefBaseSystemUnitPath="RefbasePath-0">
@@ -46,6 +50,42 @@
             <InterfaceClass ID="141929fsafa-34-5-5-1" Name="interface class Name 1" RefBaseClassPath="Ref base path1"/>
         </InterfaceClass>
     </InterfaceClassLib>
+    <RoleClassLib Name="CommunicationCable">
+        <Version>1.0</Version>
+        <RoleClass Name="BASIC_27-06-18-01 Data cable">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27061801 </Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#01-AKE197#013</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="BASIC_27-06-18-02 Coaxial cable">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27061802</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#02-AFZ688#015</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="BASIC_27-06-18-05 Telecommunications cable">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27061805</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#05-AKE200#015</Value>
+            </Attribute>
+        </RoleClass>
+    </RoleClassLib>
     <RoleClassLib ID="14-32-34-34-5-5-0" Name="Role class Lib Name 0">
         <RoleClass ID="143-3-3-34-5-5-0" Name="Role class Name 0" RefBaseClassPath="Ref base path0">
             <ExternalInterface ID="00220-1--10" Name="External Interface0" RefBaseClassPath="RefBasePath0"/>
@@ -110,38 +150,6 @@
             </RoleClass>
         </RoleClass>
     </RoleClassLib>
-    <SystemUnitClassLib Name="Conveyor">
-        <Version>1.0</Version>
-        <SystemUnitClass Name="BASIC_36-12-04-01 Conveyor">
-            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
-                <Value>9.0</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
-                <Value>36120401</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
-                <Value>0173-1---BASIC_1_1#01-AKL503#010</Value>
-            </Attribute>
-            <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor1">
-                <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
-                    <Value>1.5</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
-                </Attribute>
-            </InternalElement>
-            <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor2">
-                <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
-                    <Value>1.5</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
-                </Attribute>
-            </InternalElement>
-            <InternalElement ID="23e7138b-f28f-4f45-8c0b-ee7e0de7c08f" Name="Conveyor3">
-                <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
-                    <Value>1.5</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
-                </Attribute>
-            </InternalElement>
-        </SystemUnitClass>
-    </SystemUnitClassLib>
     <SystemUnitClassLib ID="11-31-31-31-1-1-0" Name="System Unit class Lib Name 0">
         <SystemUnitClass ID="11-31-31-31-1-1-0" Name="System Unit class Name 0">
             <ExternalInterface ID="0000-1--10" Name="External Interface0" RefBaseClassPath="RefBasePath0"/>

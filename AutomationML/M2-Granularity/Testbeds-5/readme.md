@@ -1,9 +1,9 @@
 This is an example for Granularity
 
-There are two heterogenity files in this example generated from "seed-10.aml".
+There are two heterogenity files in this example generated from "seed.aml".
 
-a) "seed-10-Granularity-1.aml"
-b) "seed-10-Granularity-0.aml"
+a) "seed-Granularity-1.aml"
+b) "seed-Granularity-0.aml"
 
 It contains the following conflicts:
 

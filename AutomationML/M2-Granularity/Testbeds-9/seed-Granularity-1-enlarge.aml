@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CAEXFile FileName="file-1.aml" SchemaVersion="2.15">
+<CAEXFile FileName="seed-Granularity-1-enlarge.aml" SchemaVersion="2.15">
     <AdditionalInformation AutomationMLVersion="2.0"/>
     <AdditionalInformation>
         <WriterHeader>
@@ -9,12 +9,13 @@
             <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
             <WriterVersion>1.0</WriterVersion>
             <WriterRelease>1.0</WriterRelease>
-            <LastWritingDateTime>2012-02-20 </LastWritingDateTime>
+            <LastWritingDateTime>2012-02-20</LastWritingDateTime>
             <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
-            <WriterProjectID>AutomationML Tutorial Examples </WriterProjectID>
+            <WriterProjectID>AutomationML Tutorial Examples</WriterProjectID>
         </WriterHeader>
     </AdditionalInformation>
-    <ExternalReference Alias="AutomationMLBaseRoleClassLib" Path="Libs\RoleClass Libraries\AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
     <ExternalReference Alias="Alias0" Path="Path0"/>
     <InstanceHierarchy ID="0000-0" Name="Instance Name-0">
         <InternalElement ChangeMode="state" ID="0000-0" Name="AML Object-0" RefBaseSystemUnitPath="RefbasePath-0">
@@ -50,42 +51,6 @@
             <InterfaceClass ID="141929fsafa-34-5-5-1" Name="interface class Name 1" RefBaseClassPath="Ref base path1"/>
         </InterfaceClass>
     </InterfaceClassLib>
-    <RoleClassLib Name="CommunicationCable">
-        <Version>1.0</Version>
-        <RoleClass Name="BASIC_27-06-18-01 Data cable">
-            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
-                <Value>9.0</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
-                <Value>27061801 </Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
-                <Value>0173-1---BASIC_1_1#01-AKE197#013</Value>
-            </Attribute>
-        </RoleClass>
-        <RoleClass Name="BASIC_27-06-18-02 Coaxial cable">
-            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
-                <Value>9.0</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
-                <Value>27061802</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
-                <Value>0173-1---BASIC_1_1#02-AFZ688#015</Value>
-            </Attribute>
-        </RoleClass>
-        <RoleClass Name="BASIC_27-06-18-05 Telecommunications cable">
-            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
-                <Value>9.0</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
-                <Value>27061805</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
-                <Value>0173-1---BASIC_1_1#05-AKE200#015</Value>
-            </Attribute>
-        </RoleClass>
-    </RoleClassLib>
     <RoleClassLib ID="14-32-34-34-5-5-0" Name="Role class Lib Name 0">
         <RoleClass ID="143-3-3-34-5-5-0" Name="Role class Name 0" RefBaseClassPath="Ref base path0">
             <ExternalInterface ID="00220-1--10" Name="External Interface0" RefBaseClassPath="RefBasePath0"/>
@@ -150,6 +115,36 @@
             </RoleClass>
         </RoleClass>
     </RoleClassLib>
+    <SystemUnitClassLib Name="Connector System">
+        <Version>1.0</Version>
+        <SystemUnitClass Name="BASIC_27-44-01-05 Valve connector">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27440105</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#05-AFR414#002</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Rated current In">
+                <Description>The current value stipulated by the manufacturer that is composed of the measured values established under defined conditions and rules</Description>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAB500#006"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Combustibility class">
+                <Description>Classification of insulation in combustibility classes pursuant to UL 94 for construction element serial terminals</Description>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAC140#008"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Housing material">
+                <Description>working material from which the housing of the control and signaling devices combination in the housings primarily constructed</Description>
+                <RefSemantic CorrespondingAttributePath="0173-1#02-BAC461#010"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Rated voltage">
+                <Description>Manufacturer's value for the voltage, which is derived from measured values that have been obtained under established conditions and rules</Description>
+                <RefSemantic CorrespondingAttributePath="0173-1#02-BAH005#003"/>
+            </Attribute>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
     <SystemUnitClassLib ID="11-31-31-31-1-1-0" Name="System Unit class Lib Name 0">
         <SystemUnitClass ID="11-31-31-31-1-1-0" Name="System Unit class Name 0">
             <ExternalInterface ID="0000-1--10" Name="External Interface0" RefBaseClassPath="RefBasePath0"/>
