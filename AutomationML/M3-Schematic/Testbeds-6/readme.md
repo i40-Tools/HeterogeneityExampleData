@@ -1,9 +1,9 @@
 This is an example for Schematic 
 
-There are two heterogenity files in this example generated from "seed-15.aml".
+There are two heterogenity files in this example generated from "seed.aml".
 
-a) "seed-15-Schematic-1.aml"
-b) "seed-15-Schematic-0.aml"
+a) "seed-Schematic-1.aml"
+b) "seed-Schematic-0.aml"
 
 It contains the following conflicts:
 
@@ -71,6 +71,6 @@ Representation: Pair(File a, File b)
 
 
 
-In conflict 13  and 22 we show that "seed-15-Schematic-1.aml":Internal Elemen("Conveyor2","Conveyor4", internalLink) equals "seed-15-Schematic-0.aml":Internal Element("Connection",Internal Link). 
+In conflict 13  and 22 we show that "seed-Schematic-1.aml":InternalElement("Conveyor2","Conveyor4", InternalLink) equals "seed-Schematic-0.aml":InternalElement("Connection",InternalLink). 
 
 If such conflict exist then this a schematic heterogeneity.
