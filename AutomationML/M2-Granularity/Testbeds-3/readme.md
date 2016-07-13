@@ -7,22 +7,20 @@ b) "seed-Granularity-0.aml"
 
 It contains the following conflicts:
 
-1: pair(InterfaceClassLib("DistributionTransformer"), RoleClassLib("DistributionTransformer")
+1: pair (InterfaceClass("BASIC_27-03-14-02 Single-phase distribution transformer (oil-cooled)"),(InterfaceClass("BASIC_27-03-14-02 Single-phase distribution transformer (oil-cooled)")
 
-2: pair (InterfaceClass("BASIC_27-03-14-02 Single-phase distribution transformer (oil-cooled)"),(InterfaceClass("BASIC_27-03-14-02 Single-phase distribution transformer (oil-cooled)")
+2: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
 
-3: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
+3: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
 
-4: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
-
-5: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
+4: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
 
 
-6: pair (InterfaceClass("BASIC_27-03-14-01 Three-phase distribution transformer (oil-cooled)"),(InterfaceClass("BASIC_27-03-14-01 Three-phase distribution transformer (oil-cooled)")
+5: pair (InterfaceClass("BASIC_27-03-14-01 Three-phase distribution transformer (oil-cooled)"),(InterfaceClass("BASIC_27-03-14-01 Three-phase distribution transformer (oil-cooled)")
 
-7: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
+6: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
 
-8: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
+7: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
 
-9: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
+8: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
 
