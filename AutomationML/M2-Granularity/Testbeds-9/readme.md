@@ -15,7 +15,6 @@ It contains the following conflicts:
 
 4: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
 
-
 5: pair(Attribute("Combustibility class") , (Attribute("Combustibility class"))
 
  - pair(Attribute(RefSemantic), (Attribute(RefSemantic))
