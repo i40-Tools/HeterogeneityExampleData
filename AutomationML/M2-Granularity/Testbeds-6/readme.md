@@ -7,21 +7,19 @@ b) "seed-Granularity-0.aml"
 
 It contains the following conflicts:
 
-1: pair(SystemUnitClassLib("Industry Connector"), (SystemUnitClassLib("Industry Connector"))
+1: pair (SystemUnitClass("BASIC_27-44-01-05 Valve connector"),(SystemUnitClass("BASIC_27-44-01-05 Valve connector"))
 
-2: pair (SystemUnitClass("BASIC_27-44-01-05 Valve connector"),(SystemUnitClass("BASIC_27-44-01-05 Valve connector"))
+2: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
 
-3: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
+3: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
 
-4: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
-
-5: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
+4: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
 
 
-6: pair (SystemUnitClass("BASIC_27-44-01-92 Industry connector (accessories)"),((SystemUnitClass("BASIC_27-44-01-92 Industry connector (accessories)"))
+5: pair (SystemUnitClass("BASIC_27-44-01-92 Industry connector (accessories)"),((SystemUnitClass("BASIC_27-44-01-92 Industry connector (accessories)"))
 
-7: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
+6: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
 
-8: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
+7: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
 
-9: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
+8: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))

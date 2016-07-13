@@ -19,4 +19,6 @@ It contains the following conflicts:
  
  - pair(RefSemantic,RefSemantic)
 
+6: pair (RoleClassLib(),(RoleClassLib())
+
 

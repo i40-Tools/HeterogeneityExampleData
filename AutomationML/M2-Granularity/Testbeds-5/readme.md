@@ -14,3 +14,4 @@ It contains the following conflicts:
 2: pair(Attribute("paperType") , (Attribute("paperType"))
    
  - pair(RefSemantic,RefSemantic)
+  

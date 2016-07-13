@@ -15,5 +15,4 @@ It contains the following conflicts:
 
 4: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
 
-5: pair(Attribute("Mass fraction of the individual packaging for the component polysterene") , (Attribute("Mass fraction of the individual packaging for the component polysterene"))
-
+5: pair(Attribute("Polystyrene weight portion of the individual packaging") , (Attribute("Polystyrene weight portion of the individual packaging"))
