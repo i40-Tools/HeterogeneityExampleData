@@ -28,5 +28,4 @@ Representation: Pair(File a, File b)
  
  - pair (RoleRequirement,RoleRequirement).
 
-5: pair(InternalLink("PortLink"),(InternalLink("PortLink"))
   
