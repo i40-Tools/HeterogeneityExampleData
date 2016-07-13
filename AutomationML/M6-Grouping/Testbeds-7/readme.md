@@ -9,51 +9,60 @@ It contains the following conflicts:
 
 Representation: Pair(File a, File b)
 
-1: pair(InstanceHierarchy("AssemblySystem"), pair(InstanceHierarchy("AssemblySystem"))
+1: pair (InternalElement("LiftUpGate",ID),(InternalElement("LiftUpGate",ID))
 
-2: pair (InternalElement("LiftUpGate",ID),(InternalElement("LiftUpGate",ID))
-
-3: pair(InternalElement("LiftUpGate"), (InternalElement("ConveyorGroup"(InternalElement("LiftUpGate"))))
+  - pair(RoleRequirements ,RoleRequirements)
 
 
-4: pair (InternalElement("TransferToSubAssembly",ID),(InternalElement("TransferToSubAssembly",ID))
+2: pair(InternalElement("LiftUpGate"), (InternalElement("ConveyorGroup"(InternalElement("LiftUpGate"))))
 
-5: pair(InternalElement("TransferToSubAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToSubAssembly"))))
-
-
-6: pair (InternalElement("SubAssembly",ID),(InternalElement("SubAssembly",ID))
-
-7: pair(InternalElement("SubAssembly"), (InternalElement("ConveyorGroup"(InternalElement("SubAssembly"))))
+  - pair(RoleRequirements ,RoleRequirements)
 
 
-8: pair (InternalElement("TransferToMainAssembly",ID),(InternalElement("TransferToMainAssembly",ID))
+3: pair (InternalElement("TransferToSubAssembly",ID),(InternalElement("TransferToSubAssembly",ID))
 
-9: pair(InternalElement("TransferToMainAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToMainAssembly"))))
-
-
-10: pair (InternalElement("MainAssemblyStation",ID),(InternalElement("MainAssemblyStation",ID))
-
-11: pair(InternalElement("MainAssemblyStation"), (InternalElement("ConveyorGroup"(InternalElement("MainAssemblyStation"))))
+  - pair(RoleRequirements ,RoleRequirements)
 
 
-12: pair (InternalElement("EndStop",ID),(InternalElement("EndStop",ID))
+4: pair(InternalElement("TransferToSubAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToSubAssembly"))))
 
-13: pair(InternalElement("EndStop"), (InternalElement("ConveyorGroup"(InternalElement("EndStop"))))
-
-
+  - pair(RoleRequirements ,RoleRequirements)
 
 
-In conflict 3 we show that "seed-Grouping-1.aml":InternalElement("LiftUpGate") equals "seed-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("LiftUpGate")). 
+5: pair (InternalElement("SubAssembly",ID),(InternalElement("SubAssembly",ID))
 
-In conflict 5 we show that "seed-Grouping-1.aml":InternalElement("TransferToSubAssembly") equals "seed-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("TransferToSubAssembly")). 
-
-In conflict 7 we show that "seed-Grouping-1.aml":InternalElement("SubAssembly") equals "seed-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("SubAssembly")). 
-
-In conflict 9 we show that "seed-Grouping-1.aml":InternalElement("TransferToMainAssembly") equals "seed-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("TransferToMainAssembly")). 
-
-In conflict 11 we show that "seed-Grouping-1.aml":InternalElement("MainAssemblyStation") equals "seed-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("MainAssemblyStation")). 
-
-In conflict 13 we show that "seed-Grouping-1.aml":InternalElement("EndStop") equals "seed-Grouping-0.aml":InternalElement("ConveyorGroup"(InternalElement("EndStop")). 
+  - pair(RoleRequirements ,RoleRequirements)
 
 
-If such conflict exist then this a schematic heterogeneity.
+6: pair(InternalElement("SubAssembly"), (InternalElement("ConveyorGroup"(InternalElement("SubAssembly"))))
+
+  - pair(RoleRequirements ,RoleRequirements)
+
+
+7: pair (InternalElement("TransferToMainAssembly",ID),(InternalElement("TransferToMainAssembly",ID))
+
+  - pair(RoleRequirements ,RoleRequirements)
+
+
+8: pair(InternalElement("TransferToMainAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToMainAssembly"))))
+
+  - pair(RoleRequirements ,RoleRequirements)
+
+9: pair (InternalElement("MainAssemblyStation",ID),(InternalElement("MainAssemblyStation",ID))
+
+  - pair(RoleRequirements ,RoleRequirements)
+
+
+10: pair(InternalElement("MainAssemblyStation"), (InternalElement("ConveyorGroup"(InternalElement("MainAssemblyStation"))))
+
+  - pair(RoleRequirements ,RoleRequirements)
+
+
+11: pair (InternalElement("EndStop",ID),(InternalElement("EndStop",ID))
+
+  - pair(RoleRequirements ,RoleRequirements)
+
+
+12: pair(InternalElement("EndStop"), (InternalElement("ConveyorGroup"(InternalElement("EndStop"))))
+
+  - pair(RoleRequirements ,RoleRequirements)

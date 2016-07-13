@@ -28,10 +28,18 @@
             <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
                 <Value>0173-1---BASIC_1_1#01-AKL503#010</Value>
             </Attribute>
-            <InternalElement ID="{6aa1bd9a-701a-43a6-bc04-c414d30e0f93}" Name="LiftUpGate" RefBaseSystemUnitPath="Resources/RollerConveyor"> </InternalElement>
-            <InternalElement ID="{71fc6d29-7797-4e3f-a659-ac69198e464f}" Name="TransferToSubAssembly" RefBaseSystemUnitPath="Resources/RollerConveyor"> </InternalElement>
-            <InternalElement ID="{9facd06a-1725-4d18-95f7-4814ba2e4cf8}" Name="TransferToMainAssembly" RefBaseSystemUnitPath="Resources/RollerConveyor"> </InternalElement>
-            <InternalElement ID="{72bf71e8-15fd-4882-9d35-00a12d1aa995}" Name="EndStop" RefBaseSystemUnitPath="Resources/RollerConveyor"> </InternalElement>
+            <InternalElement ID="{6aa1bd9a-701a-43a6-bc04-c414d30e0f93}" Name="LiftUpGate" RefBaseSystemUnitPath="Resources/RollerConveyor">
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="{71fc6d29-7797-4e3f-a659-ac69198e464f}" Name="TransferToSubAssembly" RefBaseSystemUnitPath="Resources/RollerConveyor">
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="{9facd06a-1725-4d18-95f7-4814ba2e4cf8}" Name="TransferToMainAssembly" RefBaseSystemUnitPath="Resources/RollerConveyor">
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="{72bf71e8-15fd-4882-9d35-00a12d1aa995}" Name="EndStop" RefBaseSystemUnitPath="Resources/RollerConveyor">
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
         </SystemUnitClass>
     </SystemUnitClassLib>
 </CAEXFile>
