@@ -32,3 +32,8 @@ Representation: Pair(File a, File b)
   
   -pair(RoleRequirements ,RoleRequirements)
 
+
+8: pair (InternalElement("Inport2",ID),(InternalElement("Inport2",ID))
+
+  -pair(RoleRequirements ,RoleRequirements)
+
