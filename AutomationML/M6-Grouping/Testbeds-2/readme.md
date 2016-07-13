@@ -37,12 +37,12 @@ Representation: Pair(File a, File b)
  - pair(RoleRequirements ,RoleRequirements)
 
 
-9: pair (InternalElement("Conveyor1",ID),(InternalElement("Conveyor1",ID))
+9: pair (InternalElement("Conveyor1",ID),((InternalElement("ConveyorGroup"(InternalElement("Conveyor1",ID))
 
  - pair(RoleRequirements ,RoleRequirements)
 
 
-10: pair (InternalElement("Conveyor2",ID),(InternalElement("Conveyor2",ID))
+10: pair (InternalElement("Conveyor2",ID),((InternalElement("ConveyorGroup"(InternalElement("Conveyor2",ID))
 
  - pair(RoleRequirements ,RoleRequirements)
 
