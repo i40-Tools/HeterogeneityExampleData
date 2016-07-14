@@ -18,59 +18,26 @@ Representation: Pair(File a, File b)
 4: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI)
 
 
+5: pair(Attribute("maxConveyingSpeed") , (Attribute("maxConveyingSpeed"))
 
-5: pair (InternalElement("LiftUpGate",ID),(InternalElement("LiftUpGate",ID))
+ - pair (RefSemantic,RefSemantic)
 
-  - pair(RoleRequirements ,RoleRequirements)
+6: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
-6: pair(InternalElement("LiftUpGate"), (InternalElement("ConveyorGroup"(InternalElement("LiftUpGate"))))
+ - pair (RefSemantic,RefSemantic)
 
-  - pair(RoleRequirements ,RoleRequirements)
+7: pair(Attribute("Min. speed of the drive") , (Attribute("Min. speed of the drive"))
 
+ - pair (RefSemantic,RefSemantic)
 
-7: pair (InternalElement("TransferToSubAssembly",ID),(InternalElement("TransferToSubAssembly",ID))
+8: pair(Attribute("maxTransportationWeight") , (Attribute("maxTransportationWeight"))
 
-  - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
-8: pair(InternalElement("TransferToSubAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToSubAssembly"))))
+9: pair(Attribute("length of the robot") , (Attribute("length of the robot"))
 
-  - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
+10: pair(Attribute("number of pins of the connector for connection to PLC") , (Attribute("number of pins of the connector for connection to PLC"))
 
-9: pair (InternalElement("SubAssembly",ID),(InternalElement("SubAssembly",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-10: pair(InternalElement("SubAssembly"), (InternalElement("AssemblyStationGroup"(InternalElement("SubAssembly"))))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-11: pair (InternalElement("MainAssemblyStation",ID),(InternalElement("MainAssemblyStation",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-12: pair(InternalElement("MainAssemblyStation"), (InternalElement("AssemblyStationGroup"(InternalElement("EndStop"))))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-13: pair (InternalElement("Robot",ID),(InternalElement("Robot",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-14: pair(InternalElement("Robot"), (InternalElement("RobotGroup"(InternalElement("Robot"))))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-15: pair (InternalElement("PLC1",ID),(InternalElement("PLC1",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-16: pair(InternalElement("PLC1"), (InternalElement("RobotGroup"(InternalElement("PLC1"))))
-
-  - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)

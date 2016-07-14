@@ -9,60 +9,27 @@ It contains the following conflicts:
 
 Representation: Pair(File a, File b)
 
-1: pair (InternalElement("LiftUpGate",ID),(InternalElement("LiftUpGate",ID))
+1: pair(Attribute("maxConveyingSpeed") , (Attribute("maxConveyingSpeed"))
 
-  - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
+2: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
-2: pair(InternalElement("LiftUpGate"), (InternalElement("ConveyorGroup"(InternalElement("LiftUpGate"))))
+ - pair (RefSemantic,RefSemantic)
 
-  - pair(RoleRequirements ,RoleRequirements)
+3: pair(Attribute("Min. speed of the drive") , (Attribute("Min. speed of the drive"))
 
+ - pair (RefSemantic,RefSemantic)
 
-3: pair (InternalElement("TransferToSubAssembly",ID),(InternalElement("TransferToSubAssembly",ID))
+4: pair(Attribute("maxTransportationWeight") , (Attribute("maxTransportationWeight"))
 
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-4: pair(InternalElement("TransferToSubAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToSubAssembly"))))
-
-  - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
 
-5: pair (InternalElement("SubAssembly",ID),(InternalElement("SubAssembly",ID))
+5: pair(Attribute("allowsPaper") , (Attribute("allowsPaper"))
 
-  - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
+6: pair(Attribute("paperType") , (Attribute("paperType"))
 
-6: pair(InternalElement("SubAssembly"), (InternalElement("ConveyorGroup"(InternalElement("SubAssembly"))))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-7: pair (InternalElement("TransferToMainAssembly",ID),(InternalElement("TransferToMainAssembly",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-8: pair(InternalElement("TransferToMainAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToMainAssembly"))))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-9: pair (InternalElement("MainAssemblyStation",ID),(InternalElement("MainAssemblyStation",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-10: pair(InternalElement("MainAssemblyStation"), (InternalElement("ConveyorGroup"(InternalElement("MainAssemblyStation"))))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-11: pair (InternalElement("EndStop",ID),(InternalElement("EndStop",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-12: pair(InternalElement("EndStop"), (InternalElement("ConveyorGroup"(InternalElement("EndStop"))))
-
-  - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
