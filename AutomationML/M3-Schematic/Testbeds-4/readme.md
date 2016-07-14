@@ -18,7 +18,6 @@ Representation: Pair(File a, File b)
 
 4: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI)
 
-
 5: pair(Attribute(maxConveyingSpeed) , (Attribute(maxConveyingSpeed))
 
  - pair (RefSemantic,RefSemantic)
@@ -26,7 +25,3 @@ Representation: Pair(File a, File b)
 6: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
  - pair (RefSemantic,RefSemantic)
-
-
-
-

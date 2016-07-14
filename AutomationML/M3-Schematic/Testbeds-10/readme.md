@@ -9,36 +9,30 @@ It contains the following conflicts:
 
 Representation: Pair(File a, File b)
 
-1: pair (SystemUnitClass("BASIC_36-12-04-01 Conveyor"),(SystemUnitClass("BASIC_36-12-04-01 Conveyor"))
 
-2: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
-
-3: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
-
-4: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI)
-
-
-5: pair(Attribute("maxConveyingSpeed") , (Attribute("maxConveyingSpeed"))
+1: pair(Attribute(maxConveyingSpeed) , (Attribute(maxConveyingSpeed))
 
  - pair (RefSemantic,RefSemantic)
 
-6: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
-
- - pair (RefSemantic,RefSemantic)
-
-7: pair(Attribute("Min. speed of the drive") , (Attribute("Min. speed of the drive"))
-
- - pair (RefSemantic,RefSemantic)
-
-8: pair(Attribute("maxTransportationWeight") , (Attribute("maxTransportationWeight"))
+2: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
  - pair (RefSemantic,RefSemantic)
 
 
-9: pair(Attribute("allowsPaper") , (Attribute("allowsPaper"))
+3: pair(InternalElement("Conveyor1") ,(InternalElement("Conveyor1"))
+ 
+ - pair (RoleRequirement,RoleRequirement).
 
- - pair (RefSemantic,RefSemantic)
 
-10: pair(Attribute("paperType") , (Attribute("paperType"))
+4: pair(InternalElement("Conveyor2") ,(InternalElement("Conveyor2"))
+ 
+ - pair (RoleRequirement,RoleRequirement).
 
- - pair (RefSemantic,RefSemantic)
+
+5: pair(RoleClass) , pair(RoleClass))
+
+6: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
+
+7: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
+
+8: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))  
