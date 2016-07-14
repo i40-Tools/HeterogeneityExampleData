@@ -17,15 +17,4 @@ Representation: Pair(File a, File b)
 2: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
  - pair (RefSemantic,RefSemantic)
-
-
-3: pair(InternalElement("Conveyor1") ,(InternalElement("Conveyor1"))
- 
- - pair (RoleRequirement,RoleRequirement).
-
-
-4: pair(InternalElement("Conveyor2") ,(InternalElement("Conveyor2"))
- 
- - pair (RoleRequirement,RoleRequirement).
-
   

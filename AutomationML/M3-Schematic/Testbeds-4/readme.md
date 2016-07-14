@@ -19,21 +19,14 @@ Representation: Pair(File a, File b)
 4: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI)
 
 
-5: pair (InternalElement("Conveyor1",ID),(InternalElement("Conveyor1",ID))
+5: pair(Attribute(maxConveyingSpeed) , (Attribute(maxConveyingSpeed))
 
-  -pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
-6: pair (InternalElement("Inport",ID),(InternalElement("Inport",ID))
+6: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
-  -pair(RoleRequirements ,RoleRequirements)
-
-
-7: pair (InternalElement("Conveyor2",ID),(InternalElement("Conveyor2",ID))
-  
-  -pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
 
-8: pair (InternalElement("Inport2",ID),(InternalElement("Inport2",ID))
 
-  -pair(RoleRequirements ,RoleRequirements)
 

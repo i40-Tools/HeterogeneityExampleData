@@ -35,24 +35,5 @@ Representation: Pair(File a, File b)
  - pair (RefSemantic,RefSemantic)
 
 
-9: pair (InternalElement("Conveyor1",ID),(InternalElement("Conveyor1",ID))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-10: pair (InternalElement("Conveyor2",ID),(InternalElement("Conveyor2",ID))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-11: pair (InternalElement("Conveyor3",ID),(InternalElement("Conveyor3",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-12: pair (InternalElement("Conveyor4",ID),(InternalElement("Conveyor4",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
 
 

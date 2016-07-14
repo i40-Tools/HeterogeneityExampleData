@@ -9,20 +9,11 @@ It contains the following conflicts:
 
 Representation: Pair(File a, File b)
 
-1: pair (InternalElement("Conveyor1",ID),(InternalElement("Conveyor1",ID))
-  
- - pair(RoleRequirements ,RoleRequirements)
- 
-2: pair (InternalElement("Inport",ID),(InternalElement("Inport",ID))
+1: pair(Attribute(maxConveyingSpeed) , (Attribute(maxConveyingSpeed))
 
- - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
+2: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
-3: pair (InternalElement("Conveyor2",ID),(InternalElement("Conveyor2",ID))
- 
- - pair(RoleRequirements ,RoleRequirements)
-
-4: pair (InternalElement("Inport2",ID),(InternalElement("Inport2",ID))
-
- - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
