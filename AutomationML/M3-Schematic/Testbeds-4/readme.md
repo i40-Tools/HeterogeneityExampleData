@@ -18,22 +18,3 @@ Representation: Pair(File a, File b)
 
 4: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI)
 
-
-5: pair (InternalElement("Conveyor1",ID),(InternalElement("Conveyor1",ID))
-
-  -pair(RoleRequirements ,RoleRequirements)
-
-6: pair (InternalElement("Inport",ID),(InternalElement("Inport",ID))
-
-  -pair(RoleRequirements ,RoleRequirements)
-
-
-7: pair (InternalElement("Conveyor2",ID),(InternalElement("Conveyor2",ID))
-  
-  -pair(RoleRequirements ,RoleRequirements)
-
-
-8: pair (InternalElement("Inport2",ID),(InternalElement("Inport2",ID))
-
-  -pair(RoleRequirements ,RoleRequirements)
-
