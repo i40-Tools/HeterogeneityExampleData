@@ -28,11 +28,11 @@ Representation: Pair(File a, File b)
  
  - pair (RoleRequirement,RoleRequirement).
 
-
 5: pair(RoleClass) , pair(RoleClass))
 
 6: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
 
 7: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
 
-8: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))  
+8: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
+  
