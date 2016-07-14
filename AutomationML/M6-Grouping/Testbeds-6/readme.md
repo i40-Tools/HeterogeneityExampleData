@@ -21,39 +21,18 @@ Representation: Pair(File a, File b)
 
  - pair(RoleRequirements ,RoleRequirements)
 
+6: pair(Attribute("maxConveyingSpeed") , (Attribute("maxConveyingSpeed"))
 
-6: pair(InternalElement("LiftUpGate"), (InternalElement("ConveyorGroup"(InternalElement("LiftUpGate"))))
+ - pair (RefSemantic,RefSemantic)
 
- - pair(RoleRequirements ,RoleRequirements)
+7: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
+ - pair (RefSemantic,RefSemantic)
 
+8: pair(Attribute("Min. speed of the drive") , (Attribute("Min. speed of the drive"))
 
-7: pair (InternalElement("TransferToSubAssembly",ID),(InternalElement("TransferToSubAssembly",ID))
+ - pair (RefSemantic,RefSemantic)
 
- - pair(RoleRequirements ,RoleRequirements)
+9: pair(Attribute("maxTransportationWeight") , (Attribute("maxTransportationWeight"))
 
-
-8: pair(InternalElement("TransferToSubAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToSubAssembly"))))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-
-9: pair (InternalElement("SubAssembly",ID),(InternalElement("SubAssembly",ID))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-10: pair(InternalElement("SubAssembly"), (InternalElement("AssemblyStationGroup"(InternalElement("SubAssembly"))))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-11: pair (InternalElement("MainAssemblyStation",ID),(InternalElement("MainAssemblyStation",ID))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-12: pair(InternalElement("MainAssemblyStation"), (InternalElement("AssemblyStationGroup"(InternalElement("EndStop"))))
-
- - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)

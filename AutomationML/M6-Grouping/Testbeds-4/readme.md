@@ -19,42 +19,19 @@ Representation: Pair(File a, File b)
 4: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI)
 
 
-5: pair (InternalElement("LiftUpGate",ID),(InternalElement("LiftUpGate",ID))
- 
-  - pair(RoleRequirements ,RoleRequirements)
+5: pair(Attribute("maxConveyingSpeed") , (Attribute("maxConveyingSpeed"))
 
+ - pair (RefSemantic,RefSemantic)
 
-6: pair (InternalElement("LiftUpGate",ID), InternalElement("ConveyorGroup"(InternalElement("LiftUpGate",ID))
- 
-  - pair(RoleRequirements ,RoleRequirements)
+6: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
+ - pair (RefSemantic,RefSemantic)
 
-7: pair (InternalElement("TransferToSubAssembly",ID),(InternalElement("TransferToSubAssembly",ID))
+7: pair(Attribute("Min. speed of the drive") , (Attribute("Min. speed of the drive"))
 
-  - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
+8: pair(Attribute("maxTransportationWeight") , (Attribute("maxTransportationWeight"))
 
-8: pair(InternalElement("TransferToSubAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToSubAssembly"))))
+ - pair (RefSemantic,RefSemantic)
 
-   - pair(RoleRequirements ,RoleRequirements)
-
-
-9: pair (InternalElement("TransferToMainAssembly",ID),(InternalElement("TransferToMainAssembly",ID))
-   
-   - pair(RoleRequirements ,RoleRequirements)
-
-
-10: pair(InternalElement("TransferToMainAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToMainAssembly"))))
-
-   
-   - pair(RoleRequirements ,RoleRequirements)
-
-
-11: pair (InternalElement("EndStop",ID),(InternalElement("EndStop",ID))
- 
-   - pair(RoleRequirements ,RoleRequirements)
-
-
-12: pair(InternalElement("EndStop"), (InternalElement("ConveyorGroup"(InternalElement("EndStop"))))
-
-   - pair(RoleRequirements ,RoleRequirements)

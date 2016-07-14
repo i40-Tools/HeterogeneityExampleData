@@ -9,44 +9,19 @@ It contains the following conflicts:
 
 Representation: Pair(File a, File b)
 
+1: pair(Attribute("maxConveyingSpeed") , (Attribute("maxConveyingSpeed"))
 
-1: pair (InternalElement("LiftUpGate",ID),(InternalElement("LiftUpGate",ID))
+ - pair (RefSemantic,RefSemantic)
 
- - pair(RoleRequirements ,RoleRequirements)
+2: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
+ - pair (RefSemantic,RefSemantic)
 
-2: pair(InternalElement("LiftUpGate"), (InternalElement("ConveyorGroup"(InternalElement("LiftUpGate"))))
+3: pair(Attribute("Min. speed of the drive") , (Attribute("Min. speed of the drive"))
 
- - pair(RoleRequirements ,RoleRequirements)
+ - pair (RefSemantic,RefSemantic)
 
+4: pair(Attribute("maxTransportationWeight") , (Attribute("maxTransportationWeight"))
 
+ - pair (RefSemantic,RefSemantic)
 
-3: pair (InternalElement("TransferToSubAssembly",ID),(InternalElement("TransferToSubAssembly",ID))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-4: pair(InternalElement("TransferToSubAssembly"), (InternalElement("ConveyorGroup"(InternalElement("TransferToSubAssembly"))))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-
-5: pair (InternalElement("SubAssembly",ID),(InternalElement("SubAssembly",ID))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-6: pair(InternalElement("SubAssembly"), (InternalElement("AssemblyStationGroup"(InternalElement("SubAssembly"))))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-7: pair (InternalElement("MainAssemblyStation",ID),(InternalElement("MainAssemblyStation",ID))
-
- - pair(RoleRequirements ,RoleRequirements)
-
-
-8: pair(InternalElement("MainAssemblyStation"), (InternalElement("AssemblyStationGroup"(InternalElement("EndStop"))))
-
- - pair(RoleRequirements ,RoleRequirements)
