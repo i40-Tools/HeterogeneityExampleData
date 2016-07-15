@@ -56,34 +56,6 @@
                 </Attribute>
                 <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
             </InternalElement>
-            <InternalElement ID="{ac026999-a2e2-4a86-8c97-39685607e49a}" Name="SubAssembly" RefBaseSystemUnitPath="Resources/AssemblyStation">
-                <Attribute AttributeDataType="xs:double" Name="Min. speed of the drive" Unit="m/s">
-                    <Value>1.5</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAH608#004"/>
-                </Attribute>
-                <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
-            </InternalElement>
-            <InternalElement ID="{22612ce1-4b89-4bb1-8a37-9c0ae4a13bdf}" Name="MainAssemblyStation" RefBaseSystemUnitPath="Resources/AssemblyStation">
-                <Attribute AttributeDataType="xs:double" Name="maxTransportationWeight" Unit="kg">
-                    <Value>35.0</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAI721#002"/>
-                </Attribute>
-                <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
-            </InternalElement>
-            <InternalElement ID="83ca746f-9397-4f03-9e28-8afeefdd3537" Name="Robot" RefBaseSystemUnitPath="Resources/Robot">
-                <Attribute AttributeDataType="xs:double" Name="length of the robot" Unit="mm">
-                    <Value>3.0</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAJ752#003 "/>
-                </Attribute>
-                <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
-            </InternalElement>
-            <InternalElement ID="d53e5b56-d5c0-44f4-bd94-cfeeafddc38e" Name="PLC1" RefBaseSystemUnitPath="Resources/Robot">
-                <Attribute AttributeDataType="xs:integer" Name=" number of pins of the connector for connection to PLC">
-                    <Value>3.0</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAF316#001 "/>
-                </Attribute>
-                <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
-            </InternalElement>
         </SystemUnitClass>
     </SystemUnitClassLib>
 </CAEXFile>

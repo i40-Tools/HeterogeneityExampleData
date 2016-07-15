@@ -26,64 +26,26 @@ Representation: Pair(File a, File b)
 
  - pair (RefSemantic,RefSemantic)
 
-7: pair(Attribute("Min. speed of the drive") , (Attribute("Min. speed of the drive"))
-
- - pair (RefSemantic,RefSemantic)
-
-8: pair(Attribute("maxTransportationWeight") , (Attribute("maxTransportationWeight"))
-
- - pair (RefSemantic,RefSemantic)
-
-9: pair(Attribute("length of the robot") , (Attribute("length of the robot"))
-
- - pair (RefSemantic,RefSemantic)
-
-10: pair(Attribute("number of pins of the connector for connection to PLC") , (Attribute("number of pins of the connector for connection to PLC"))
-
- - pair (RefSemantic,RefSemantic)
 
 
-11: pair (InternalElement("LiftUpGate",ID),(InternalElement("LiftUpGate",ID))
+7: pair (InternalElement("LiftUpGate",ID),(InternalElement("LiftUpGate",ID))
 
   - pair(RoleRequirements ,RoleRequirements)
 
 
 
-12: pair (InternalElement("TransferToSubAssembly",ID),(InternalElement("TransferToSubAssembly",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-
-13: pair (InternalElement("SubAssembly",ID),(InternalElement("SubAssembly",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-
-14: pair (InternalElement("MainAssemblyStation",ID),(InternalElement("MainAssemblyStation",ID))
-
-  - pair(RoleRequirements ,RoleRequirements)
-
-
-
-15: pair (InternalElement("Robot",ID),(InternalElement("Robot",ID))
+8: pair (InternalElement("TransferToSubAssembly",ID),(InternalElement("TransferToSubAssembly",ID))
 
   - pair(RoleRequirements ,RoleRequirements)
 
 
 
 
-16: pair (InternalElement("PLC1",ID),(InternalElement("PLC1",ID))
 
-  - pair(RoleRequirements ,RoleRequirements)
+9: pair(RoleClass) , pair(RoleClass))
 
+10: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
 
+11: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
 
-17: pair(RoleClass) , pair(RoleClass))
-
-18: pair(Attribute(eClassVersion) , (Attribute(eClassVersion))
-
-19: pair(Attribute(eClassClassificationClass) , (Attribute(eClassClassificationClass))
-
-20: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
+12: pair(Attribute(eClassIRDI) , (Attribute(eClassIRDI))
