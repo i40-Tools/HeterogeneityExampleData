@@ -1,0 +1,71 @@
+<https://w3id.org/i40/aml/CAEXFile1>
+	a	<https://w3id.org/i40/aml/CAEXFile> ;
+	<https://w3id.org/i40/aml/hasFileName>	"seed-Granularity-0.aml" ;
+	<https://w3id.org/i40/aml/hasSchemaVersion>	"2.15" ;
+	<https://w3id.org/i40/aml/hasAdditionalInfomation>	<https://w3id.org/i40/aml/AdditionalInformation1>, <https://w3id.org/i40/aml/AdditionalInformation2> ;
+	<https://w3id.org/i40/aml/hasExternalReference>	<https://w3id.org/i40/aml/ExternalReference1>, <https://w3id.org/i40/aml/ExternalReference2> ;
+	<https://w3id.org/i40/aml/hasInstanceHierarchy>	<https://w3id.org/i40/aml/InstanceHierarchy1> .
+<https://w3id.org/i40/aml/AdditionalInformation1>
+	a	<https://w3id.org/i40/aml/AdditionalInformation> ;
+	<https://w3id.org/i40/aml/hasAutomationMLVersion>	"2.0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/AdditionalInformation2>
+	a	<https://w3id.org/i40/aml/AdditionalInformation> ;
+	<https://w3id.org/i40/aml/hasWriterName>	"AutomationML e.V." ;
+	<https://w3id.org/i40/aml/hasWriterID>	"AutomationML e.V."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasWriterVendor>	"AutomationML e.V."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasWriterVendorURL>	"www.AutomationML.org"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasWriterVersion>	"1.0"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasWriterRelease>	"1.0"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasLastWritingDateTime>	"2012-02-20 "^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<https://w3id.org/i40/aml/hasWriterProjectTitle>	"AutomationML Tutorial Examples"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasWriterProjectID>	"AutomationML Tutorial Examples "^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/ExternalReference1>
+	a	<https://w3id.org/i40/aml/ExternalReference> ;
+	<https://w3id.org/i40/aml/externalReferenceAlias>	"BaseRoleClassLib"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/refBaseClassPath>	"Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/ExternalReference2>
+	a	<https://w3id.org/i40/aml/ExternalReference> ;
+	<https://w3id.org/i40/aml/externalReferenceAlias>	"BaseInterfaceClassLib"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/refBaseClassPath>	"Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/InstanceHierarchy1>
+	a	<https://w3id.org/i40/aml/InstanceHierarchy> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"MechatronicEngineering"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasInternalElement>	<https://w3id.org/i40/aml/InternalElement1> .
+<https://w3id.org/i40/aml/InternalElement1>
+	a	<https://w3id.org/i40/aml/InternalElement> ;
+	<http://purl.org/dc/elements/1.1/identifier>	"74d0c8ef-ab53-462a-8225-306ed22dc0f3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"RollerConveyor"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/RefBaseSystemUnitPath>	""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute1>, <https://w3id.org/i40/aml/Attribute2>, <https://w3id.org/i40/aml/Attribute3>, <https://w3id.org/i40/aml/Attribute4> ;
+	<https://w3id.org/i40/aml/hasRoleRequirements>	<https://w3id.org/i40/aml/RoleRequirements1> .
+<https://w3id.org/i40/aml/Attribute1>
+	a	<https://w3id.org/i40/aml/Attribute> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"maxConveyingSpeed"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic1> .
+<https://w3id.org/i40/aml/RefSemantic1>
+	a	<https://w3id.org/i40/aml/RefSemantic> ;
+	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"ECLASS:0173-1#02-BAF685#003"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/Attribute2>
+	a	<https://w3id.org/i40/aml/Attribute> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"maxTransportationWeight"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic2> .
+<https://w3id.org/i40/aml/RefSemantic2>
+	a	<https://w3id.org/i40/aml/RefSemantic> ;
+	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"ECLASS:0173-1#02-AAI721#002"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/Attribute3>
+	a	<https://w3id.org/i40/aml/Attribute> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"allowsPaper"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic3> .
+<https://w3id.org/i40/aml/RefSemantic3>
+	a	<https://w3id.org/i40/aml/RefSemantic> ;
+	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"ECLASS:0173-1#07-CAA016#001"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/Attribute4>
+	a	<https://w3id.org/i40/aml/Attribute> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"paperType"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic4> .
+<https://w3id.org/i40/aml/RefSemantic4>
+	a	<https://w3id.org/i40/aml/RefSemantic> ;
+	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"ECLASS:0173-1#02-BAF818#002"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/RoleRequirements1>
+	a	<https://w3id.org/i40/aml/RoleRequirements> ;
+	<https://w3id.org/i40/aml/refBaseRoleClassPath>	"BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"^^<http://www.w3.org/2001/XMLSchema#string> .
