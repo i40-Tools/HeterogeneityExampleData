@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="seed.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+    <AdditionalInformation AutomationMLVersion="2.0" />
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20
+            </LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples
+            </WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+    <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
+    <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
+<InstanceHierarchy Name="NE150DemoProject">
+         <InternalElement Name="A+" RefBaseSystemUnitPath="NE150SUCLibrary/Alarm" ID="6e85d76c-e243-457f-b87a-c1f414eb7f23">
+                                <Attribute Name="OperatorDisplayName" AttributeDataType="xs:string">
+                                    <Description>The signal must be depicted on this operator display</Description>
+                                    <Value>Alarm2</Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
+                                </Attribute>
+                                <Attribute Name="LimitValueType" AttributeDataType="xs:string">
+                                    <Description>Definition of direction and criticality</Description>
+                                    <Value>H</Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.2.1" />
+                                </Attribute>
+                                <Attribute Name="LimitValue" AttributeDataType="xs:double" Unit="%">
+                                    <Description>Value that triggers an alarm if exceed/undershot</Description>
+                                    <Value>99</Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.2.2" />
+                                </Attribute>
+                                
+</InternalElement>
+    </InstanceHierarchy>
+</CAEXFile>
