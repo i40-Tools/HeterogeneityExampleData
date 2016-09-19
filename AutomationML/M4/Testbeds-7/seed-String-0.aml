@@ -19,14 +19,18 @@
     </AdditionalInformation>
     <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
     <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
-<RoleClassLib Name="AutomationMLPropertySetRoleClassLib">
+<InterfaceClassLib Name="AutomationMLPropertySetRoleClassLib">
         <Description>AutomationML Property Set Role Class Library</Description>
         <Version>1.0</Version>
-     <RoleClass Name="Material" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties">
-                        <Attribute Name="Amortization" AttributeDataType="xs:decimal" >
-                             <Value>2.5</Value>
+     <InterfaceClass Name="Material" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties">
+                        <Attribute Name="submaterial" AttributeDataType="xs:string" >
+                             <Value>Metal</Value>
                          </Attribute>
-                    </RoleClass>
+                        <Attribute Name="materialname" AttributeDataType="xs:string" >
+                       <Value>Almunium</Value>
+                         </Attribute>
 
-               </RoleClassLib>         
+                    </InterfaceClass>
+
+               </InterfaceClassLib>         
 </CAEXFile>

@@ -19,18 +19,15 @@
 	</AdditionalInformation>
 	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
 	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
-<RoleClassLib Name="AutomationMLPropertySetRoleClassLib">
+<SystemUnitClassLib Name="AutomationMLPropertySetRoleClassLib">
         <Description>AutomationML Property Set Role Class Library</Description>
         <Version>1.0</Version>
-     <RoleClass Name="Material" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties">
-                        <Attribute Name="submaterial" AttributeDataType="xs:string" >
-                             <Value>Metal</Value>
-                         </Attribute>
-                        <Attribute Name="materialname" AttributeDataType="xs:string" >
-                       <Value>Almunium</Value>
-                         </Attribute>
-
-                    </RoleClass>
-
-               </RoleClassLib>         
+    <SystemUnitClass Name="Load" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties">
+                        <Attribute Name="mass" AttributeDataType="xs:double" Unit="kg" >
+                        	<Value>5.0 </Value>
+                        </Attribute>
+                        <SystemUnitClass Name="Payload" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties/Load" />
+                        <SystemUnitClass Name="SupplementaryLoad" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties/Load" />
+                    </SystemUnitClass>
+               </SystemUnitClassLib>         
 </CAEXFile>

@@ -7,8 +7,6 @@ b) "seed-String-0.aml"
 
 It contains the following conflicts:
 
-1: pair (Amortization),(submaterial)
+1: pair (Amortization),(ManufactureAddress)
 
-2: pair (Amortization),(materialname)
-
-The amortization cost depend on the material used.
+The amortization value depend on the manufacture address location.
