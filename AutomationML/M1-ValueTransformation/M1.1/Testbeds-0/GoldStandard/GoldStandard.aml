@@ -19,20 +19,34 @@
 	</AdditionalInformation>
 	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
 	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
-<InstanceHierarchy Name="NE150DemoProject">
-	      <InternalElement Name="LIRCS+-A+-" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
-                 <ExternalInterface Name="AI Level SW" RefBaseClassPath="NE150InterfaceLibrary/SWSignal" ID="91a89c81-b794-421c-8f24-458f51307f72">
-								<Attribute Name="MeasurementRangeStart" AttributeDataType="xs:double" Unit="%">
-									<Description>Actual measurement range start of sensor in field</Description>
-									<Value>0</Value>
-									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
-								</Attribute>
-								<Attribute Name="MeasurementRangeEnd" AttributeDataType="xs:double" Unit="%">
-									<Description>Actual measurement range end of sensor in field</Description>
-									<Value>100</Value>
-									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.5" />
-								</Attribute>
-							</ExternalInterface>							
-</InternalElement>
-	</InstanceHierarchy>
+<RoleClassLib Name="AutomationMLPropertySetRoleClassLib">
+        <Description>AutomationML Property Set Role Class Library</Description>
+        <Version>1.0</Version>
+
+         <RoleClass Name="ContactData" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Administrative">
+                <Attribute Name="PhoneNumbers" AttributeDataType="xs:string">
+                    <Attribute Name="Business" AttributeDataType="xs:string" />
+                    <Attribute Name="Mobile" AttributeDataType="xs:string" />
+                </Attribute>
+                <Attribute Name="WebAddress" AttributeDataType="xs:string" />
+                <Attribute Name="eMailAddress" AttributeDataType="xs:string" />
+                <Attribute Name="MailAddress" AttributeDataType="xs:string">
+                    <Attribute Name="CompanyName" AttributeDataType="xs:string" />
+                    <Attribute Name="StreetAndNumber" AttributeDataType="xs:string" >
+                    	<Value>endinicher Alee</Value>
+                    </Attribute>
+                    <Attribute Name="City" AttributeDataType="xs:string">
+                    <Value>Bonn</Value>
+                </Attribute>
+                    <Attribute Name="State" AttributeDataType="xs:string" >
+                    	<Value>Nordrhein-Westfalen</Value>
+                    </Attribute>
+                    <Attribute Name="Country" AttributeDataType="xs:string" >
+                    	<Value>Germany</Value>
+                  </Attribute>  
+                </Attribute>
+                <RoleClass Name="Manufacturer" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Administrative/ContactData" />
+                <RoleClass Name="Supplier" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Administrative/ContactData" />
+            </RoleClass>
+</RoleClassLib>
 </CAEXFile>
