@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
-<CAEXFile FileName="seed.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+<CAEXFile FileName="GoldStandard.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
 	<AdditionalInformation AutomationMLVersion="2.0" />
 	<AdditionalInformation>
 		<WriterHeader>
@@ -24,14 +24,7 @@
         <Version>1.0</Version>
 
          <RoleClass Name="ContactData" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Administrative">
-                <Attribute Name="PhoneNumbers" AttributeDataType="xs:string">
-                    <Attribute Name="Business" AttributeDataType="xs:string" />
-                    <Attribute Name="Mobile" AttributeDataType="xs:string" />
-                </Attribute>
-                <Attribute Name="WebAddress" AttributeDataType="xs:string" />
-                <Attribute Name="eMailAddress" AttributeDataType="xs:string" />
                 <Attribute Name="MailAddress" AttributeDataType="xs:string">
-                    <Attribute Name="CompanyName" AttributeDataType="xs:string" />
                     <Attribute Name="StreetAndNumber" AttributeDataType="xs:string" >
                     	<Value>endinicher Alee</Value>
                     </Attribute>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
-<CAEXFile FileName="seed.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+<CAEXFile FileName="seed-Mapping-0.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
     <AdditionalInformation AutomationMLVersion="2.0" />
     <AdditionalInformation>
         <WriterHeader>
@@ -19,14 +19,15 @@
     </AdditionalInformation>
     <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
     <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
-<SystemUnitClassLib Name="AutomationMLPropertySetRoleClassLib">
+<RoleClassLib Name="AutomationMLPropertySetRoleClassLib">
         <Description>AutomationML Property Set Role Class Library</Description>
         <Version>1.0</Version>
-     <SystemUnitClass Name="Material" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties">
-                        <Attribute Name="Amortization" AttributeDataType="xs:decimal" >
-                             <Value>3.5</Value>
-                         </Attribute>
-                    </SystemUnitClass>
-
-               </SystemUnitClassLib>         
+    <RoleClass Name="Load" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties">
+                        <Attribute Name="mass" AttributeDataType="xs:double" Unit="kg" >
+                            <Value>5.0 </Value>
+                        </Attribute>
+                        <RoleClass Name="Payload" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties/Load" />
+                        <RoleClass Name="SupplementaryLoad" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties/Load" />
+                    </RoleClass>
+               </RoleClassLib>         
 </CAEXFile>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
-<CAEXFile FileName="seed.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+<CAEXFile FileName="seed-Mapping-0.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
     <AdditionalInformation AutomationMLVersion="2.0" />
     <AdditionalInformation>
         <WriterHeader>
@@ -23,9 +23,12 @@
         <Description>AutomationML Property Set Role Class Library</Description>
         <Version>1.0</Version>
      <RoleClass Name="Material" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties">
-                        <Attribute Name="Amortization" AttributeDataType="xs:decimal" >
-                             <Value>3.5</Value>
-                         </Attribute>
+                   
+                   <Attribute Name="ManufactureAddress" AttributeDataType="xs:string">
+                    <Attribute Name="Country" AttributeDataType="xs:string" >
+                        <Value>Germany</Value>
+                  </Attribute>  
+                </Attribute>
                     </RoleClass>
 
                </RoleClassLib>         

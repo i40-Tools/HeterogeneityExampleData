@@ -2,8 +2,8 @@ This is an example for Value Transformation
 
 There are two heterogenity files in this example generated from "seed.aml".
 
-a) "seed-String-1.aml"
-b) "seed-String-0.aml"
+a) "seed-Mapping-0.aml"
+b) "seed-Mapping-1.aml"
 
 It contains the following conflicts:
 
