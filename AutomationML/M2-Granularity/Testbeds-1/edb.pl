@@ -67,7 +67,6 @@ clause1(hasRoleClass(roleClassLib11,roleClass11),true).
 clause1(hasVersion(roleClassLib11,'1.0.0'),true).
 clause1(hasAttributeName(roleClassLib11,'ExampleEClassRoleClassLib'),true).
 clause1(type(roleClassLib11,roleClassLib),true).
-
 clause1(refBaseClassPath(externalReference12,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference12,'BaseRoleClassLib'),true).
 clause1(type(externalReference12,externalReference),true).

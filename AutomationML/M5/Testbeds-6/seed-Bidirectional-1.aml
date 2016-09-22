@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="seed-Bidirectional-1.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20 </LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples </WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+   <RoleClassLib Name="SystemA">
+        <RoleClass Name="Robot">
+        </RoleClass>
+
+ <RoleClass Name="Tool">
+        </RoleClass>
+
+        <RoleClass Name="Fence">
+        </RoleClass>
+
+    </RoleClassLib>
+
+    <RoleClassLib Name="SystemB">
+        <RoleClass Name="ActiveObject">
+        </RoleClass>
+
+            <RoleClass Name="PassiveObject">
+        </RoleClass>
+
+    </RoleClassLib>
+
+    <RoleClassLib Name="SystemBMapping">
+        <RoleClass Name="ActiveObjectMapping" RefBaseClassPath="SystemB/ActiveObject">
+                <Attribute Name="MappedRoleClassPathReference" AttributeDataType="xs:string">
+                    <Value>SystemA/Robot</Value>
+                </Attribute>
+        </RoleClass>
+ <RoleClass Name="ActiveObjectMapping" RefBaseClassPath="SystemB/ActiveObject">
+                <Attribute Name="MappedRoleClassPathReference" AttributeDataType="xs:string">
+                    <Value>SystemA/Tool</Value>
+                </Attribute>
+        </RoleClass>
+
+        <RoleClass Name="PassiveObjectMapping" RefBaseClassPath="SystemB/PassiveObject">
+                <Attribute Name="MappedRoleClassPathReference" AttributeDataType="xs:string">
+                    <Value>SystemA/Fence</Value>
+                </Attribute>
+        </RoleClass>
+
+    </RoleClassLib>
+</CAEXFile>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="seed-Bidirectional-0.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20 </LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples </WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+   <SystemUnitClassLib Name="SystemA">
+        <SystemUnitClass Name="Robot">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Robot" />
+        </SystemUnitClass>
+        <SystemUnitClass Name="Tool">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Tool" />
+        </SystemUnitClass>
+        <SystemUnitClass Name="Fence">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Fence" />
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+    <SystemUnitClassLib Name="SystemB">
+        <SystemUnitClass Name="ActiveObject">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Tool" />
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Robot" />
+        </SystemUnitClass>
+        <SystemUnitClass Name="PassiveObject">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Fence" />
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+    <SystemUnitClassLib Name="SystemAMapping">
+        <SystemUnitClass Name="RobotMapping" RefBaseClassPath="SystemA/Robot">
+            <InternalElement Name="ActiveObjectMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject" ID="{8301bf6f-3034-455d-95cf-44c128b8baeb}">
+                <Attribute Name="MappedSystemUnitClassPathReference" AttributeDataType="xs:string">
+                    <Value>SystemB/ActiveObject</Value>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping" />
+            </InternalElement>
+        </SystemUnitClass>
+        <SystemUnitClass Name="ToolMapping" RefBaseClassPath="SystemA/Tool">
+            <InternalElement Name="ActiveObjetcMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject" ID="{9be13bdb-13f6-42c5-9be3-db3142b385af}">
+                <Attribute Name="MappedSystemUnitClassPathReference" AttributeDataType="xs:string">
+                    <Value>SystemB/ActiveObject</Value>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping" />
+            </InternalElement>
+        </SystemUnitClass>
+        <SystemUnitClass Name="FenceMapping" RefBaseClassPath="SystemA/Fence">
+            <InternalElement Name="PassiveObjectMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject" ID="{1c833706-f02f-4bef-9781-5829b673b76a}">
+                <Attribute Name="MappedSystemUnitClassPathReference" AttributeDataType="xs:string">
+                    <Value>SystemB/PassiveObject</Value>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping" />
+            </InternalElement>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+</CAEXFile>
