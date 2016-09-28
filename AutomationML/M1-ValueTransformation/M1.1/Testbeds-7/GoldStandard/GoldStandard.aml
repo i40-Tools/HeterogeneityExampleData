@@ -21,9 +21,7 @@
 	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
 <InterfaceClassLib Name="NE150DemoProject">
         <InterfaceClass Name="AmlObject">
-			      <InternalElement Name="LIRCS+-A+-" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
-                 <ExternalInterface Name="AI Level SW" RefBaseClassPath="NE150InterfaceLibrary/SWSignal" ID="91a89c81-b794-421c-8f24-458f51307f72">
-								<Attribute Name="MeasurementRangeStart" AttributeDataType="xs:double" Unit="%">
+			 					<Attribute Name="MeasurementRangeStart" AttributeDataType="xs:double" Unit="%">
 									<Description>Actual measurement range start of sensor in field</Description>
 									<Value>0</Value>
 									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
@@ -33,9 +31,7 @@
 									<Value>100</Value>
 									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.5" />
 								</Attribute>
-							</ExternalInterface>							
-</InternalElement>
-</InterfaceClass>
+			</InterfaceClass>
 </InterfaceClassLib>
 
 </CAEXFile>
