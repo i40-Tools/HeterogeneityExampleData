@@ -1,4 +1,4 @@
-This is an example for Value Transformation
+This is an example for Mapping
 
 There are two heterogenity files in this example generated from "seed.aml".
 

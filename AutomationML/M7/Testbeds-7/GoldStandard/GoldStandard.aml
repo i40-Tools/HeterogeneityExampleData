@@ -18,20 +18,17 @@
 		</WriterHeader>
 	</AdditionalInformation>
 	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
-	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
-    <InterfaceClassLib Name="NE150DemoProject">
-        <InterfaceClassLib Name="NE150DemoProject">
-        <InterfaceClass Name="LIRCS+-A+-" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
-								<Attribute Name="MeasurementRangeStart" AttributeDataType="xs:double" Unit="%">
-									<Description>Actual measurement range start of sensor in field</Description>
-									<Value>0</Value>
+	<ExternalReference Path="Libs/SystemUnitClass Libraries/AutomationMLSystemUnitClassLib.aml" Alias="BaseSystemUnitClassLib" />
+<SystemUnitClassLib Name="NE150DemoProject">
+        <SystemUnitClass Name="LIRCS+-A+-" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
+	             	
+             	<Attribute Name="Cardinality" AttributeDataType="xs:string">
+					<Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" >
+									<Value>1</Value>
 									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
 								</Attribute>
-								<Attribute Name="MeasurementRangeEnd" AttributeDataType="xs:double" Unit="%">
-									<Description>Actual measurement range end of sensor in field</Description>
-									<Value>100</Value>
-									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.5" />
-								</Attribute>
-</InterfaceClass>
-	</InterfaceClassLib>
+													</Attribute>
+															
+                  </SystemUnitClass>
+	</SystemUnitClassLib>
 </CAEXFile>
