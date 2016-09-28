@@ -18,15 +18,21 @@
 		</WriterHeader>
 	</AdditionalInformation>
 	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
-	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
-<InstanceHierarchy Name="NE150DemoProject">
-	      <InternalElement Name="LIRCS+-A+-" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
+	<ExternalReference Path="Libs/SystemUnitClass Libraries/AutomationMLSystemUnitClassLib.aml" Alias="BaseSystemUnitClassLib" />
+<SystemUnitClassLib Name="NE150DemoProject">
+        <SystemUnitClass Name="LIRCS+-A+-" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
              	
              	<Attribute Name="Cardinality" AttributeDataType="xs:string">
 					<Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" >
 									<Value>1</Value>
 									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
-								</Attribute>				
-                  </InternalElement>
-	</InstanceHierarchy>
+								</Attribute>
+					<Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" >
+									<Value>5</Value>
+									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
+								</Attribute>
+			</Attribute>
+												
+                  </SystemUnitClass>
+	</SystemUnitClassLib>
 </CAEXFile>
