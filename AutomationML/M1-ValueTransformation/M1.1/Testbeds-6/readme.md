@@ -7,8 +7,8 @@ b) "seed-String-0.aml"
 
 It contains the following conflicts:
 
-1: pair (PCEFunction),(PCE initial)
+1: pair (PCE initial),(PCE initial)
 
-2: pair (PCEFunction),(PCEFunction)
+2: pair (PCE initial),(flowcharnumber)
 
 One file has PCEFunction defined with function  and catagory initial where other has the value concatinated.

@@ -20,19 +20,20 @@
 	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
 	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
 <SystemUnitClassLib Name="NE150DemoProject">
-	    	<SystemUnitClass Name="LIRCS+-A+-"  ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
+    	<SystemUnitClass Name="LIRCS+-A+-"  ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
+    		<InternalElement Name="TIRC" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="8a38e7be-bbfc-4a91-a244-1974990c7bc2">
 							<Attribute Name="PCEInitial" AttributeDataType="xs:string">
 								<Description>PCE category, e.g.: L</Description>
-								<Value>L</Value>
+								<Value>T</Value>
 								<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.1.2" />
 							</Attribute>
-							<Attribute Name="PCEFunction" AttributeDataType="xs:string">
-								<Description>The PCE function describes the device-independent PCE task solution</Description>
-								<Value>LIRCS</Value>
-								<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.1.1" />
+							<Attribute Name="FlowchartNumber" AttributeDataType="xs:string">
+								<Description>Drawing number of P&amp;I flowchart (pipework and instrumentation flowchart)</Description>
+								<Value>1000-4</Value>
+								<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5" />
 							</Attribute>
-					
-
+								
+            </InternalElement>
 </SystemUnitClass>
 	</SystemUnitClassLib>
 </CAEXFile>

@@ -20,12 +20,15 @@
     <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
     <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
 <InterfaceClassLib Name="NE150DemoProject">
-        <InterfaceClass Name="AML Object">
-                                <Attribute Name="MeasurementRange" AttributeDataType="xs:string" Unit="%">
+       <InterfaceClass Name="DemoEnterprise" ID="d812ea1e-eaa2-45f4-8c82-72ecc50236c5">
+            <InterfaceClass Name="DemoSite" ID="38d6171f-0cb1-48e0-925f-f03902af8ee2">
+                                 <Attribute Name="MeasurementRange" AttributeDataType="xs:string" Unit="%">
                                     <Description>Actual measurement range start of sensor in field</Description>
                                     <Value>0-100</Value>
                                     <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
                                 </Attribute>
 </InterfaceClass>
+</InterfaceClass>
+
 </InterfaceClassLib>
 </CAEXFile>

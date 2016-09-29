@@ -20,12 +20,13 @@
     <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
     <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
    <InterfaceClassLib Name="NE150DemoProject">
-        <InterfaceClass Name="LIRCS+-A+-"  ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
-                                 <Attribute Name="MeasurementRange" AttributeDataType="xs:string" Unit="%">
-                                    <Description>Actual measurement range start of sensor in field</Description>
-                                    <Value>0-100</Value>
-                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
-                                </Attribute>
-</InterfaceClass>
+        <InterfaceClass Name="A-" ID="c9c2093c-1e11-415d-a629-a1c8aa6ef1d3">
+            <Attribute Name="OperatorDisplayName" AttributeDataType="xs:string">
+                                    <Description>The signal must be depicted on this operator display with limitValue type, limit Value and LimitValueHysteresis
+                                    </Description>
+                                    <Value>Alarm1-L-1-0.5</Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
+                                </Attribute>                            
+                            </InterfaceClass>
     </InterfaceClassLib>
 </CAEXFile>

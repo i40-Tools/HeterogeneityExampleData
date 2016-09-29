@@ -7,8 +7,10 @@ b) "seed-String-0.aml"
 
 It contains the following conflicts:
 
-1: pair (FlowchartNumber),(PipeWork FlowchartNumber)
+1: pair (FunctionBlock),(SoftwareSignalName)
 
-2: pair (FlowchartNumber),(instrumentation flowchart)
+2: pair (FunctionBlock),(SoftwareSignalType)
 
-One file has flowchart defined with pipework and instrmentation where other has the value concatinated.
+3: pair (FunctionBlock),(FunctionBlockDiagramNumber)
+
+One file has FunctionBlock Ldefined with FunctionBlockDiagramNumber ,SoftwareSignalType and SoftwareSignalNamewhere other has the value concatinated.

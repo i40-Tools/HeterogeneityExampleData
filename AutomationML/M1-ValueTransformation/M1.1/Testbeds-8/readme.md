@@ -7,8 +7,10 @@ b) "seed-String-0.aml"
 
 It contains the following conflicts:
 
-1: pair (FlowchartNumber),(PipeWork FlowchartNumber)
+1: pair (CardType),(CardType)
 
-2: pair (FlowchartNumber),(instrumentation flowchart)
+2: pair (CardType),(CardTerminalPlus)
 
-One file has flowchart defined with pipework and instrmentation where other has the value concatinated.
+3: pair (CardType),(CardTerminalMinus)
+
+One file has CardType defined with CardType ,CardTerminalPlus and CardTerminalMinus where other has the value concatinated.

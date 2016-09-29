@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
 <CAEXFile FileName="GoldStandard.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
 	<AdditionalInformation AutomationMLVersion="2.0" />
@@ -20,17 +20,28 @@
 	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
 	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
     <InterfaceClassLib Name="NE150DemoProject">
-        <InterfaceClass Name="LIRCS+-A+-" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
-								<Attribute Name="MeasurementRangeStart" AttributeDataType="xs:double" Unit="%">
-									<Description>Actual measurement range start of sensor in field</Description>
-									<Value>0</Value>
-									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
+        <InterfaceClass Name="A-" ID="c9c2093c-1e11-415d-a629-a1c8aa6ef1d3">
+			<Attribute Name="OperatorDisplayName" AttributeDataType="xs:string">
+									<Description>The signal must be depicted on this operator display</Description>
+									<Value>Alarm1</Value>
+									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
 								</Attribute>
-								<Attribute Name="MeasurementRangeEnd" AttributeDataType="xs:double" Unit="%">
-									<Description>Actual measurement range end of sensor in field</Description>
-									<Value>100</Value>
-									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.5" />
+								<Attribute Name="LimitValueType" AttributeDataType="xs:string">
+									<Description>Definition of direction and criticality</Description>
+									<Value>L</Value>
+									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.2.1" />
 								</Attribute>
+								<Attribute Name="LimitValue" AttributeDataType="xs:double" Unit="%">
+									<Description>Value that triggers an alarm if exceed/undershot</Description>
+									<Value>1</Value>
+									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.2.2" />
+								</Attribute>
+								<Attribute Name="LimitValueHysteresis" AttributeDataType="xs:double" Unit="%">
+									<Description>Definition of dead zone around the limit value within which no further switching function occurs</Description>
+									<Value>0.5</Value>
+									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.2.4" />
+								</Attribute>
+							
 							</InterfaceClass>
 	</InterfaceClassLib>
 </CAEXFile>

@@ -7,8 +7,8 @@ b) "seed-String-0.aml"
 
 It contains the following conflicts:
 
-1: pair (FlowchartNumber),(PipeWork FlowchartNumber)
+1: pair (Cabinet),(Cabinet)
 
-2: pair (FlowchartNumber),(instrumentation flowchart)
+2: pair (Cabinet),(Subrack)
 
-One file has flowchart defined with pipework and instrmentation where other has the value concatinated.
+One file has Cabinet defined with Subrack and Cabinet where other has the value concatinated.

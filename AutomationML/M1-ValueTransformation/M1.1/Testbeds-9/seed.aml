@@ -21,17 +21,25 @@
 	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
 
 <RoleClassLib Name="NE150DemoProject">
-	    	<RoleClass Name="AML Object">
-							<Attribute Name="PipeWork FlowchartNumber" AttributeDataType="xs:string">
-								<Description>Drawing number of P&amp;I flowchart (pipework)</Description>
-								<Value>1000</Value>
-								<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5" />
-							</Attribute>
-							<Attribute Name="Instrumental FlowchartNumber" AttributeDataType="xs:string">
-								<Description>Drawing number of P&amp;I flowchart (instrumentation flowchart)</Description>
-								<Value>4</Value>
-								<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5" />
-							</Attribute>
+
+ <RoleClass Name="A-" ID="c9c2093c-1e11-415d-a629-a1c8aa6ef1d3">
+	<ExternalInterface Name="DI Alarm L &lt; min" RefBaseClassPath="NE150InterfaceLibrary/SWSignal" ID="a28eab6e-f177-414b-ac46-02786481c2e3">
+							<Attribute Name="FunctionBlockDiagramNumber" AttributeDataType="xs:string">
+										<Description>Drawing number of the function block diagram (FBD) or function specification</Description>
+										<Value>L 1001</Value>
+										<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.7" />
+									</Attribute>
+								<Attribute Name="SoftwareSignalName" AttributeDataType="xs:string">
+										<Description>Unequivocal PCS input or output name</Description>
+										<Value>L1001_AL</Value>
+										<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex" />
+									</Attribute>
+									<Attribute Name="SoftwareSignalType" AttributeDataType="xs:string">
+										<Description>Brief description of SW signal type, e.g.: AI, AO, DI, DO, FF, Profibus DP, PA, OPC, SW (conducted signal)</Description>
+										<Value>DI</Value>
+										<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.13" />
+									</Attribute>
+								</ExternalInterface>
 </RoleClass>
 	</RoleClassLib>
 </CAEXFile>
