@@ -19,16 +19,12 @@
 	</AdditionalInformation>
 	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
 	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLRoleClassLib.aml" Alias="BaseRoleClassLib" />
-<RoleClassLib Name="NE150DemoProject">
-        <RoleClass Name="LIRCS+-A+-" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
-	             	
-             	<Attribute Name="Cardinality" AttributeDataType="xs:string">
-					<Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" >
-									<Value>1</Value>
-									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
-								</Attribute>
-													</Attribute>
-															
-                  </RoleClass>
-	</RoleClassLib>
+ <RoleClassLib Name="NE150DemoProject">
+	<RoleClass Name="RollerConveyor">
+			<Attribute Name="maxTransportationWeight" AttributeDataType="xs:double" Unit="kg">
+				<Value>35.0</Value>
+				<RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAI721#002" />
+			</Attribute>
+    </RoleClass>
+ </RoleClassLib>
 </CAEXFile>

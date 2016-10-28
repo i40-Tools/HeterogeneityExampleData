@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet --><CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="seed-Mapping-1.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20
+            </LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples
+            </WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+<SystemUnitClassLib Name="AutomationMLPropertySetRoleClassLib">
+        <Description>AutomationML Property Set Role Class Library</Description>
+        <Version>1.0</Version>
+    <SystemUnitClass Name="Load" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties">
+                     <Attribute AttributeDataType="xs:boolean" Name="AllowManufacture">
+                                    <Description>Is the mass enough to do the Manufacturing? calculate requirements (true=yes)</Description>
+                                    <Value>false</Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.2.1"/>
+                                </Attribute>
+                        <SystemUnitClass Name="Payload" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties/Load"/>
+                        <SystemUnitClass Name="SupplementaryLoad" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties/Load"><Attribute AttributeDataType="xs:double" Name="mass" Unit="kg">
+                            <Value>5.0 </Value>
+                        </Attribute></SystemUnitClass>
+                    </SystemUnitClass>
+               </SystemUnitClassLib>         
+</CAEXFile>

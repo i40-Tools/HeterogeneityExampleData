@@ -7,6 +7,6 @@ b) "seed-Restriction-0.aml"
 
 It contains the following conflicts:
 
-1: pair (MinOccur),(MinOccur)
+1: pair (MaxTransportWeight),(MaxTransportWeight)
 
-One file has defined minoccur where as the other file does not have its values.
+One file has defined maxTransportWeight where as the other file does not have its values.
