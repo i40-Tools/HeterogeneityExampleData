@@ -1,0 +1,15 @@
+sameAttribute('LimitValue','OperatorDisplayName').
+sameAttribute('LimitValue','LimitValueHysteresis').
+sameAttribute('LimitValue','LimitValueType').
+sameAttribute('LimitValue','OperatorDisplayName').
+sameAttribute('OperatorDisplayName','LimitValueHysteresis').
+sameAttribute('OperatorDisplayName','LimitValueType').
+sameAttribute('OperatorDisplayName','OperatorDisplayName').
+sameAttribute('LimitValueHysteresis','LimitValueType').
+sameAttribute('LimitValueHysteresis','OperatorDisplayName').
+sameAttribute('LimitValueType','OperatorDisplayName').
+concatString('LimitValue','OperatorDisplayName').
+concatString('OperatorDisplayName','OperatorDisplayName').
+concatString('LimitValueHysteresis','OperatorDisplayName').
+concatString('LimitValueType','OperatorDisplayName').
+

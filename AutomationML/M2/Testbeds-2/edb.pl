@@ -59,7 +59,6 @@ clause1(hasAttributeName(attribute51,'Polystyrene weight portion of the individu
 clause1(type(attribute51,attribute),true).
 clause1(hasAutomationMLVersion(additionalInformation11,'2.0'),true).
 clause1(type(additionalInformation11,additionalInformation),true).
-
 clause1(refBaseClassPath(externalReference12,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference12,'BaseRoleClassLib'),true).
 clause1(type(externalReference12,externalReference),true).

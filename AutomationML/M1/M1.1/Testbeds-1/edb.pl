@@ -4,11 +4,12 @@ clause1(type(externalReference11,externalReference),true).
 clause1(hasInternalElement(instanceHierarchy11,internalElement11),true).
 clause1(hasAttributeName(instanceHierarchy11,'NE150DemoProject'),true).
 clause1(type(instanceHierarchy11,instanceHierarchy),true).
-clause1(hasCorrespondingAttributePath(refSemantic21,'NE 160 v1.0 Annex 3.3.5'),true).
+clause1(hasCorrespondingAttributePath(refSemantic21,'NE 150 v1.0 Annex 3.3.4'),true).
 clause1(type(refSemantic21,refSemantic),true).
 clause1(hasRefSemantic(attribute11,refSemantic11),true).
 clause1(hasAttributeValue(attribute11,'0'),true).
 clause1(hasAttributeName(attribute11,'MeasurementRangeStart'),true).
+clause1(hasDataType(attribute11,'xs:string'),true).
 clause1(type(attribute11,attribute),true).
 clause1(hasAttribute(externalInterface11,attribute21),true).
 clause1(hasAttribute(externalInterface11,attribute11),true).
@@ -47,6 +48,7 @@ clause1(type(internalElement11,internalElement),true).
 clause1(hasRefSemantic(attribute21,refSemantic21),true).
 clause1(hasAttributeValue(attribute21,'100'),true).
 clause1(hasAttributeName(attribute21,'MeasurementRangeEnd'),true).
+clause1(hasDataType(attribute21,'xs:string'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasCorrespondingAttributePath(refSemantic11,'NE 150 v1.0 Annex 3.3.4'),true).
 clause1(type(refSemantic11,refSemantic),true).
@@ -61,6 +63,7 @@ clause1(type(instanceHierarchy12,instanceHierarchy),true).
 clause1(hasRefSemantic(attribute12,refSemantic12),true).
 clause1(hasAttributeValue(attribute12,'0-100'),true).
 clause1(hasAttributeName(attribute12,'MeasurementRange'),true).
+clause1(hasDataType(attribute12,'xs:string'),true).
 clause1(type(attribute12,attribute),true).
 clause1(hasAttribute(externalInterface12,attribute12),true).
 clause1(refBaseClassPath(externalInterface12,'NE150InterfaceLibrary/SWSignal'),true).
