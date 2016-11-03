@@ -17,16 +17,16 @@
     </AdditionalInformation>
     <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
-<SystemUnitClassLib Name="NE150DemoProject">
-            <SystemUnitClass Name="AML Object">
-                <InternalElement ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209" Name="LIRCS+-A+-" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest">
-                            <Attribute AttributeDataType="xs:string" Name="Card">
-                                    <Description>Catalogue designation of card and Number of electrical connection on the card terminal strip(plus -minus)
-                                    </Description>
-                                    <Value>SM 431-4-5</Value>
-                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.3.7"/>
-                                </Attribute>
-</InternalElement>
-</SystemUnitClass>
-</SystemUnitClassLib>
+    <RoleClassLib Name="NE150DemoProject">
+<RoleClass ID="c9c2093c-1e11-415d-a629-a1c8aa6ef1d3" Name="A-">
+    <ExternalInterface ID="a28eab6e-f177-414b-ac46-02786481c2e3" Name="DI Alarm L &lt; min" RefBaseClassPath="NE150InterfaceLibrary/SWSignal">
+                            <Attribute AttributeDataType="xs:string" Name="FunctionBlock">
+                                        <Description>Drawing number of the function block diagram (FBD) or function specification ,SW signal and SW signal type
+                                        </Description>
+                                        <Value>L 1001-L1001_AL-DI</Value>
+                                        <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.7"/>
+                                    </Attribute>
+                                </ExternalInterface>
+</RoleClass>
+    </RoleClassLib>
 </CAEXFile>

@@ -1,17 +1,20 @@
 clause1(refBaseClassPath(externalReference11,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference11,'BaseRoleClassLib'),true).
 clause1(type(externalReference11,externalReference),true).
+clause1(hasAttributeValue(attribute31,'100'),true).
+clause1(hasAttributeName(attribute31,'MeasurementRangeEnd'),true).
+clause1(hasDataType(attribute31,'xs:double'),true).
+clause1(type(attribute31,attribute),true).
 clause1(hasInternalElement(instanceHierarchy11,internalElement11),true).
 clause1(hasAttributeName(instanceHierarchy11,'NE150DemoProject'),true).
 clause1(type(instanceHierarchy11,instanceHierarchy),true).
-clause1(hasCorrespondingAttributePath(refSemantic21,'NE 150 v1.0 Annex 3.3.4'),true).
-clause1(type(refSemantic21,refSemantic),true).
+clause1(hasAttribute(attribute11,attribute31),true).
+clause1(hasAttribute(attribute11,attribute21),true).
 clause1(hasRefSemantic(attribute11,refSemantic11),true).
-clause1(hasAttributeValue(attribute11,'0'),true).
-clause1(hasAttributeName(attribute11,'MeasurementRangeStart'),true).
+clause1(hasAttributeValue(attribute11,''),true).
+clause1(hasAttributeName(attribute11,'MeasurementRange'),true).
 clause1(hasDataType(attribute11,'xs:string'),true).
 clause1(type(attribute11,attribute),true).
-clause1(hasAttribute(externalInterface11,attribute21),true).
 clause1(hasAttribute(externalInterface11,attribute11),true).
 clause1(refBaseClassPath(externalInterface11,'NE150InterfaceLibrary/SWSignal'),true).
 clause1(hasAttributeName(externalInterface11,'AI Level SW'),true).
@@ -45,10 +48,9 @@ clause1(refBaseSystemUnitPath(internalElement11,'NE150SUCLibrary/PCERequest'),tr
 clause1(hasAttributeName(internalElement11,'LIRCS+-A+-'),true).
 clause1(identifier(internalElement11,'adb2ebf7-dc6f-479b-abfe-64a4fd69c209'),true).
 clause1(type(internalElement11,internalElement),true).
-clause1(hasRefSemantic(attribute21,refSemantic21),true).
-clause1(hasAttributeValue(attribute21,'100'),true).
-clause1(hasAttributeName(attribute21,'MeasurementRangeEnd'),true).
-clause1(hasDataType(attribute21,'xs:string'),true).
+clause1(hasAttributeValue(attribute21,'0'),true).
+clause1(hasAttributeName(attribute21,'MeasurementRangeStart'),true).
+clause1(hasDataType(attribute21,'xs:double'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasCorrespondingAttributePath(refSemantic11,'NE 150 v1.0 Annex 3.3.4'),true).
 clause1(type(refSemantic11,refSemantic),true).

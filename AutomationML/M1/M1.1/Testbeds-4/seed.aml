@@ -21,25 +21,25 @@
 	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
     <InterfaceClassLib Name="NE150DemoProject">
         <InterfaceClass Name="A-" ID="c9c2093c-1e11-415d-a629-a1c8aa6ef1d3">
-			<Attribute Name="OperatorDisplayName" AttributeDataType="xs:string">
+                    <Attribute Name="OperatorDisplay" AttributeDataType="xs:string">
+                                    <Value></Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
+         <Attribute Name="OperatorDisplayName" AttributeDataType="xs:string">
 									<Description>The signal must be depicted on this operator display</Description>
 									<Value>Alarm1</Value>
-									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
 								</Attribute>
 								<Attribute Name="LimitValueType" AttributeDataType="xs:string">
 									<Description>Definition of direction and criticality</Description>
 									<Value>L</Value>
-									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
 								</Attribute>
 								<Attribute Name="LimitValue" AttributeDataType="xs:double" Unit="%" >
 									<Description>Value that triggers an alarm if exceed/undershot</Description>
 									<Value>1</Value>
-									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
 								</Attribute>
 								<Attribute Name="LimitValueHysteresis" AttributeDataType="xs:double" Unit="%">
 									<Description>Definition of dead zone around the limit value within which no further switching function occurs</Description>
 									<Value>0.5</Value>
-									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
+								</Attribute>
 								</Attribute>
 							
 							</InterfaceClass>

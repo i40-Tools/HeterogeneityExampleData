@@ -1,11 +1,12 @@
 clause1(refBaseClassPath(externalReference11,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference11,'BaseRoleClassLib'),true).
 clause1(type(externalReference11,externalReference),true).
-clause1(hasCorrespondingAttributePath(refSemantic21,'NE 150 v1.0 Annex 3.3.4'),true).
-clause1(type(refSemantic21,refSemantic),true).
+clause1(type(attribute31,attribute),true).
+clause1(hasAttribute(attribute11,attribute31),true).
+clause1(hasAttribute(attribute11,attribute21),true).
 clause1(hasRefSemantic(attribute11,refSemantic11),true).
-clause1(hasAttributeValue(attribute11,'0'),true).
-clause1(hasAttributeName(attribute11,'MeasurementRangeStart'),true).
+clause1(hasAttributeValue(attribute11,''),true).
+clause1(hasAttributeName(attribute11,'MeasurementRange'),true).
 clause1(type(attribute11,attribute),true).
 clause1(hasInterfaceClass(interfaceClass11,interfaceClass21),true).
 clause1(hasAttributeName(interfaceClass11,'DemoEnterprise'),true).
@@ -33,11 +34,7 @@ clause1(hasWriterVendor(additionalInformation21,'AutomationML e.V.'),true).
 clause1(refBaseClassPath(externalReference21,'Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference21,'BaseInterfaceClassLib'),true).
 clause1(type(externalReference21,externalReference),true).
-clause1(hasRefSemantic(attribute21,refSemantic21),true).
-clause1(hasAttributeValue(attribute21,'100'),true).
-clause1(hasAttributeName(attribute21,'MeasurementRangeEnd'),true).
 clause1(type(attribute21,attribute),true).
-clause1(hasAttribute(interfaceClass21,attribute21),true).
 clause1(hasAttribute(interfaceClass21,attribute11),true).
 clause1(hasAttributeName(interfaceClass21,'DemoSite'),true).
 clause1(type(interfaceClass21,interfaceClass),true).

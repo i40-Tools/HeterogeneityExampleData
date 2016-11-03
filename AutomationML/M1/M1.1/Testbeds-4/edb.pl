@@ -1,21 +1,15 @@
 clause1(refBaseClassPath(externalReference11,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference11,'BaseRoleClassLib'),true).
 clause1(type(externalReference11,externalReference),true).
-clause1(hasCorrespondingAttributePath(refSemantic41,'NE 150 v1.0 Annex 3.1.5'),true).
-clause1(type(refSemantic41,refSemantic),true).
-clause1(hasRefSemantic(attribute31,refSemantic31),true).
-clause1(hasAttributeValue(attribute31,'1'),true).
-clause1(hasAttributeName(attribute31,'LimitValue'),true).
 clause1(type(attribute31,attribute),true).
-clause1(hasCorrespondingAttributePath(refSemantic21,'NE 150 v1.0 Annex 3.1.5'),true).
-clause1(type(refSemantic21,refSemantic),true).
+clause1(hasAttribute(attribute11,attribute51),true).
+clause1(hasAttribute(attribute11,attribute41),true).
+clause1(hasAttribute(attribute11,attribute31),true).
+clause1(hasAttribute(attribute11,attribute21),true).
 clause1(hasRefSemantic(attribute11,refSemantic11),true).
-clause1(hasAttributeValue(attribute11,'Alarm1'),true).
-clause1(hasAttributeName(attribute11,'OperatorDisplayName'),true).
+clause1(hasAttributeValue(attribute11,''),true).
+clause1(hasAttributeName(attribute11,'OperatorDisplay'),true).
 clause1(type(attribute11,attribute),true).
-clause1(hasAttribute(interfaceClass11,attribute41),true).
-clause1(hasAttribute(interfaceClass11,attribute31),true).
-clause1(hasAttribute(interfaceClass11,attribute21),true).
 clause1(hasAttribute(interfaceClass11,attribute11),true).
 clause1(hasAttributeName(interfaceClass11,'A-'),true).
 clause1(type(interfaceClass11,interfaceClass),true).
@@ -42,21 +36,14 @@ clause1(hasWriterVendor(additionalInformation21,'AutomationML e.V.'),true).
 clause1(refBaseClassPath(externalReference21,'Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference21,'BaseInterfaceClassLib'),true).
 clause1(type(externalReference21,externalReference),true).
-clause1(hasRefSemantic(attribute41,refSemantic41),true).
-clause1(hasAttributeValue(attribute41,'0.5'),true).
-clause1(hasAttributeName(attribute41,'LimitValueHysteresis'),true).
 clause1(type(attribute41,attribute),true).
-clause1(hasCorrespondingAttributePath(refSemantic31,'NE 150 v1.0 Annex 3.1.5'),true).
-clause1(type(refSemantic31,refSemantic),true).
-clause1(hasRefSemantic(attribute21,refSemantic21),true).
-clause1(hasAttributeValue(attribute21,'L'),true).
-clause1(hasAttributeName(attribute21,'LimitValueType'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasInterfaceClass(interfaceClassLib11,interfaceClass11),true).
 clause1(hasAttributeName(interfaceClassLib11,'NE150DemoProject'),true).
 clause1(type(interfaceClassLib11,interfaceClassLib),true).
 clause1(hasCorrespondingAttributePath(refSemantic11,'NE 150 v1.0 Annex 3.1.5'),true).
 clause1(type(refSemantic11,refSemantic),true).
+clause1(type(attribute51,attribute),true).
 clause1(hasAutomationMLVersion(additionalInformation11,'2.0'),true).
 clause1(type(additionalInformation11,additionalInformation),true).
 clause1(refBaseClassPath(externalReference12,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
@@ -64,7 +51,7 @@ clause1(externalReferenceAlias(externalReference12,'BaseRoleClassLib'),true).
 clause1(type(externalReference12,externalReference),true).
 clause1(hasRefSemantic(attribute12,refSemantic12),true).
 clause1(hasAttributeValue(attribute12,'Alarm1-L-1-0.5'),true).
-clause1(hasAttributeName(attribute12,'OperatorDisplayName'),true).
+clause1(hasAttributeName(attribute12,'OperatorDisplay'),true).
 clause1(type(attribute12,attribute),true).
 clause1(hasAttribute(interfaceClass12,attribute12),true).
 clause1(hasAttributeName(interfaceClass12,'A-'),true).

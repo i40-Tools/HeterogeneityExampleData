@@ -1,23 +1,21 @@
 clause1(refBaseClassPath(externalReference11,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference11,'BaseRoleClassLib'),true).
 clause1(type(externalReference11,externalReference),true).
-clause1(hasRefSemantic(attribute31,refSemantic31),true).
-clause1(hasAttributeValue(attribute31,'99'),true).
-clause1(hasAttributeName(attribute31,'LimitValue'),true).
-clause1(hasDataType(attribute31,'xs:double'),true).
+clause1(hasAttributeValue(attribute31,'H'),true).
+clause1(hasAttributeName(attribute31,'LimitValueType'),true).
+clause1(hasDataType(attribute31,'xs:string'),true).
 clause1(type(attribute31,attribute),true).
 clause1(hasInternalElement(instanceHierarchy11,internalElement11),true).
 clause1(hasAttributeName(instanceHierarchy11,'NE150DemoProject'),true).
 clause1(type(instanceHierarchy11,instanceHierarchy),true).
-clause1(hasCorrespondingAttributePath(refSemantic21,'NE 150 v1.0 Annex 3.1.5'),true).
-clause1(type(refSemantic21,refSemantic),true).
+clause1(hasAttribute(attribute11,attribute41),true).
+clause1(hasAttribute(attribute11,attribute31),true).
+clause1(hasAttribute(attribute11,attribute21),true).
 clause1(hasRefSemantic(attribute11,refSemantic11),true).
-clause1(hasAttributeValue(attribute11,'Alarm2'),true).
-clause1(hasAttributeName(attribute11,'OperatorDisplayName'),true).
+clause1(hasAttributeValue(attribute11,'Alarm2-H-99'),true).
+clause1(hasAttributeName(attribute11,'OperatorDisplay'),true).
 clause1(hasDataType(attribute11,'xs:string'),true).
 clause1(type(attribute11,attribute),true).
-clause1(hasAttribute(internalElement31,attribute31),true).
-clause1(hasAttribute(internalElement31,attribute21),true).
 clause1(hasAttribute(internalElement31,attribute11),true).
 clause1(refBaseSystemUnitPath(internalElement31,'NE150SUCLibrary/Alarm'),true).
 clause1(hasAttributeName(internalElement31,'A+'),true).
@@ -50,11 +48,12 @@ clause1(hasInternalElement(internalElement11,internalElement21),true).
 clause1(hasAttributeName(internalElement11,'DemoArea'),true).
 clause1(identifier(internalElement11,'33a47300-eb7e-4831-9448-b358d4246dcd'),true).
 clause1(type(internalElement11,internalElement),true).
-clause1(hasCorrespondingAttributePath(refSemantic31,'NE 150 v1.0 Annex 3.1.5'),true).
-clause1(type(refSemantic31,refSemantic),true).
-clause1(hasRefSemantic(attribute21,refSemantic21),true).
-clause1(hasAttributeValue(attribute21,'H'),true).
-clause1(hasAttributeName(attribute21,'LimitValueType'),true).
+clause1(hasAttributeValue(attribute41,'99'),true).
+clause1(hasAttributeName(attribute41,'LimitValue'),true).
+clause1(hasDataType(attribute41,'xs:double'),true).
+clause1(type(attribute41,attribute),true).
+clause1(hasAttributeValue(attribute21,'Alarm2'),true).
+clause1(hasAttributeName(attribute21,'OperatorDisplayName'),true).
 clause1(hasDataType(attribute21,'xs:string'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasCorrespondingAttributePath(refSemantic11,'NE 150 v1.0 Annex 3.1.5'),true).
@@ -74,7 +73,7 @@ clause1(hasAttributeName(instanceHierarchy12,'NE150DemoProject'),true).
 clause1(type(instanceHierarchy12,instanceHierarchy),true).
 clause1(hasRefSemantic(attribute12,refSemantic12),true).
 clause1(hasAttributeValue(attribute12,'Alarm2-H-99'),true).
-clause1(hasAttributeName(attribute12,'OperatorDisplayName'),true).
+clause1(hasAttributeName(attribute12,'OperatorDisplay'),true).
 clause1(hasDataType(attribute12,'xs:string'),true).
 clause1(type(attribute12,attribute),true).
 clause1(hasAttribute(internalElement32,attribute12),true).

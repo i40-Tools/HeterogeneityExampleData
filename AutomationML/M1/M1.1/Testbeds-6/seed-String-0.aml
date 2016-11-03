@@ -22,17 +22,19 @@
 <SystemUnitClassLib Name="NE150DemoProject">
             <SystemUnitClass Name="LIRCS+-A+-"  ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
                     <InternalElement Name="TIRC" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="8a38e7be-bbfc-4a91-a244-1974990c7bc2">
-                            <Attribute Name="PCEInitial" AttributeDataType="xs:string">
-                                <Description>PCE category, e.g.: L</Description>
-                                <Value>T</Value>
+							<Attribute Name="PCEInitial-FlowchartNumber" AttributeDataType="xs:string">
+                                <Value></Value>
                                 <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.1.2" />
-                            </Attribute>
-                            <Attribute Name="FlowchartNumber" AttributeDataType="xs:string">
-                                <Description>Drawing number of P&amp;I flowchart (pipework and instrumentation flowchart)</Description>
-                                <Value>1000-4</Value>
-                                <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.1.2" />
-                            </Attribute>
-                                
+							<Attribute Name="PCEInitial" AttributeDataType="xs:string">
+								<Description>PCE category, e.g.: L</Description>
+								<Value>T</Value>
+							</Attribute>
+							<Attribute Name="FlowchartNumber" AttributeDataType="xs:string">
+								<Description>Drawing number of P&amp;I flowchart (pipework and instrumentation flowchart)</Description>
+								<Value>1000-4</Value>
+							</Attribute>
+							</Attribute>
+						    
             </InternalElement>
 
 </SystemUnitClass>

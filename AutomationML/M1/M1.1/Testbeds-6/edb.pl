@@ -1,10 +1,14 @@
 clause1(refBaseClassPath(externalReference11,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference11,'BaseRoleClassLib'),true).
 clause1(type(externalReference11,externalReference),true).
-clause1(hasCorrespondingAttributePath(refSemantic21,'NE 150 v1.0 Annex 1.1.5'),true).
-clause1(type(refSemantic21,refSemantic),true).
+clause1(hasAttributeValue(attribute31,'1000-4'),true).
+clause1(hasAttributeName(attribute31,'FlowchartNumber'),true).
+clause1(type(attribute31,attribute),true).
+clause1(hasAttribute(attribute11,attribute31),true).
+clause1(hasAttribute(attribute11,attribute21),true).
 clause1(hasRefSemantic(attribute11,refSemantic11),true).
-clause1(hasAttributeName(attribute11,'PCEInitial'),true).
+clause1(hasAttributeValue(attribute11,''),true).
+clause1(hasAttributeName(attribute11,'PCEInitial-FlowchartNumber'),true).
 clause1(type(attribute11,attribute),true).
 clause1(hasSystemUnitClassLib(cAEXFile11,systemUnitClassLib11),true).
 clause1(hasExternalReference(cAEXFile11,externalReference21),true).
@@ -35,14 +39,13 @@ clause1(type(externalReference21,externalReference),true).
 clause1(hasInternalElement(systemUnitClass11,internalElement11),true).
 clause1(hasAttributeName(systemUnitClass11,'LIRCS+-A+-'),true).
 clause1(type(systemUnitClass11,systemUnitClass),true).
-clause1(hasAttribute(internalElement11,attribute21),true).
 clause1(hasAttribute(internalElement11,attribute11),true).
 clause1(refBaseSystemUnitPath(internalElement11,'NE150SUCLibrary/PCERequest'),true).
 clause1(hasAttributeName(internalElement11,'TIRC'),true).
 clause1(identifier(internalElement11,'8a38e7be-bbfc-4a91-a244-1974990c7bc2'),true).
 clause1(type(internalElement11,internalElement),true).
-clause1(hasRefSemantic(attribute21,refSemantic21),true).
-clause1(hasAttributeName(attribute21,'FlowchartNumber'),true).
+clause1(hasAttributeValue(attribute21,'T'),true).
+clause1(hasAttributeName(attribute21,'PCEInitial'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasCorrespondingAttributePath(refSemantic11,'NE 150 v1.0 Annex 2.1.2'),true).
 clause1(type(refSemantic11,refSemantic),true).
@@ -52,7 +55,8 @@ clause1(refBaseClassPath(externalReference12,'Libs/RoleClass Libraries/Automatio
 clause1(externalReferenceAlias(externalReference12,'BaseRoleClassLib'),true).
 clause1(type(externalReference12,externalReference),true).
 clause1(hasRefSemantic(attribute12,refSemantic12),true).
-clause1(hasAttributeName(attribute12,'PCEInitial'),true).
+clause1(hasAttributeValue(attribute12,'T-1000-4'),true).
+clause1(hasAttributeName(attribute12,'PCEInitial-FlowchartNumber'),true).
 clause1(type(attribute12,attribute),true).
 clause1(hasSystemUnitClassLib(cAEXFile12,systemUnitClassLib12),true).
 clause1(hasExternalReference(cAEXFile12,externalReference22),true).

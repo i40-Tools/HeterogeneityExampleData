@@ -42,25 +42,25 @@
 	<http://purl.org/dc/elements/1.1/identifier>	"adb2ebf7-dc6f-479b-abfe-64a4fd69c209"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasAttributeName>	"LIRCS+-A+-"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/RefBaseSystemUnitPath>	"NE150SUCLibrary/PCERequest"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute1>, <https://w3id.org/i40/aml/Attribute2>, <https://w3id.org/i40/aml/Attribute3> .
+	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute1> .
 <https://w3id.org/i40/aml/Attribute1>
 	a	<https://w3id.org/i40/aml/Attribute> ;
-	<https://w3id.org/i40/aml/hasAttributeName>	"CardType"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic1> .
+	<https://w3id.org/i40/aml/hasAttributeName>	"Card"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeValue>	""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic1> ;
+	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute2>, <https://w3id.org/i40/aml/Attribute3>, <https://w3id.org/i40/aml/Attribute4> .
 <https://w3id.org/i40/aml/RefSemantic1>
 	a	<https://w3id.org/i40/aml/RefSemantic> ;
 	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"NE 150 v1.0 Annex 2.3.7"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/aml/Attribute2>
 	a	<https://w3id.org/i40/aml/Attribute> ;
-	<https://w3id.org/i40/aml/hasAttributeName>	"CardTerminalPlus"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic2> .
-<https://w3id.org/i40/aml/RefSemantic2>
-	a	<https://w3id.org/i40/aml/RefSemantic> ;
-	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"NE 150 v1.0 Annex 2.3.7"^^<http://www.w3.org/2001/XMLSchema#string> .
+	<https://w3id.org/i40/aml/hasAttributeName>	"CardType"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeValue>	"SM 431"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/aml/Attribute3>
 	a	<https://w3id.org/i40/aml/Attribute> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"CardTerminalPlus"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeValue>	"4"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/Attribute4>
+	a	<https://w3id.org/i40/aml/Attribute> ;
 	<https://w3id.org/i40/aml/hasAttributeName>	"CardTerminalMinus"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic3> .
-<https://w3id.org/i40/aml/RefSemantic3>
-	a	<https://w3id.org/i40/aml/RefSemantic> ;
-	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"NE 150 v1.0 Annex 2.3.7"^^<http://www.w3.org/2001/XMLSchema#string> .
+	<https://w3id.org/i40/aml/hasAttributeValue>	"5"^^<http://www.w3.org/2001/XMLSchema#string> .

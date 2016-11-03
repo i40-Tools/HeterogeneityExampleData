@@ -1,13 +1,15 @@
 clause1(refBaseClassPath(externalReference11,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference11,'BaseRoleClassLib'),true).
 clause1(type(externalReference11,externalReference),true).
-clause1(hasRefSemantic(attribute31,refSemantic31),true).
-clause1(hasAttributeName(attribute31,'CardTerminalMinus'),true).
+clause1(hasAttributeValue(attribute31,'4'),true).
+clause1(hasAttributeName(attribute31,'CardTerminalPlus'),true).
 clause1(type(attribute31,attribute),true).
-clause1(hasCorrespondingAttributePath(refSemantic21,'NE 150 v1.0 Annex 2.3.7'),true).
-clause1(type(refSemantic21,refSemantic),true).
+clause1(hasAttribute(attribute11,attribute41),true).
+clause1(hasAttribute(attribute11,attribute31),true).
+clause1(hasAttribute(attribute11,attribute21),true).
 clause1(hasRefSemantic(attribute11,refSemantic11),true).
-clause1(hasAttributeName(attribute11,'CardType'),true).
+clause1(hasAttributeValue(attribute11,''),true).
+clause1(hasAttributeName(attribute11,'Card'),true).
 clause1(type(attribute11,attribute),true).
 clause1(hasSystemUnitClassLib(cAEXFile11,systemUnitClassLib11),true).
 clause1(hasExternalReference(cAEXFile11,externalReference21),true).
@@ -38,17 +40,16 @@ clause1(type(externalReference21,externalReference),true).
 clause1(hasInternalElement(systemUnitClass11,internalElement11),true).
 clause1(hasAttributeName(systemUnitClass11,'AML Object'),true).
 clause1(type(systemUnitClass11,systemUnitClass),true).
-clause1(hasAttribute(internalElement11,attribute31),true).
-clause1(hasAttribute(internalElement11,attribute21),true).
 clause1(hasAttribute(internalElement11,attribute11),true).
 clause1(refBaseSystemUnitPath(internalElement11,'NE150SUCLibrary/PCERequest'),true).
 clause1(hasAttributeName(internalElement11,'LIRCS+-A+-'),true).
 clause1(identifier(internalElement11,'adb2ebf7-dc6f-479b-abfe-64a4fd69c209'),true).
 clause1(type(internalElement11,internalElement),true).
-clause1(hasCorrespondingAttributePath(refSemantic31,'NE 150 v1.0 Annex 2.3.7'),true).
-clause1(type(refSemantic31,refSemantic),true).
-clause1(hasRefSemantic(attribute21,refSemantic21),true).
-clause1(hasAttributeName(attribute21,'CardTerminalPlus'),true).
+clause1(hasAttributeValue(attribute41,'5'),true).
+clause1(hasAttributeName(attribute41,'CardTerminalMinus'),true).
+clause1(type(attribute41,attribute),true).
+clause1(hasAttributeValue(attribute21,'SM 431'),true).
+clause1(hasAttributeName(attribute21,'CardType'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasCorrespondingAttributePath(refSemantic11,'NE 150 v1.0 Annex 2.3.7'),true).
 clause1(type(refSemantic11,refSemantic),true).
@@ -58,7 +59,8 @@ clause1(refBaseClassPath(externalReference12,'Libs/RoleClass Libraries/Automatio
 clause1(externalReferenceAlias(externalReference12,'BaseRoleClassLib'),true).
 clause1(type(externalReference12,externalReference),true).
 clause1(hasRefSemantic(attribute12,refSemantic12),true).
-clause1(hasAttributeName(attribute12,'CardType'),true).
+clause1(hasAttributeValue(attribute12,'SM 431-4-5'),true).
+clause1(hasAttributeName(attribute12,'Card'),true).
 clause1(type(attribute12,attribute),true).
 clause1(hasSystemUnitClassLib(cAEXFile12,systemUnitClassLib12),true).
 clause1(hasExternalReference(cAEXFile12,externalReference22),true).

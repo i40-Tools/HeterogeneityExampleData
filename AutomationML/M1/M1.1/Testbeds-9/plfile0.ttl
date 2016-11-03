@@ -4,7 +4,7 @@
 	<https://w3id.org/i40/aml/hasSchemaVersion>	"2.15" ;
 	<https://w3id.org/i40/aml/hasAdditionalInfomation>	<https://w3id.org/i40/aml/AdditionalInformation1>, <https://w3id.org/i40/aml/AdditionalInformation2> ;
 	<https://w3id.org/i40/aml/hasExternalReference>	<https://w3id.org/i40/aml/ExternalReference1>, <https://w3id.org/i40/aml/ExternalReference2> ;
-	<https://w3id.org/i40/aml/hasInstanceHierarchy>	<https://w3id.org/i40/aml/InstanceHierarchy1> .
+	<https://w3id.org/i40/aml/hasRoleClassLib>	<https://w3id.org/i40/aml/RoleClassLib1> .
 <https://w3id.org/i40/aml/AdditionalInformation1>
 	a	<https://w3id.org/i40/aml/AdditionalInformation> ;
 	<https://w3id.org/i40/aml/hasAutomationMLVersion>	"2.0"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -29,38 +29,38 @@
 	a	<https://w3id.org/i40/aml/ExternalReference> ;
 	<https://w3id.org/i40/aml/externalReferenceAlias>	"BaseInterfaceClassLib"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/refBaseClassPath>	"Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/i40/aml/InstanceHierarchy1>
-	a	<https://w3id.org/i40/aml/InstanceHierarchy> ;
+<https://w3id.org/i40/aml/RoleClassLib1>
+	a	<https://w3id.org/i40/aml/RoleClassLib> ;
 	<https://w3id.org/i40/aml/hasAttributeName>	"NE150DemoProject"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasInternalElement>	<https://w3id.org/i40/aml/InternalElement1> .
-<https://w3id.org/i40/aml/InternalElement1>
-	a	<https://w3id.org/i40/aml/InternalElement> ;
-	<http://purl.org/dc/elements/1.1/identifier>	"adb2ebf7-dc6f-479b-abfe-64a4fd69c209"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttributeName>	"LIRCS+-A+-"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/RefBaseSystemUnitPath>	"NE150SUCLibrary/PCERequest"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRoleClass>	<https://w3id.org/i40/aml/RoleClass1> .
+<https://w3id.org/i40/aml/RoleClass1>
+	a	<https://w3id.org/i40/aml/RoleClass> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"A-"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasExternalInterface>	<https://w3id.org/i40/aml/ExternalInterface1> .
+<https://w3id.org/i40/aml/ExternalInterface1>
+	a	<https://w3id.org/i40/aml/ExternalInterface> ;
+	<http://purl.org/dc/elements/1.1/identifier>	"a28eab6e-f177-414b-ac46-02786481c2e3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"DI Alarm L < min"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/refBaseClassPath>	"NE150InterfaceLibrary/SWSignal"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute1> .
 <https://w3id.org/i40/aml/Attribute1>
 	a	<https://w3id.org/i40/aml/Attribute> ;
-	<https://w3id.org/i40/aml/hasDataType>	"xs:string"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttributeName>	"PCEFunction"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"FunctionBlock"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasAttributeValue>	""^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic1> ;
 	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute2>, <https://w3id.org/i40/aml/Attribute3>, <https://w3id.org/i40/aml/Attribute4> .
 <https://w3id.org/i40/aml/RefSemantic1>
 	a	<https://w3id.org/i40/aml/RefSemantic> ;
-	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"NE 150 v1.0 Annex 2.1.1"^^<http://www.w3.org/2001/XMLSchema#string> .
+	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"NE 150 v1.0 Annex 1.1.7"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/aml/Attribute2>
 	a	<https://w3id.org/i40/aml/Attribute> ;
-	<https://w3id.org/i40/aml/hasDataType>	"xs:string"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttributeName>	"PCEInitial"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttributeValue>	"L"^^<http://www.w3.org/2001/XMLSchema#string> .
+	<https://w3id.org/i40/aml/hasAttributeName>	"FunctionBlockDiagramNumber"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeValue>	"L 1001"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/aml/Attribute3>
 	a	<https://w3id.org/i40/aml/Attribute> ;
-	<https://w3id.org/i40/aml/hasDataType>	"xs:string"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttributeName>	"PCEFunction"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttributeValue>	"LIRCS"^^<http://www.w3.org/2001/XMLSchema#string> .
+	<https://w3id.org/i40/aml/hasAttributeName>	"SoftwareSignalName"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeValue>	"L1001_AL"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/aml/Attribute4>
 	a	<https://w3id.org/i40/aml/Attribute> ;
-	<https://w3id.org/i40/aml/hasDataType>	"xs:string"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttributeName>	"FlowchartNumber"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttributeValue>	"1000_4"^^<http://www.w3.org/2001/XMLSchema#string> .
+	<https://w3id.org/i40/aml/hasAttributeName>	"SoftwareSignalType"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeValue>	"DI"^^<http://www.w3.org/2001/XMLSchema#string> .

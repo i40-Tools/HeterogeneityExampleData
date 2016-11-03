@@ -22,21 +22,22 @@
 <SystemUnitClassLib Name="NE150DemoProject">
             <SystemUnitClass Name="AML Object">
             <InternalElement Name="LIRCS+-A+-" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
-                            <Attribute Name="CardType" AttributeDataType="xs:string">
-                                    <Description>Catalogue designation of card</Description>
-                                    <Value>SM 431</Value>
+	    		               <Attribute Name="Card" AttributeDataType="xs:string">
+                                    <Value></Value>
                                     <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.3.7" />
-                                </Attribute>
-                                <Attribute Name="CardTerminalPlus" AttributeDataType="xs:string">
-                                    <Description>Number of electrical connection on the card terminal strip</Description>
-                                    <Value>4</Value>
-                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.3.7" />
-                                </Attribute>
-                                <Attribute Name="CardTerminalMinus" AttributeDataType="xs:string">
-                                    <Description>Number of electrical connection on the card terminal strip</Description>
-                                    <Value>5</Value>
-                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.3.7" />
-                                </Attribute>
+								<Attribute Name="CardType" AttributeDataType="xs:string">
+									<Description>Catalogue designation of card</Description>
+									<Value>SM 431</Value>
+								</Attribute>
+								<Attribute Name="CardTerminalPlus" AttributeDataType="xs:string">
+									<Description>Number of electrical connection on the card terminal strip</Description>
+									<Value>4</Value>
+								</Attribute>
+								<Attribute Name="CardTerminalMinus" AttributeDataType="xs:string">
+									<Description>Number of electrical connection on the card terminal strip</Description>
+									<Value>5</Value>
+								</Attribute>
+								</Attribute>
 
 </InternalElement>
 </SystemUnitClass>

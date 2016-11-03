@@ -1,14 +1,18 @@
 clause1(refBaseClassPath(externalReference11,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference11,'BaseRoleClassLib'),true).
 clause1(type(externalReference11,externalReference),true).
+clause1(hasAttributeValue(attribute31,'4'),true).
+clause1(hasAttributeName(attribute31,'Instrumental FlowchartNumber'),true).
+clause1(hasDataType(attribute31,'xs:string'),true).
+clause1(type(attribute31,attribute),true).
 clause1(hasInternalElement(instanceHierarchy11,internalElement11),true).
 clause1(hasAttributeName(instanceHierarchy11,'NE150DemoProject'),true).
 clause1(type(instanceHierarchy11,instanceHierarchy),true).
-clause1(hasCorrespondingAttributePath(refSemantic21,'NE 150 v1.0 Annex 1.1.5'),true).
-clause1(type(refSemantic21,refSemantic),true).
+clause1(hasAttribute(attribute11,attribute31),true).
+clause1(hasAttribute(attribute11,attribute21),true).
 clause1(hasRefSemantic(attribute11,refSemantic11),true).
-clause1(hasAttributeValue(attribute11,'1000'),true).
-clause1(hasAttributeName(attribute11,'PipeWork FlowchartNumber'),true).
+clause1(hasAttributeValue(attribute11,''),true).
+clause1(hasAttributeName(attribute11,'FlowchartNumber'),true).
 clause1(hasDataType(attribute11,'xs:string'),true).
 clause1(type(attribute11,attribute),true).
 clause1(hasInstanceHierarchy(cAEXFile11,instanceHierarchy11),true).
@@ -34,15 +38,13 @@ clause1(hasWriterVendor(additionalInformation21,'AutomationML e.V.'),true).
 clause1(refBaseClassPath(externalReference21,'Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference21,'BaseInterfaceClassLib'),true).
 clause1(type(externalReference21,externalReference),true).
-clause1(hasAttribute(internalElement11,attribute21),true).
 clause1(hasAttribute(internalElement11,attribute11),true).
 clause1(refBaseSystemUnitPath(internalElement11,'NE150SUCLibrary/PCERequest'),true).
 clause1(hasAttributeName(internalElement11,'LIRCS+-A+-'),true).
 clause1(identifier(internalElement11,'adb2ebf7-dc6f-479b-abfe-64a4fd69c209'),true).
 clause1(type(internalElement11,internalElement),true).
-clause1(hasRefSemantic(attribute21,refSemantic21),true).
-clause1(hasAttributeValue(attribute21,'4'),true).
-clause1(hasAttributeName(attribute21,'Instrumental FlowchartNumber'),true).
+clause1(hasAttributeValue(attribute21,'1000'),true).
+clause1(hasAttributeName(attribute21,'PipeWork FlowchartNumber'),true).
 clause1(hasDataType(attribute21,'xs:string'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasCorrespondingAttributePath(refSemantic11,'NE 150 v1.0 Annex 1.1.5'),true).

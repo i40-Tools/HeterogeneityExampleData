@@ -42,18 +42,21 @@
 	<http://purl.org/dc/elements/1.1/identifier>	"8a38e7be-bbfc-4a91-a244-1974990c7bc2"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasAttributeName>	"TIRC"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/RefBaseSystemUnitPath>	"NE150SUCLibrary/PCERequest"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute1>, <https://w3id.org/i40/aml/Attribute2> .
+	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute1> .
 <https://w3id.org/i40/aml/Attribute1>
 	a	<https://w3id.org/i40/aml/Attribute> ;
-	<https://w3id.org/i40/aml/hasAttributeName>	"PCEInitial"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic1> .
+	<https://w3id.org/i40/aml/hasAttributeName>	"PCEInitial-FlowchartNumber"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeValue>	""^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic1> ;
+	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute2>, <https://w3id.org/i40/aml/Attribute3> .
 <https://w3id.org/i40/aml/RefSemantic1>
 	a	<https://w3id.org/i40/aml/RefSemantic> ;
 	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"NE 150 v1.0 Annex 2.1.2"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/aml/Attribute2>
 	a	<https://w3id.org/i40/aml/Attribute> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"PCEInitial"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeValue>	"T"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/Attribute3>
+	a	<https://w3id.org/i40/aml/Attribute> ;
 	<https://w3id.org/i40/aml/hasAttributeName>	"FlowchartNumber"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic2> .
-<https://w3id.org/i40/aml/RefSemantic2>
-	a	<https://w3id.org/i40/aml/RefSemantic> ;
-	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"NE 150 v1.0 Annex 1.1.5"^^<http://www.w3.org/2001/XMLSchema#string> .
+	<https://w3id.org/i40/aml/hasAttributeValue>	"1000-4"^^<http://www.w3.org/2001/XMLSchema#string> .

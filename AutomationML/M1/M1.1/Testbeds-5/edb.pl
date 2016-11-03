@@ -1,12 +1,15 @@
 clause1(refBaseClassPath(externalReference11,'Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference11,'BaseRoleClassLib'),true).
 clause1(type(externalReference11,externalReference),true).
-clause1(hasCorrespondingAttributePath(refSemantic21,'NE 150 v1.0 Annex 2.3.4'),true).
-clause1(type(refSemantic21,refSemantic),true).
+clause1(hasAttributeValue(attribute31,'LA'),true).
+clause1(hasAttributeName(attribute31,'Subrack'),true).
+clause1(type(attribute31,attribute),true).
+clause1(hasAttribute(attribute11,attribute31),true).
+clause1(hasAttribute(attribute11,attribute21),true).
 clause1(hasRefSemantic(attribute11,refSemantic11),true).
-clause1(hasAttributeName(attribute11,'Cabinet'),true).
+clause1(hasAttributeValue(attribute11,''),true).
+clause1(hasAttributeName(attribute11,'Cabinet-Subrack'),true).
 clause1(type(attribute11,attribute),true).
-clause1(hasAttribute(externalInterface11,attribute21),true).
 clause1(hasAttribute(externalInterface11,attribute11),true).
 clause1(refBaseClassPath(externalInterface11,'NE150InterfaceLibrary/HWSignal'),true).
 clause1(hasAttributeName(externalInterface11,'AI Level HW'),true).
@@ -41,8 +44,8 @@ clause1(type(externalReference21,externalReference),true).
 clause1(hasExternalInterface(roleClass11,externalInterface11),true).
 clause1(hasAttributeName(roleClass11,'LIRCS+-A+-'),true).
 clause1(type(roleClass11,roleClass),true).
-clause1(hasRefSemantic(attribute21,refSemantic21),true).
-clause1(hasAttributeName(attribute21,'Subrack'),true).
+clause1(hasAttributeValue(attribute21,'C03'),true).
+clause1(hasAttributeName(attribute21,'Cabinet'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasCorrespondingAttributePath(refSemantic11,'NE 150 v1.0 Annex 2.3.1'),true).
 clause1(type(refSemantic11,refSemantic),true).
@@ -52,7 +55,8 @@ clause1(refBaseClassPath(externalReference12,'Libs/RoleClass Libraries/Automatio
 clause1(externalReferenceAlias(externalReference12,'BaseRoleClassLib'),true).
 clause1(type(externalReference12,externalReference),true).
 clause1(hasRefSemantic(attribute12,refSemantic12),true).
-clause1(hasAttributeName(attribute12,'Cabinet'),true).
+clause1(hasAttributeValue(attribute12,'C03-LA'),true).
+clause1(hasAttributeName(attribute12,'Cabinet-Subrack'),true).
 clause1(type(attribute12,attribute),true).
 clause1(hasAttribute(externalInterface12,attribute12),true).
 clause1(refBaseClassPath(externalInterface12,'NE150InterfaceLibrary/HWSignal'),true).
