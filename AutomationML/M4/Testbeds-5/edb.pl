@@ -34,6 +34,8 @@ clause1(type(externalReference21,externalReference),true).
 clause1(hasAttribute(systemUnitClass11,attribute11),true).
 clause1(hasAttributeName(systemUnitClass11,'Material'),true).
 clause1(type(systemUnitClass11,systemUnitClass),true).
+clause1(hasAttributeValue(attribute21,'Germany'),true).
+clause1(hasAttributeName(attribute21,'Country'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasAutomationMLVersion(additionalInformation11,'2.0'),true).
 clause1(type(additionalInformation11,additionalInformation),true).

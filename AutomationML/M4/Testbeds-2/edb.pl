@@ -35,6 +35,8 @@ clause1(hasAttribute(roleClass11,attribute11),true).
 clause1(refBaseClassPath(roleClass11,'AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties'),true).
 clause1(hasAttributeName(roleClass11,'Material'),true).
 clause1(type(roleClass11,roleClass),true).
+clause1(hasAttributeValue(attribute21,'Germany'),true).
+clause1(hasAttributeName(attribute21,'Country'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasAutomationMLVersion(additionalInformation11,'2.0'),true).
 clause1(type(additionalInformation11,additionalInformation),true).

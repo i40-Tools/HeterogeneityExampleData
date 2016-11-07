@@ -5,6 +5,7 @@ clause1(hasInternalElement(instanceHierarchy11,internalElement11),true).
 clause1(hasAttributeName(instanceHierarchy11,'NE150DemoProject'),true).
 clause1(type(instanceHierarchy11,instanceHierarchy),true).
 clause1(hasAttribute(attribute11,attribute21),true).
+clause1(hasRefSemantic(attribute11,refSemantic11),true).
 clause1(hasAttributeName(attribute11,'Cardinality'),true).
 clause1(hasDataType(attribute11,'xs:string'),true).
 clause1(type(attribute11,attribute),true).
@@ -36,12 +37,11 @@ clause1(refBaseSystemUnitPath(internalElement11,'NE150SUCLibrary/PCERequest'),tr
 clause1(hasAttributeName(internalElement11,'LIRCS+-A+-'),true).
 clause1(identifier(internalElement11,'adb2ebf7-dc6f-479b-abfe-64a4fd69c209'),true).
 clause1(type(internalElement11,internalElement),true).
-clause1(hasRefSemantic(attribute21,refSemantic11),true).
 clause1(hasAttributeValue(attribute21,'1'),true).
 clause1(hasAttributeName(attribute21,'MinOccur'),true).
 clause1(hasDataType(attribute21,'xs:unsignedInt'),true).
 clause1(type(attribute21,attribute),true).
-clause1(hasCorrespondingAttributePath(refSemantic11,'NE 150 v1.0 Annex 3.3.4'),true).
+clause1(hasCorrespondingAttributePath(refSemantic11,'NE 160 v1.0 Annex 3.3.4'),true).
 clause1(type(refSemantic11,refSemantic),true).
 clause1(hasAutomationMLVersion(additionalInformation11,'2.0'),true).
 clause1(type(additionalInformation11,additionalInformation),true).
@@ -52,6 +52,7 @@ clause1(hasInternalElement(instanceHierarchy12,internalElement12),true).
 clause1(hasAttributeName(instanceHierarchy12,'NE150DemoProject'),true).
 clause1(type(instanceHierarchy12,instanceHierarchy),true).
 clause1(hasAttribute(attribute12,attribute22),true).
+clause1(hasRefSemantic(attribute12,refSemantic12),true).
 clause1(hasAttributeName(attribute12,'Cardinality'),true).
 clause1(hasDataType(attribute12,'xs:string'),true).
 clause1(type(attribute12,attribute),true).
@@ -83,12 +84,11 @@ clause1(refBaseSystemUnitPath(internalElement12,'NE150SUCLibrary/PCERequest'),tr
 clause1(hasAttributeName(internalElement12,'LIRCS+-A+-'),true).
 clause1(identifier(internalElement12,'adb2ebf7-dc6f-479b-abfe-64a4fd69c209'),true).
 clause1(type(internalElement12,internalElement),true).
-clause1(hasRefSemantic(attribute22,refSemantic12),true).
 clause1(hasAttributeValue(attribute22,''),true).
 clause1(hasAttributeName(attribute22,'MinOccur'),true).
 clause1(hasDataType(attribute22,'xs:unsignedInt'),true).
 clause1(type(attribute22,attribute),true).
-clause1(hasCorrespondingAttributePath(refSemantic12,'NE 150 v1.0 Annex 3.3.4'),true).
+clause1(hasCorrespondingAttributePath(refSemantic12,'NE 160 v1.0 Annex 3.3.4'),true).
 clause1(type(refSemantic12,refSemantic),true).
 clause1(hasAutomationMLVersion(additionalInformation12,'2.0'),true).
 clause1(type(additionalInformation12,additionalInformation),true).
