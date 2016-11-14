@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
-<CAEXFile FileName="seed-String-0.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+<CAEXFile FileName="GoldStandard.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
     <AdditionalInformation AutomationMLVersion="2.0" />
     <AdditionalInformation>
         <WriterHeader>
@@ -24,19 +24,8 @@
         <Version>1.0</Version>
          <RoleClass Name="ContactData" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Administrative">
                 <Attribute Name="MailAddress" AttributeDataType="xs:string">
-				    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
-                    <Attribute Name="StreetAndNumber" AttributeDataType="xs:string" >
-                        <Value>endenicher Allee</Value>
-                    </Attribute>
-                    <Attribute Name="City" AttributeDataType="xs:string">
-                    <Value>Bonn</Value>
-                </Attribute>
-                    <Attribute Name="State" AttributeDataType="xs:string" >
-                        <Value>Nordrhein-Westfalen</Value>
-                    </Attribute>
-                    <Attribute Name="Country" AttributeDataType="xs:string" >
-                        <Value>Germany</Value>
-                  </Attribute>                  
+                     <Value>Endenicher Allee/Bonn/Nordrhein-Westfalen/Germany</Value>
+                   <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
                 </Attribute>
                 <RoleClass Name="Manufacturer" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Administrative/ContactData" />
                 <RoleClass Name="Supplier" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Administrative/ContactData" />

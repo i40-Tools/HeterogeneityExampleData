@@ -4,6 +4,7 @@ clause1(hasCorrespondingAttributePath(refSemantic21,'ECLASS:0173-1#02-BAF316#002
 clause1(type(refSemantic21,refSemantic),true).
 clause1(hasInternalElement(instanceHierarchy11,internalElement11),true).
 clause1(hasAttributeName(instanceHierarchy11,'ConveyorSystem'),true).
+clause1(identifier(instanceHierarchy11,'acf9f51b'),true).
 clause1(type(instanceHierarchy11,instanceHierarchy),true).
 clause1(hasRoleRequirements(internalElement31,roleRequirements21),true).
 clause1(hasExternalInterface(internalElement31,externalInterface21),true).
@@ -70,6 +71,7 @@ clause1(type(roleRequirements22,roleRequirements),true).
 clause1(hasInternalElement(instanceHierarchy12,internalElement22),true).
 clause1(hasInternalElement(instanceHierarchy12,internalElement12),true).
 clause1(hasAttributeName(instanceHierarchy12,'ConveyorSystem'),true).
+clause1(identifier(instanceHierarchy12,'acf9f51b'),true).
 clause1(type(instanceHierarchy12,instanceHierarchy),true).
 clause1(hasCorrespondingAttributePath(refSemantic22,'ECLASS:0173-1#02-BAF316#002'),true).
 clause1(type(refSemantic22,refSemantic),true).

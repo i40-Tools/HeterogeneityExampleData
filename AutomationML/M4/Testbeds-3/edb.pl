@@ -15,13 +15,13 @@ clause1(hasAdditionalInfomation(cAEXFile11,additionalInformation11),true).
 clause1(hasSchemaVersion(cAEXFile11,'2.15'),true).
 clause1(hasFileName(cAEXFile11,'seed-Mapping-0.aml'),true).
 clause1(type(cAEXFile11,cAEXFile),true).
-clause1(hasLastWritingDateTime(additionalInformation21,'2012-02-20
-            '),true).
 clause1(hasWriterID(additionalInformation21,'AutomationML e.V.'),true).
 clause1(hasWriterRelease(additionalInformation21,'1.0'),true).
 clause1(hasWriterProjectID(additionalInformation21,'AutomationML Tutorial Examples
-            '),true).
+			'),true).
 clause1(hasWriterVendorURL(additionalInformation21,'www.AutomationML.org'),true).
+clause1(hasLastWritingDateTime(additionalInformation21,'2012-02-20
+			'),true).
 clause1(hasWriterName(additionalInformation21,'AutomationML e.V.'),true).
 clause1(type(additionalInformation21,additionalInformation),true).
 clause1(hasWriterProjectTitle(additionalInformation21,'AutomationML Tutorial Examples'),true).
@@ -63,13 +63,13 @@ clause1(hasAdditionalInfomation(cAEXFile12,additionalInformation12),true).
 clause1(hasSchemaVersion(cAEXFile12,'2.15'),true).
 clause1(hasFileName(cAEXFile12,'seed-Mapping-1.aml'),true).
 clause1(type(cAEXFile12,cAEXFile),true).
-clause1(hasLastWritingDateTime(additionalInformation22,'2012-02-20
-            '),true).
 clause1(hasWriterID(additionalInformation22,'AutomationML e.V.'),true).
 clause1(hasWriterRelease(additionalInformation22,'1.0'),true).
 clause1(hasWriterProjectID(additionalInformation22,'AutomationML Tutorial Examples
-            '),true).
+			'),true).
 clause1(hasWriterVendorURL(additionalInformation22,'www.AutomationML.org'),true).
+clause1(hasLastWritingDateTime(additionalInformation22,'2012-02-20
+			'),true).
 clause1(hasWriterName(additionalInformation22,'AutomationML e.V.'),true).
 clause1(type(additionalInformation22,additionalInformation),true).
 clause1(hasWriterProjectTitle(additionalInformation22,'AutomationML Tutorial Examples'),true).

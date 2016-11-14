@@ -5,36 +5,50 @@ clause1(hasAdditionalInfomation(cAEXFile11,additionalInformation11),true).
 clause1(hasSchemaVersion(cAEXFile11,'2.15'),true).
 clause1(hasFileName(cAEXFile11,'seed-Schematic-0.aml'),true).
 clause1(type(cAEXFile11,cAEXFile),true).
-clause1(refBaseRoleClassPath(roleRequirements11,'ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)'),true).
-clause1(type(roleRequirements11,roleRequirements),true).
 clause1(hasAttributeValue(attribute41,'27440209'),true).
 clause1(hasAttributeName(attribute41,'eClassClassificationClass'),true).
 clause1(type(attribute41,attribute),true).
+clause1(refBaseRoleClassPath(roleRequirements11,'ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)'),true).
+clause1(type(roleRequirements11,roleRequirements),true).
+clause1(hasRoleRequirements(internalElement21,roleRequirements11),true).
+clause1(hasExternalInterface(internalElement21,externalInterface11),true).
+clause1(hasAttribute(internalElement21,attribute11),true).
+clause1(hasAttributeName(internalElement21,'Conveyor1'),true).
+clause1(identifier(internalElement21,'45e20f8e-7351-4af9-bdfd-3c019674de55'),true).
+clause1(type(internalElement21,internalElement),true).
 clause1(hasAttributeValue(attribute31,'9.0'),true).
 clause1(hasAttributeName(attribute31,'eClassVersion'),true).
 clause1(type(attribute31,attribute),true).
-clause1(hasExternalInterface(internalElement11,externalInterface21),true).
+clause1(hasRoleRequirements(internalElement11,roleRequirements31),true).
+clause1(hasInternalElement(internalElement11,internalElement31),true).
+clause1(hasInternalElement(internalElement11,internalElement21),true).
+clause1(hasAttributeName(internalElement11,'Connection'),true).
 clause1(identifier(internalElement11,'acf9f51b-3fbd-4f30-891d-f8daca50ed17'),true).
 clause1(type(internalElement11,internalElement),true).
-clause1(hasRoleRequirements(internalElement11,roleRequirements21),true).
-clause1(hasAttributeName(internalElement11,'Connection'),true).
-clause1(hasRoleRequirements(internalElement11,roleRequirements31),true).
-clause1(hasAttribute(internalElement11,attribute11),true).
-clause1(hasAttribute(internalElement11,attribute21),true).
-clause1(hasRoleRequirements(internalElement11,roleRequirements11),true).
-clause1(hasExternalInterface(internalElement11,externalInterface11),true).
 clause1(hasCorrespondingAttributePath(refSemantic21,'ECLASS:0173-1#02-BAF316#002'),true).
 clause1(type(refSemantic21,refSemantic),true).
 clause1(hasRefSemantic(attribute21,refSemantic21),true).
+clause1(hasAttributeValue(attribute21,'2'),true).
+clause1(hasAttributeName(attribute21,' Max.load capacity'),true).
+clause1(hasDataType(attribute21,'xs:double'),true).
 clause1(type(attribute21,attribute),true).
 clause1(hasCorrespondingAttributePath(refSemantic11,'ECLASS:0173-1#02-BAF685#003'),true).
 clause1(type(refSemantic11,refSemantic),true).
+clause1(refBaseClassPath(externalInterface21,'BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector'),true).
+clause1(hasAttributeName(externalInterface21,'ConnectionPoint'),true).
+clause1(identifier(externalInterface21,'c50f79eb-6634-4c7e-a32f-54bdef05cace'),true).
 clause1(type(externalInterface21,externalInterface),true).
 clause1(hasInternalElement(instanceHierarchy11,internalElement11),true).
 clause1(hasAttributeName(instanceHierarchy11,'ConveyorSystem'),true).
 clause1(type(instanceHierarchy11,instanceHierarchy),true).
 clause1(hasRefSemantic(attribute11,refSemantic11),true).
+clause1(hasAttributeValue(attribute11,'1.5'),true).
+clause1(hasAttributeName(attribute11,'maxConveyingSpeed'),true).
+clause1(hasDataType(attribute11,'xs:double'),true).
 clause1(type(attribute11,attribute),true).
+clause1(refBaseClassPath(externalInterface11,'BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector'),true).
+clause1(hasAttributeName(externalInterface11,'ConnectionPoint'),true).
+clause1(identifier(externalInterface11,'51e272d6-0252-4ebd-b865-2ca7a202a68e'),true).
 clause1(type(externalInterface11,externalInterface),true).
 clause1(hasWriterID(additionalInformation21,'AutomationML e.V.'),true).
 clause1(hasWriterRelease(additionalInformation21,'1.0'),true).
@@ -60,11 +74,16 @@ clause1(hasAttributeName(attribute51,'eClassIRDI'),true).
 clause1(type(attribute51,attribute),true).
 clause1(refBaseRoleClassPath(roleRequirements21,'ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)'),true).
 clause1(type(roleRequirements21,roleRequirements),true).
+clause1(hasRoleRequirements(internalElement31,roleRequirements21),true).
+clause1(hasExternalInterface(internalElement31,externalInterface21),true).
+clause1(hasAttribute(internalElement31,attribute21),true).
+clause1(hasAttributeName(internalElement31,'Conveyor2'),true).
+clause1(identifier(internalElement31,'11b59bf6-44f6-4650-939f-d8e2551912a7'),true).
+clause1(type(internalElement31,internalElement),true).
 clause1(hasRoleClass(roleClassLib11,roleClass11),true).
 clause1(hasVersion(roleClassLib11,'1.0'),true).
 clause1(hasAttributeName(roleClassLib11,'ConnectorSystem'),true).
 clause1(type(roleClassLib11,roleClassLib),true).
-
 clause1(hasRoleClassLib(cAEXFile12,roleClassLib12),true).
 clause1(hasInstanceHierarchy(cAEXFile12,instanceHierarchy12),true).
 clause1(hasAdditionalInfomation(cAEXFile12,additionalInformation22),true).
@@ -95,7 +114,9 @@ clause1(type(internalElement12,internalElement),true).
 clause1(hasCorrespondingAttributePath(refSemantic22,'ECLASS:0173-1#02-BAF316#002'),true).
 clause1(type(refSemantic22,refSemantic),true).
 clause1(hasRefSemantic(attribute22,refSemantic22),true).
+clause1(hasAttributeValue(attribute22,'2'),true).
 clause1(hasAttributeName(attribute22,' Max.load capacity'),true).
+clause1(hasDataType(attribute22,'xs:double'),true).
 clause1(type(attribute22,attribute),true).
 clause1(hasCorrespondingAttributePath(refSemantic12,'ECLASS:0173-1#02-BAF685#003'),true).
 clause1(type(refSemantic12,refSemantic),true).
@@ -108,7 +129,9 @@ clause1(hasInternalElement(instanceHierarchy12,internalElement12),true).
 clause1(hasAttributeName(instanceHierarchy12,'ConveyorSystem'),true).
 clause1(type(instanceHierarchy12,instanceHierarchy),true).
 clause1(hasRefSemantic(attribute12,refSemantic12),true).
+clause1(hasAttributeValue(attribute12,'1.5'),true).
 clause1(hasAttributeName(attribute12,'maxConveyingSpeed'),true).
+clause1(hasDataType(attribute12,'xs:double'),true).
 clause1(type(attribute12,attribute),true).
 clause1(refBaseClassPath(externalInterface12,'BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector'),true).
 clause1(hasAttributeName(externalInterface12,'ConnectionPoint'),true).
