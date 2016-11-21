@@ -16,9 +16,4 @@ Representation: Pair(File a, File b)
 
 2: pair(Attribute("Max.load capacity") , (Attribute("Max.load capacity"))
 
-<<<<<<< HEAD
- - pair (RefSemantic,RefSemantic)
-  
-=======
  - pair (RefSemantic,RefSemantic) 
->>>>>>> ee82618f6e4537e9ee6d8acdf7b26244d978fba8
