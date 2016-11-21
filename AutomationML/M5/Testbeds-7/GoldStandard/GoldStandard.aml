@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
-<CAEXFile FileName="GoldStandard.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?><!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet --><CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="GoldStandard.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
     <AdditionalInformation AutomationMLVersion="2.0"/>
     <AdditionalInformation>
         <WriterHeader>
@@ -23,11 +21,17 @@
         <InterfaceClass Name="ActiveObject">
         </InterfaceClass>
     </InterfaceClassLib>
-    <InterfaceClassLib Name="SystemAMapping">
-        <InterfaceClass Name="RobotMapping" RefBaseClassPath="SystemA/Robot">
-                <Attribute Name="MappedInterfaceClassPathReference" AttributeDataType="xs:string">
-                    <Value>SystemB/ActiveObject</Value>
+    <InterfaceClassLib Name="SystemBMapping">
+        <InterfaceClass Name="ActiveObjectMapping" RefBaseClassPath="SystemB/ActiveObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedInterfaceClassPathReference">
+                    <Value>SystemA/Robot</Value>
                 </Attribute>
         </InterfaceClass>
     </InterfaceClassLib>
-</CAEXFile>
+<InterfaceClassLib Name="SystemAMapping">
+        <InterfaceClass Name="RobotMapping" RefBaseClassPath="SystemA/Robot">
+                <Attribute AttributeDataType="xs:string" Name="MappedInterfaceClassPathReference">
+                    <Value>SystemB/ActiveObject</Value>
+                </Attribute>
+        </InterfaceClass>
+    </InterfaceClassLib></CAEXFile>

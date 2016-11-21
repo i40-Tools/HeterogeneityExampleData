@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
-<CAEXFile FileName="GoldStandard.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<?xml version="1.0" encoding="UTF-8"?><!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet --><CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="GoldStandard.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
     <AdditionalInformation AutomationMLVersion="2.0"/>
     <AdditionalInformation>
         <WriterHeader>
@@ -17,34 +15,81 @@
     </AdditionalInformation>
    <SystemUnitClassLib Name="SystemA">
         <SystemUnitClass Name="Robot">
-            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Robot" />
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Robot"/>
         </SystemUnitClass>
-        <SystemUnitClass Name="Tool">
-            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Tool" />
+
+ <SystemUnitClass Name="Tool">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Tool"/>
         </SystemUnitClass>
+
+        <SystemUnitClass Name="Fence">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Fence"/>
+        </SystemUnitClass>
+
     </SystemUnitClassLib>
+
     <SystemUnitClassLib Name="SystemB">
         <SystemUnitClass Name="ActiveObject">
-            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Tool" />
-            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Robot" />
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Robot"/>
         </SystemUnitClass>
+
+            <SystemUnitClass Name="PassiveObject">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Fence"/>
+        </SystemUnitClass>
+
     </SystemUnitClassLib>
-    <SystemUnitClassLib Name="SystemAMapping">
+
+    <SystemUnitClassLib Name="SystemBMapping">
+        <SystemUnitClass Name="ActiveObjectMapping" RefBaseClassPath="SystemB/ActiveObject">
+            <InternalElement ID="{8301bf6f-3034-455d-95cf-44c128b8baeb}" Name="RobotMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedSystemUnitClassPathReference">
+                    <Value>SystemA/Robot</Value>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping"/>
+            </InternalElement>
+        </SystemUnitClass>
+ <SystemUnitClass Name="ActiveObjectMapping" RefBaseClassPath="SystemB/ActiveObject">
+            <InternalElement ID="{8301bf6f-3034-455d-95cf-44c128b8baeb}" Name="ToolMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedSystemUnitClassPathReference">
+                    <Value>SystemA/Tool</Value>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping"/>
+            </InternalElement>
+        </SystemUnitClass>
+
+        <SystemUnitClass Name="PassiveObjectMapping" RefBaseClassPath="SystemB/PassiveObject">
+            <InternalElement ID="{1c833706-f02f-4bef-9781-5829b673b76a}" Name="FenceMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedSystemUnitClassPathReference">
+                    <Value>SystemA/Fence</Value>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping"/>
+            </InternalElement>
+        </SystemUnitClass>
+
+    </SystemUnitClassLib>
+<SystemUnitClassLib Name="SystemAMapping">
         <SystemUnitClass Name="RobotMapping" RefBaseClassPath="SystemA/Robot">
-            <InternalElement Name="ActiveObjectMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject" ID="{8301bf6f-3034-455d-95cf-44c128b8baeb}">
-                <Attribute Name="MappedSystemUnitClassPathReference" AttributeDataType="xs:string">
+            <InternalElement ID="{8301bf6f-3034-455d-95cf-44c128b8baeb}" Name="ActiveObjectMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedSystemUnitClassPathReference">
                     <Value>SystemB/ActiveObject</Value>
                 </Attribute>
-                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping" />
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping"/>
             </InternalElement>
         </SystemUnitClass>
         <SystemUnitClass Name="ToolMapping" RefBaseClassPath="SystemA/Tool">
-            <InternalElement Name="ActiveObjetcMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject" ID="{9be13bdb-13f6-42c5-9be3-db3142b385af}">
-                <Attribute Name="MappedSystemUnitClassPathReference" AttributeDataType="xs:string">
+            <InternalElement ID="{9be13bdb-13f6-42c5-9be3-db3142b385af}" Name="ActiveObjetcMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedSystemUnitClassPathReference">
                     <Value>SystemB/ActiveObject</Value>
                 </Attribute>
-                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping" />
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping"/>
             </InternalElement>
         </SystemUnitClass>
-    </SystemUnitClassLib>
-</CAEXFile>
+        <SystemUnitClass Name="FenceMapping" RefBaseClassPath="SystemA/Fence">
+            <InternalElement ID="{1c833706-f02f-4bef-9781-5829b673b76a}" Name="PassiveObjectMappingObject" RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedSystemUnitClassPathReference">
+                    <Value>SystemB/PassiveObject</Value>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping"/>
+            </InternalElement>
+        </SystemUnitClass>
+    </SystemUnitClassLib></CAEXFile>
