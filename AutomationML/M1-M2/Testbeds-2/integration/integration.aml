@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CAEXFile FileName="seed-String-1.aml" SchemaVersion="2.15">
+  <AdditionalInformation AutomationMLVersion="2.0">
+      <attributes name="AutomationMLVersion" value="2.0"/>
+  </AdditionalInformation>
+  <AdditionalInformation>
+      <WriterHeader>
+         <WriterName>AutomationML e.V.</WriterName>
+         <WriterID>AutomationML e.V.</WriterID>
+         <WriterVendor>AutomationML e.V.</WriterVendor>
+         <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+         <WriterVersion>1.0</WriterVersion>
+         <WriterRelease>1.0</WriterRelease>
+         <LastWritingDateTime>2012-02-20</LastWritingDateTime>
+         <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+         <WriterProjectID>AutomationML Tutorial Examples</WriterProjectID>
+      </WriterHeader>
+  </AdditionalInformation>
+  <ExternalReference Alias="BaseRoleClassLib"
+                      Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+  <ExternalReference Alias="BaseInterfaceClassLib"
+                      Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+  <InstanceHierarchy Name="NE150DemoProject">
+      <InternalElement ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209" Name="LIRCS+-A+-"
+                       RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest">
+         <Attribute Name="FlowchartNumber" AttributeDataType="xs:string">
+            <Description>Drawing number of P&amp;I flowchart (pipework and instrumentation flowchart)</Description>
+            <Value>1000_4</Value>
+            <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5"/>
+         </Attribute>
+      </InternalElement>
+  </InstanceHierarchy>
+  <InterfaceClassLib Name="DistributionTransformer">
+      <Version>1.0</Version>
+      <InterfaceClass Name="BASIC_27-03-14-02 Single-phase distribution transformer (oil-cooled)">
+         <Attribute Name="eClassVersion" AttributeDataType="xs:string">
+            <Value>9.0</Value>
+         </Attribute>
+         <Attribute Name="eClassClassificationClass" AttributeDataType="xs:string">
+            <Value>27031402</Value>
+         </Attribute>
+         <Attribute Name="eClassIRDI" AttributeDataType="xs:string">
+            <Value>0173-1---BASIC_1_1#02-ACO096#009</Value>
+         </Attribute>
+      </InterfaceClass>
+      <InterfaceClass Name="BASIC_27-03-14-01 Three-phase distribution transformer (oil-cooled)">
+         <Attribute Name="eClassVersion" AttributeDataType="xs:string">
+            <Value>9.0</Value>
+         </Attribute>
+         <Attribute Name="eClassClassificationClass" AttributeDataType="xs:string">
+            <Value>27031401</Value>
+         </Attribute>
+         <Attribute Name="eClassIRDI" AttributeDataType="xs:string">
+            <Value>0173-1---BASIC_1_1#01-ACO094#009</Value>
+         </Attribute>
+      </InterfaceClass>
+      <InterfaceClass Name="BASIC_27-03-14-03 Distribution transformer cast resin">
+         <Attribute Name="eClassVersion" AttributeDataType="xs:string">
+            <Value>9.0</Value>
+         </Attribute>
+         <Attribute Name="eClassClassificationClass" AttributeDataType="xs:string">
+            <Value>27031403</Value>
+         </Attribute>
+         <Attribute Name="eClassIRDI" AttributeDataType="xs:string">
+            <Value>0173-1---BASIC_1_1#03-ACO098#009</Value>
+         </Attribute>
+      </InterfaceClass>
+  </InterfaceClassLib>
+</CAEXFile>
