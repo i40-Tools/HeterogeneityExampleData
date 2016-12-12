@@ -28,7 +28,8 @@
 <https://w3id.org/i40/aml/SystemUnitClass1>
 	a	<https://w3id.org/i40/aml/SystemUnitClass> ;
 	<https://w3id.org/i40/aml/hasAttributeName>	"BASIC_36-12-04-01 Conveyor"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute1>, <https://w3id.org/i40/aml/Attribute2>, <https://w3id.org/i40/aml/Attribute3>, <https://w3id.org/i40/aml/Attribute4> .
+	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute1>, <https://w3id.org/i40/aml/Attribute2>, <https://w3id.org/i40/aml/Attribute3> ;
+	<https://w3id.org/i40/aml/hasInternalElement>	<https://w3id.org/i40/aml/InternalElement1> .
 <https://w3id.org/i40/aml/Attribute1>
 	a	<https://w3id.org/i40/aml/Attribute> ;
 	<https://w3id.org/i40/aml/hasAttributeName>	"eClassVersion"^^<http://www.w3.org/2001/XMLSchema#string> ;
@@ -41,8 +42,14 @@
 	a	<https://w3id.org/i40/aml/Attribute> ;
 	<https://w3id.org/i40/aml/hasAttributeName>	"eClassIRDI"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasAttributeValue>	"0173-1---BASIC_1_1#01-AKL503#010"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/InternalElement1>
+	a	<https://w3id.org/i40/aml/InternalElement> ;
+	<http://purl.org/dc/elements/1.1/identifier>	"11b59bf6-44f6-4650-939f-d8e2551912a7"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"Conveyor2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute4> .
 <https://w3id.org/i40/aml/Attribute4>
 	a	<https://w3id.org/i40/aml/Attribute> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	" Max.load capacity"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasAttributeValue>	"2"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic1> .
 <https://w3id.org/i40/aml/RefSemantic1>
