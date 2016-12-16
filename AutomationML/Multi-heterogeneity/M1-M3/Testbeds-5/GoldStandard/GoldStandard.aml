@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet --><CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="GoldStandard.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+	<AdditionalInformation AutomationMLVersion="2.0"/>
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML e.V.</WriterName>
+			<WriterID>AutomationML e.V.</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>1.0</WriterVersion>
+			<WriterRelease>1.0</WriterRelease>
+			<LastWritingDateTime>2012-02-20
+			</LastWritingDateTime>
+			<WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+			<WriterProjectID>AutomationML Tutorial Examples
+			</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+	<ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+		<InstanceHierarchy Name="NE150DemoProject">
+			<InternalElement ID="945248d6-fa03-4007-b74d-6dba0469b893" Name="TVK" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest">
+					<Attribute AttributeDataType="xs:string" Name="ManufactureDate">
+				<Description>PCE Manufacture Date</Description>
+				<Value>2014</Value>
+				<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.1.2"/>
+			</Attribute>
+			<Attribute AttributeDataType="xs:string" Name="ShippingDate">
+				<Description>PCE Shipping Date</Description>
+				<Value>2016</Value>
+				<RefSemantic CorrespondingAttributePath="NE 160 v1.0 Annex 2.1.2"/>
+			</Attribute>
+
+		<RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"/></InternalElement>
+	</InstanceHierarchy>
+	        <InstanceHierarchy Name="ConveyorSystem">
+        <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor1">
+            <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
+                <Value>1.5</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
+            </Attribute>
+            <ExternalInterface ID="51e272d6-0252-4ebd-b865-2ca7a202a68e" Name="ConnectionPoint" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+        </InternalElement>
+        <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor2">
+            <Attribute AttributeDataType="xs:double" Name=" Max.load capacity" Unit="kg">
+                <Value>2</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF316#002"/>
+            </Attribute>
+            <ExternalInterface ID="c50f79eb-6634-4c7e-a32f-54bdef05cace" Name="ConnectionPoint" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+            <InternalLink Name="PortLink" RefPartnerSideA="45e20f8e-7351-4af9-bdfd-3c019674de55:ConnectionPoint" RefPartnerSideB="11b59bf6-44f6-4650-939f-d8e2551912a7:ConnectionPoint"/>
+            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+        </InternalElement>
+        <InternalElement ID="23e7138b-f28f-4f45-8c0b-ee7e0de7c08f" Name="Conveyor3">
+            <Attribute AttributeDataType="xs:double" Name="Min. speed of the drive" Unit="m/s">
+                <Value>1.5</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAH608#004"/>
+            </Attribute>
+            <ExternalInterface ID="b0e2d6a0-2d8b-44c8-921b-bf4b43de906e" Name="ConnectionPoint" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+        </InternalElement>
+        <InternalElement ID="819f4954-892a-4a46-9091-b6f75ddd1332" Name="Conveyor4">
+            <Attribute AttributeDataType="xs:double" Name="maxTransportationWeight" Unit="kg">
+                <Value>35.0</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAI721#002"/>
+            </Attribute>
+            <ExternalInterface ID="c45eca55-521a-492e-b094-472124d1ae65" Name="ConnectionPoint" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+            <InternalLink Name="InternalLink1" RefPartnerSideA="23e7138b-f28f-4f45-8c0b-ee7e0de7c08f:ConnectionPoint" RefPartnerSideB="819f4954-892a-4a46-9091-b6f75ddd1332:ConnectionPoint"/>
+            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+        </InternalElement>
+    </InstanceHierarchy>
+
+</CAEXFile>

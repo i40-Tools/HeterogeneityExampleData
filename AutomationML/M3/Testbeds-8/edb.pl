@@ -37,6 +37,7 @@ clause1(type(attribute31,attribute),true).
 clause1(refBaseRoleClassPath(roleRequirements61,'BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource'),true).
 clause1(type(roleRequirements61,roleRequirements),true).
 clause1(hasRoleRequirements(internalElement11,roleRequirements31),true).
+clause1(hasInternalLink(internalElement11,internalLink11),true).
 clause1(hasInternalElement(internalElement11,internalElement31),true).
 clause1(hasInternalElement(internalElement11,internalElement21),true).
 clause1(hasAttributeName(internalElement11,'Connection'),true).
@@ -103,11 +104,16 @@ clause1(type(attribute61,attribute),true).
 clause1(refBaseRoleClassPath(roleRequirements31,'BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource'),true).
 clause1(type(roleRequirements31,roleRequirements),true).
 clause1(hasRoleRequirements(internalElement41,roleRequirements61),true).
+clause1(hasInternalLink(internalElement41,internalLink21),true).
 clause1(hasInternalElement(internalElement41,internalElement61),true).
 clause1(hasInternalElement(internalElement41,internalElement51),true).
 clause1(hasAttributeName(internalElement41,'Station'),true).
 clause1(identifier(internalElement41,'acf9f51b-3fbd-4f30-891d-f8daca50ed17'),true).
 clause1(type(internalElement41,internalElement),true).
+clause1(hasRefPartnerSideB(internalLink21,'819f4954-892a-4a46-9091-b6f75ddd1332:ConnectionPoint'),true).
+clause1(hasRefPartnerSideA(internalLink21,'23e7138b-f28f-4f45-8c0b-ee7e0de7c08f:ConnectionPoint'),true).
+clause1(hasAttributeName(internalLink21,'InternalLink1'),true).
+clause1(type(internalLink21,internalLink),true).
 clause1(hasAutomationMLVersion(additionalInformation11,'2.0'),true).
 clause1(type(additionalInformation11,additionalInformation),true).
 clause1(refBaseRoleClassPath(roleRequirements21,'BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port'),true).
@@ -122,11 +128,15 @@ clause1(hasAttribute(internalElement31,attribute51),true).
 clause1(hasAttributeName(internalElement31,'Conveyor2'),true).
 clause1(identifier(internalElement31,'11b59bf6-44f6-4650-939f-d8e2551912a7'),true).
 clause1(type(internalElement31,internalElement),true).
+clause1(hasCorrespondingAttributePath(refSemantic41,'ECLASS:0173-1#02-AAI721#002'),true).
+clause1(type(refSemantic41,refSemantic),true).
 clause1(refBaseClassPath(externalReference21,'Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference21,'BaseInterfaceClassLib'),true).
 clause1(type(externalReference21,externalReference),true).
-clause1(hasCorrespondingAttributePath(refSemantic41,'ECLASS:0173-1#02-AAI721#002'),true).
-clause1(type(refSemantic41,refSemantic),true).
+clause1(hasRefPartnerSideB(internalLink11,'11b59bf6-44f6-4650-939f-d8e2551912a7:ConnectionPoint'),true).
+clause1(hasRefPartnerSideA(internalLink11,'45e20f8e-7351-4af9-bdfd-3c019674de55:ConnectionPoint'),true).
+clause1(hasAttributeName(internalLink11,'PortLink'),true).
+clause1(type(internalLink11,internalLink),true).
 clause1(hasSystemUnitClass(systemUnitClassLib12,systemUnitClass12),true).
 clause1(hasVersion(systemUnitClassLib12,'1.0'),true).
 clause1(hasAttributeName(systemUnitClassLib12,'Conveyors'),true).
@@ -145,6 +155,8 @@ clause1(hasRefSemantic(attribute42,refSemantic12),true).
 clause1(hasAttributeValue(attribute42,'1.5'),true).
 clause1(hasAttributeName(attribute42,'maxConveyingSpeed'),true).
 clause1(type(attribute42,attribute),true).
+clause1(hasInternalLink(internalElement22,internalLink12),true).
+clause1(hasRoleRequirements(internalElement22,roleRequirements32),true).
 clause1(hasRoleRequirements(internalElement22,roleRequirements22),true).
 clause1(hasExternalInterface(internalElement22,externalInterface22),true).
 clause1(hasAttribute(internalElement22,attribute52),true).
@@ -163,6 +175,8 @@ clause1(type(externalInterface42,externalInterface),true).
 clause1(hasAttributeValue(attribute32,'0173-1---BASIC_1_1#01-AKL503#010'),true).
 clause1(hasAttributeName(attribute32,'eClassIRDI'),true).
 clause1(type(attribute32,attribute),true).
+clause1(refBaseRoleClassPath(roleRequirements62,'BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port'),true).
+clause1(type(roleRequirements62,roleRequirements),true).
 clause1(hasRoleRequirements(internalElement12,roleRequirements12),true).
 clause1(hasExternalInterface(internalElement12,externalInterface12),true).
 clause1(hasAttribute(internalElement12,attribute42),true).
@@ -187,21 +201,23 @@ clause1(type(systemUnitClass12,systemUnitClass),true).
 clause1(hasAttributeValue(attribute22,'36120401'),true).
 clause1(hasAttributeName(attribute22,'eClassClassificationClass'),true).
 clause1(type(attribute22,attribute),true).
+clause1(refBaseRoleClassPath(roleRequirements52,'BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port'),true).
+clause1(type(roleRequirements52,roleRequirements),true).
 clause1(hasCorrespondingAttributePath(refSemantic12,'ECLASS:0173-1#02-BAF685#003'),true).
 clause1(type(refSemantic12,refSemantic),true).
 clause1(refBaseClassPath(externalInterface22,'BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector'),true).
 clause1(hasAttributeName(externalInterface22,'ConnectionPoint'),true).
 clause1(identifier(externalInterface22,'c50f79eb-6634-4c7e-a32f-54bdef05cace'),true).
 clause1(type(externalInterface22,externalInterface),true).
-clause1(refBaseRoleClassPath(roleRequirements42,'BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port'),true).
-clause1(type(roleRequirements42,roleRequirements),true).
-clause1(hasAttributeValue(attribute12,'9.0'),true).
-clause1(hasAttributeName(attribute12,'eClassVersion'),true).
-clause1(type(attribute12,attribute),true).
 clause1(hasRefSemantic(attribute72,refSemantic42),true).
 clause1(hasAttributeValue(attribute72,'35.0'),true).
 clause1(hasAttributeName(attribute72,'maxTransportationWeight'),true).
 clause1(type(attribute72,attribute),true).
+clause1(hasAttributeValue(attribute12,'9.0'),true).
+clause1(hasAttributeName(attribute12,'eClassVersion'),true).
+clause1(type(attribute12,attribute),true).
+clause1(refBaseRoleClassPath(roleRequirements42,'BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port'),true).
+clause1(type(roleRequirements42,roleRequirements),true).
 clause1(refBaseClassPath(externalInterface12,'BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector'),true).
 clause1(hasAttributeName(externalInterface12,'ConnectionPoint'),true).
 clause1(identifier(externalInterface12,'51e272d6-0252-4ebd-b865-2ca7a202a68e'),true).
@@ -211,18 +227,24 @@ clause1(hasWriterRelease(additionalInformation22,'1.0'),true).
 clause1(hasWriterVendorURL(additionalInformation22,'www.AutomationML.org'),true).
 clause1(hasWriterID(additionalInformation22,'AutomationML e.V.'),true).
 clause1(type(additionalInformation22,additionalInformation),true).
-clause1(refBaseRoleClassPath(roleRequirements32,'BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port'),true).
-clause1(type(roleRequirements32,roleRequirements),true).
 clause1(hasRefSemantic(attribute62,refSemantic32),true).
 clause1(hasAttributeValue(attribute62,'1.5'),true).
 clause1(hasAttributeName(attribute62,'Min. speed of the drive'),true).
 clause1(type(attribute62,attribute),true).
-clause1(hasRoleRequirements(internalElement42,roleRequirements42),true).
+clause1(refBaseRoleClassPath(roleRequirements32,'BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port'),true).
+clause1(type(roleRequirements32,roleRequirements),true).
+clause1(hasInternalLink(internalElement42,internalLink22),true).
+clause1(hasRoleRequirements(internalElement42,roleRequirements62),true).
+clause1(hasRoleRequirements(internalElement42,roleRequirements52),true).
 clause1(hasExternalInterface(internalElement42,externalInterface42),true).
 clause1(hasAttribute(internalElement42,attribute72),true).
 clause1(hasAttributeName(internalElement42,'Conveyor4'),true).
 clause1(identifier(internalElement42,'819f4954-892a-4a46-9091-b6f75ddd1332'),true).
 clause1(type(internalElement42,internalElement),true).
+clause1(hasRefPartnerSideB(internalLink22,'819f4954-892a-4a46-9091-b6f75ddd1332:ConnectionPoint'),true).
+clause1(hasRefPartnerSideA(internalLink22,'23e7138b-f28f-4f45-8c0b-ee7e0de7c08f:ConnectionPoint'),true).
+clause1(hasAttributeName(internalLink22,'InternalLink1'),true).
+clause1(type(internalLink22,internalLink),true).
 clause1(hasAutomationMLVersion(additionalInformation12,'2.0'),true).
 clause1(type(additionalInformation12,additionalInformation),true).
 clause1(refBaseRoleClassPath(roleRequirements22,'BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port'),true).
@@ -231,15 +253,19 @@ clause1(hasRefSemantic(attribute52,refSemantic22),true).
 clause1(hasAttributeValue(attribute52,'2'),true).
 clause1(hasAttributeName(attribute52,' Max.load capacity'),true).
 clause1(type(attribute52,attribute),true).
-clause1(hasRoleRequirements(internalElement32,roleRequirements32),true).
+clause1(hasRoleRequirements(internalElement32,roleRequirements42),true).
 clause1(hasExternalInterface(internalElement32,externalInterface32),true).
 clause1(hasAttribute(internalElement32,attribute62),true).
 clause1(hasAttributeName(internalElement32,'Conveyor3'),true).
 clause1(identifier(internalElement32,'23e7138b-f28f-4f45-8c0b-ee7e0de7c08f'),true).
 clause1(type(internalElement32,internalElement),true).
+clause1(hasCorrespondingAttributePath(refSemantic42,'ECLASS:0173-1#02-AAI721#002'),true).
+clause1(type(refSemantic42,refSemantic),true).
 clause1(refBaseClassPath(externalReference22,'Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml'),true).
 clause1(externalReferenceAlias(externalReference22,'BaseInterfaceClassLib'),true).
 clause1(type(externalReference22,externalReference),true).
-clause1(hasCorrespondingAttributePath(refSemantic42,'ECLASS:0173-1#02-AAI721#002'),true).
-clause1(type(refSemantic42,refSemantic),true).
+clause1(hasRefPartnerSideB(internalLink12,'11b59bf6-44f6-4650-939f-d8e2551912a7:ConnectionPoint'),true).
+clause1(hasRefPartnerSideA(internalLink12,'45e20f8e-7351-4af9-bdfd-3c019674de55:ConnectionPoint'),true).
+clause1(hasAttributeName(internalLink12,'PortLink'),true).
+clause1(type(internalLink12,internalLink),true).
 

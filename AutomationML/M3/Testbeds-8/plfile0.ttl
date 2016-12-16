@@ -49,6 +49,7 @@
 	<http://purl.org/dc/elements/1.1/identifier>	"acf9f51b-3fbd-4f30-891d-f8daca50ed18"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasAttributeName>	"Connection"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasInternalElement>	<https://w3id.org/i40/aml/InternalElement2>, <https://w3id.org/i40/aml/InternalElement3> ;
+	<https://w3id.org/i40/aml/hasInternalLink>	<https://w3id.org/i40/aml/InternalLink1> ;
 	<https://w3id.org/i40/aml/hasRoleRequirements>	<https://w3id.org/i40/aml/RoleRequirements3> .
 <https://w3id.org/i40/aml/InternalElement2>
 	a	<https://w3id.org/i40/aml/InternalElement> ;
@@ -96,6 +97,11 @@
 <https://w3id.org/i40/aml/RoleRequirements2>
 	a	<https://w3id.org/i40/aml/RoleRequirements> ;
 	<https://w3id.org/i40/aml/refBaseRoleClassPath>	"BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/InternalLink1>
+	a	<https://w3id.org/i40/aml/InternalLink> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"PortLink"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefPartnerSideA>	"45e20f8e-7351-4af9-bdfd-3c019674de55:ConnectionPoint"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefPartnerSideB>	"11b59bf6-44f6-4650-939f-d8e2551912a7:ConnectionPoint"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/aml/RoleRequirements3>
 	a	<https://w3id.org/i40/aml/RoleRequirements> ;
 	<https://w3id.org/i40/aml/refBaseRoleClassPath>	"BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -104,6 +110,7 @@
 	<http://purl.org/dc/elements/1.1/identifier>	"acf9f51b-3fbd-4f30-891d-f8daca50ed17"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasAttributeName>	"Station"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/aml/hasInternalElement>	<https://w3id.org/i40/aml/InternalElement5>, <https://w3id.org/i40/aml/InternalElement6> ;
+	<https://w3id.org/i40/aml/hasInternalLink>	<https://w3id.org/i40/aml/InternalLink2> ;
 	<https://w3id.org/i40/aml/hasRoleRequirements>	<https://w3id.org/i40/aml/RoleRequirements6> .
 <https://w3id.org/i40/aml/InternalElement5>
 	a	<https://w3id.org/i40/aml/InternalElement> ;
@@ -151,6 +158,11 @@
 <https://w3id.org/i40/aml/RoleRequirements5>
 	a	<https://w3id.org/i40/aml/RoleRequirements> ;
 	<https://w3id.org/i40/aml/refBaseRoleClassPath>	"BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/InternalLink2>
+	a	<https://w3id.org/i40/aml/InternalLink> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"InternalLink1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefPartnerSideA>	"23e7138b-f28f-4f45-8c0b-ee7e0de7c08f:ConnectionPoint"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefPartnerSideB>	"819f4954-892a-4a46-9091-b6f75ddd1332:ConnectionPoint"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/aml/RoleRequirements6>
 	a	<https://w3id.org/i40/aml/RoleRequirements> ;
 	<https://w3id.org/i40/aml/refBaseRoleClassPath>	"BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"^^<http://www.w3.org/2001/XMLSchema#string> .

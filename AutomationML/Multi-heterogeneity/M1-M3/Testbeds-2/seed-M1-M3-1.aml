@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="seed-M1-M3-1.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+    <AdditionalInformation AutomationMLVersion="2.0" />
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20
+            </LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples
+            </WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+    <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
+    <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
+        <InstanceHierarchy Name="ConveyorSystem">
+        <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor1">
+            <InternalElement ID="eff50f8d-bc86-403b-a17b-08356b15485a" Name="InPort">
+                <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
+                    <Value>1.5</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
+                </Attribute>
+                <ExternalInterface ID="51e272d6-0252-4ebd-b865-2ca7a202a68e" Name="ConnectionPoint" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"/>
+        </InternalElement>
+        <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor2">
+            <InternalElement ID="c56f14f2-9a68-43f2-b0a2-46204ed2a21c" Name="InPort2">
+                <Attribute AttributeDataType="xs:double" Name=" Max.load capacity" Unit="kg">
+                    <Value>2</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF316#002"/>
+                </Attribute>
+                <ExternalInterface ID="c50f79eb-6634-4c7e-a32f-54bdef05cace" Name="ConnectionPoint" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+                <InternalLink Name="PortLink" RefPartnerSideA="eff50f8d-bc86-403b-a17b-08356b15485a:ConnectionPoint" RefPartnerSideB="c56f14f2-9a68-43f2-b0a2-46204ed2a21c:ConnectionPoint"/>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+        </InternalElement>
+    </InstanceHierarchy>
+
+<InstanceHierarchy Name="NE150DemoProject">
+            <InternalElement Name="LIRCS+-A+-" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
+                            <Attribute Name="PipeWork FlowchartNumber" AttributeDataType="xs:integer">
+                                <Description>Drawing number of P&amp;I flowchart (pipework)</Description>
+                                <Value>1000</Value>
+                                <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5" />
+                            </Attribute>
+                            <Attribute Name="Instrumental FlowchartNumber" AttributeDataType="xs:integer">
+                                <Description>Drawing number of P&amp;I flowchart (instrumentation flowchart)</Description>
+                                <Value>4</Value>
+                                <RefSemantic CorrespondingAttributePath="NE 160 v1.0 Annex 1.1.5" />
+                            </Attribute>
+
+</InternalElement>
+    </InstanceHierarchy>
+</CAEXFile>
