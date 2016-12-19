@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="seed-Granularity-1.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterRelease>1.0</WriterRelease>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+        </WriterHeader>
+    </AdditionalInformation>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+    <InstanceHierarchy Name="MechatronicEngineering">
+        <InternalElement ID="74d0c8ef-ab53-462a-8225-306ed22dc0f3" Name="RollerConveyor" RefBaseSystemUnitPath="">
+            <Attribute AttributeDataType="xs:double" Name="maxTransportationWeight" Unit="kg">
+                <Value>35.0</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAI721#002"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="paperType">
+                <Value>Carbon</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF818#002"/>
+            </Attribute>
+        </InternalElement>
+    </InstanceHierarchy>
+
+    <SystemUnitClassLib Name="AutomationMLPropertySetRoleClassLib">
+        <Description>AutomationML Property Set Role Class Library</Description>
+        <Version>1.0</Version>
+     <SystemUnitClass Name="Material" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties">
+                        <Attribute Name="Amortization" AttributeDataType="xs:decimal" >
+                             <Value>3.5</Value>
+                         </Attribute>
+                    </SystemUnitClass>
+
+               </SystemUnitClassLib>         
+
+</CAEXFile>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CAEXFile FileName="seed-Granularity-1.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="./Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterRelease>1.0</WriterRelease>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+        </WriterHeader>
+    </AdditionalInformation>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+    <InterfaceClassLib Name="DistributionTransformer">
+        <Version>1.0</Version>
+        <InterfaceClass Name="BASIC_27-03-14-02 Single-phase distribution transformer (oil-cooled)">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27031402</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#02-ACO096#009</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="GTIN">
+                <Description>internationally unique and unambiguous article number for products and services (Global Trade Item Number, formerly EAN)</Description>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO663#002"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Manufacturer name">
+                <Description> legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation</Description>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+            </Attribute>
+        </InterfaceClass>
+    </InterfaceClassLib>
+    <SystemUnitClassLib Name="NE150DemoProject">
+        <SystemUnitClass Name="LIRCS+-A+-" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
+             	
+             	<Attribute Name="Cardinality" AttributeDataType="xs:string">
+             		<RefSemantic CorrespondingAttributePath="NE 160 v1.0 Annex 3.3.4" />
+				
+					<Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" >
+									<Value>1</Value>
+								</Attribute>
+					<Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" >
+									<Value>5</Value>
+								</Attribute>
+			</Attribute>
+												
+                  </SystemUnitClass>
+	</SystemUnitClassLib>
+</CAEXFile>

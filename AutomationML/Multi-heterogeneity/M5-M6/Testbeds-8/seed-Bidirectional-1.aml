@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="seed-Bidirectional-1.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20 </LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples </WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+   <InterfaceClassLib Name="SystemA">
+        <InterfaceClass Name="Robot">
+        </InterfaceClass>
+
+ <InterfaceClass Name="Tool">
+        </InterfaceClass>
+
+    </InterfaceClassLib>
+    <InterfaceClassLib Name="SystemB">
+        <InterfaceClass Name="ActiveObject">
+        </InterfaceClass>
+    </InterfaceClassLib>
+
+    <InterfaceClassLib Name="SystemBMapping">
+        <InterfaceClass Name="ActiveObjectMapping" RefBaseClassPath="SystemB/ActiveObject">
+                <Attribute Name="MappedInterfaceClassPathReference" AttributeDataType="xs:string">
+                    <Value>SystemA/Robot</Value>
+                </Attribute>
+        </InterfaceClass>
+ <InterfaceClass Name="ActiveObjectMapping" RefBaseClassPath="SystemB/ActiveObject">
+                <Attribute Name="MappedInterfaceClassPathReference" AttributeDataType="xs:string">
+                    <Value>SystemA/Tool</Value>
+                </Attribute>
+        </InterfaceClass>
+
+
+
+    </InterfaceClassLib>
+    <SystemUnitClassLib Name="AssembleSystem">
+        <Version>1.0</Version>
+        <SystemUnitClass Name="BASIC_36-12-04-01 Conveyor">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>36120401</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#01-AKL503#010</Value>
+            </Attribute>
+            <InternalElement ID="{6aa1bd9a-701a-43a6-bc04-c414d30e0f93}" Name="LiftUpGate" RefBaseSystemUnitPath="Resources/RollerConveyor">
+                <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
+                    <Value>1.5</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="{71fc6d29-7797-4e3f-a659-ac69198e464f}" Name="TransferToSubAssembly" RefBaseSystemUnitPath="Resources/RollerConveyor">
+                <Attribute AttributeDataType="xs:double" Name=" Max.load capacity" Unit="kg">
+                    <Value>2</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF316#002"/>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="{ac026999-a2e2-4a86-8c97-39685607e49a}" Name="SubAssembly" RefBaseSystemUnitPath="Resources/AssemblyStation">
+                <Attribute AttributeDataType="xs:double" Name="Min. speed of the drive" Unit="m/s">
+                    <Value>1.5</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAH608#004"/>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="{22612ce1-4b89-4bb1-8a37-9c0ae4a13bdf}" Name="MainAssemblyStation" RefBaseSystemUnitPath="Resources/AssemblyStation">
+                <Attribute AttributeDataType="xs:double" Name="maxTransportationWeight" Unit="kg">
+                    <Value>35.0</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAI721#002"/>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="{9facd06a-1725-4d18-95f7-4814ba2e4cf8}" Name="TransferToMainAssembly" RefBaseSystemUnitPath="Resources/RollerConveyor">
+                <Attribute AttributeDataType="xs:string" Name="allowsPaper">
+                    <DefaultValue>Carbon</DefaultValue>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#07-CAA016#001"/>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="{72bf71e8-15fd-4882-9d35-00a12d1aa995}" Name="EndStop" RefBaseSystemUnitPath="Resources/RollerConveyor">
+                <Attribute AttributeDataType="xs:string" Name="paperType">
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF818#002"/>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+
+</CAEXFile>

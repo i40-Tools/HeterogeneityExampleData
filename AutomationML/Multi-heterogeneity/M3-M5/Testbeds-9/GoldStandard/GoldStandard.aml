@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet --><CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="GoldStandard.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20 </LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples </WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+   <InterfaceClassLib Name="SystemA">
+        <InterfaceClass Name="Robot">
+        </InterfaceClass>
+
+ <InterfaceClass Name="Tool">
+        </InterfaceClass>
+
+        <InterfaceClass Name="Fence">
+        </InterfaceClass>
+
+    </InterfaceClassLib>
+
+    <InterfaceClassLib Name="SystemB">
+        <InterfaceClass Name="ActiveObject">
+        </InterfaceClass>
+
+            <InterfaceClass Name="PassiveObject">
+        </InterfaceClass>
+
+    </InterfaceClassLib>
+
+    <InterfaceClassLib Name="SystemBMapping">
+        <InterfaceClass Name="ActiveObjectMapping" RefBaseClassPath="SystemB/ActiveObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedInterfaceClassPathReference">
+                    <Value>SystemA/Robot</Value>
+                </Attribute>
+        </InterfaceClass>
+ <InterfaceClass Name="ActiveObjectMapping" RefBaseClassPath="SystemB/ActiveObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedInterfaceClassPathReference">
+                    <Value>SystemA/Tool</Value>
+                </Attribute>
+        </InterfaceClass>
+
+        <InterfaceClass Name="PassiveObjectMapping" RefBaseClassPath="SystemB/PassiveObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedInterfaceClassPathReference">
+                    <Value>SystemA/Fence</Value>
+                </Attribute>
+        </InterfaceClass>
+
+    </InterfaceClassLib>
+<InterfaceClassLib Name="SystemAMapping">
+        <InterfaceClass Name="RobotMapping" RefBaseClassPath="SystemA/Robot">
+                <Attribute AttributeDataType="xs:string" Name="MappedInterfaceClassPathReference">
+                    <Value>SystemB/ActiveObject</Value>
+                </Attribute>
+        </InterfaceClass>
+        <InterfaceClass Name="ToolMapping" RefBaseClassPath="SystemA/Tool">
+                <Attribute AttributeDataType="xs:string" Name="MappedInterfaceClassPathReference">
+                    <Value>SystemB/ActiveObject</Value>
+                </Attribute>
+        </InterfaceClass>
+        <InterfaceClass Name="FenceMapping" RefBaseClassPath="SystemA/Fence">
+                <Attribute AttributeDataType="xs:string" Name="MappedInterfaceClassPathReference">
+                    <Value>SystemB/PassiveObject</Value>
+                </Attribute>
+        </InterfaceClass>
+    </InterfaceClassLib></CAEXFile>
