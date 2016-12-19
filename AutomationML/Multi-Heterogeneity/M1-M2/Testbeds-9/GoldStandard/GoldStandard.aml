@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet --><CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="GoldStandard.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20
+            </LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples
+            </WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+        <InstanceHierarchy Name="InstanceHierarchy1">
+        <Version>1.0.0</Version>
+        <InternalElement ID="3fc3ade7-aa58-44a4-ab37-fa7e7665a74e" Name="InstanceMyMotor"/>
+    </InstanceHierarchy>
+
+    <RoleClassLib Name="NE150DemoProject">
+<RoleClass ID="c9c2093c-1e11-415d-a629-a1c8aa6ef1d3" Name="A-">
+    <ExternalInterface ID="a28eab6e-f177-414b-ac46-02786481c2e3" Name="DI Alarm L &lt; min" RefBaseClassPath="NE150InterfaceLibrary/SWSignal">
+                            <Attribute AttributeDataType="xs:string" Name="FunctionBlock">
+                                        <Description>Drawing number of the function block diagram (FBD) or function specification ,SW signal and SW signal type
+                                        </Description>
+                                        <Value>L 1001-L1001_AL-DI</Value>
+                                        <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.7"/>
+                                    </Attribute>
+                                </ExternalInterface>
+</RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="RoleClassLibDCEngine">
+        <Version>1.0.0</Version>
+        <RoleClass Name="eClassClassSpecification">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27022501</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1#01-AKE162#012</Value>
+            </Attribute>
+        </RoleClass> 		
+		<RoleClass Name="27-06 Cable, wire">
+			<Attribute AttributeDataType="xs:string" Name="Data cable">
+					<Description>Type of cable for transmission of electrical or optical signals on the basis for the use in data transmission.</Description>
+					<RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AKE197#013"/>
+			</Attribute>
+	    </RoleClass>
+
+    <RoleClass Name="BASIC_27-02-25-01 DC engine (IEC)">
+			<Attribute AttributeDataType="xs:string" Name="Construction form of DC motor">
+					<Description>Arrangement of machine parts in reference to anchorage, arrangement of bearings and shafts</Description>
+					<RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAE069#007"/>
+			</Attribute>
+			<Attribute AttributeDataType="xs:string" Name="Construction size of DC motor">
+					<Description>Housing size of a DC motor, from which the attachment and anchorage dimensions are derived</Description>
+					<RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAE072#005"/>
+			</Attribute>
+	    </RoleClass></RoleClassLib>
+
+</CAEXFile>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CAEXFile FileName="GoldStandard.aml" SchemaVersion="2.15">
+  <AdditionalInformation AutomationMLVersion="2.0">
+      <attributes name="AutomationMLVersion" value="2.0"/>
+  </AdditionalInformation>
+  <AdditionalInformation>
+      <WriterHeader>
+         <WriterID>AutomationML e.V.</WriterID>
+         <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+         <WriterRelease>1.0</WriterRelease>
+         <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+         <WriterName>AutomationML e.V.</WriterName>
+         <WriterVendor>AutomationML e.V.</WriterVendor>
+         <WriterVersion>1.0</WriterVersion>
+         <LastWritingDateTime>2012-02-20</LastWritingDateTime>
+         <WriterProjectID>AutomationML Tutorial Examples</WriterProjectID>
+      </WriterHeader>
+  </AdditionalInformation>
+  <ExternalReference Alias="BaseInterfaceClassLib"
+                      Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+  <InterfaceClassLib Name="DistributionTransformer">
+      <Version>1.0</Version>
+      <InterfaceClass Name="BASIC_27-03-14-02 Single-phase distribution transformer (oil-cooled)">
+         <Attribute Name="eClassVersion" AttributeDataType="xs:string">
+            <Value>9.0</Value>
+         </Attribute>
+         <Attribute Name="eClassClassificationClass" AttributeDataType="xs:string">
+            <Value>27031402</Value>
+         </Attribute>
+         <Attribute Name="eClassIRDI" AttributeDataType="xs:string">
+            <Value>0173-1---BASIC_1_1#02-ACO096#009</Value>
+         </Attribute>
+         <Attribute Name="GTIN" AttributeDataType="xs:string">
+            <Description>internationally unique and unambiguous article number for products and services (Global Trade Item Number, formerly EAN)</Description>
+            <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO663#002"/>
+         </Attribute>
+         <Attribute Name="Manufacturer name" AttributeDataType="xs:string">
+            <Description> legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation</Description>
+            <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+         </Attribute>
+         <Attribute Name="additional link address" AttributeDataType="xs:string">
+            <Description>site address where you can view information about the product or to communicate</Description>
+            <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAQ326#001"/>
+         </Attribute>
+         <Attribute Name="Power loss, static, current-independent [Pls]"
+                    AttributeDataType="xs:string">
+            <Description>Specification of electrical heat loss in watts for a device without a load current dependent portions</Description>
+            <RefSemantic CorrespondingAttributePath="0173-1#02-BAA303#005"/>
+         </Attribute>
+         <Attribute Name="Product type description" AttributeDataType="xs:string">
+            <Description>name of the product family or variant</Description>
+            <RefSemantic CorrespondingAttributePath="0173-1#02-AAO847#002"/>
+         </Attribute>
+      </InterfaceClass>
+  </InterfaceClassLib>
+  <SystemUnitClassLib Name="Conveyors">
+      <Version>1.0</Version>
+      <SystemUnitClass Name="BASIC_36-12-04-01 Conveyor">
+         <Attribute Name="eClassVersion" AttributeDataType="xs:string">
+            <Value>9.0</Value>
+         </Attribute>
+         <Attribute Name="eClassClassificationClass" AttributeDataType="xs:string">
+            <Value>36120401</Value>
+         </Attribute>
+         <Attribute Name="eClassIRDI" AttributeDataType="xs:string">
+            <Value>0173-1---BASIC_1_1#01-AKL503#010</Value>
+         </Attribute>
+         <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor1">
+            <Attribute Name="maxConveyingSpeed" Unit="m/s" AttributeDataType="xs:double">
+               <Value>1.5</Value>
+               <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
+            </Attribute>
+            <ExternalInterface ID="51e272d6-0252-4ebd-b865-2ca7a202a68e" Name="ConnectionPoint"
+                               RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+            <RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"/>
+         </InternalElement>
+         <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor2">
+            <Attribute Name=" Max.load capacity" Unit="kg" AttributeDataType="xs:double">
+               <Value>2</Value>
+               <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF316#002"/>
+            </Attribute>
+            <ExternalInterface ID="c50f79eb-6634-4c7e-a32f-54bdef05cace" Name="ConnectionPoint"
+                               RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+            <InternalLink Name="PortLink"
+                          RefPartnerSideA="45e20f8e-7351-4af9-bdfd-3c019674de55:ConnectionPoint"
+                          RefPartnerSideB="11b59bf6-44f6-4650-939f-d8e2551912a7:ConnectionPoint"/>
+            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+         </InternalElement>
+         <InternalElement ID="23e7138b-f28f-4f45-8c0b-ee7e0de7c08f" Name="Conveyor3">
+            <Attribute Name="Min. speed of the drive" Unit="m/s" AttributeDataType="xs:double">
+               <Value>1.5</Value>
+               <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAH608#004"/>
+            </Attribute>
+            <ExternalInterface ID="b0e2d6a0-2d8b-44c8-921b-bf4b43de906e" Name="ConnectionPoint"
+                               RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+         </InternalElement>
+         <InternalElement ID="819f4954-892a-4a46-9091-b6f75ddd1332" Name="Conveyor4">
+            <Attribute Name="maxTransportationWeight" Unit="kg" AttributeDataType="xs:double">
+               <Value>35.0</Value>
+               <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAI721#002"/>
+            </Attribute>
+            <ExternalInterface ID="c45eca55-521a-492e-b094-472124d1ae65" Name="ConnectionPoint"
+                               RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+            <InternalLink Name="InternalLink1"
+                          RefPartnerSideA="23e7138b-f28f-4f45-8c0b-ee7e0de7c08f:ConnectionPoint"
+                          RefPartnerSideB="819f4954-892a-4a46-9091-b6f75ddd1332:ConnectionPoint"/>
+            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+         </InternalElement>
+         <InternalElement ID="acf9f51b-3fbd-4f30-891d-f8daca50ed17" Name="Station">
+            <InternalElement ID="23e7138b-f28f-4f45-8c0b-ee7e0de7c08f" Name="Conveyor3">
+               <Attribute Name="Min. speed of the drive" Unit="m/s" AttributeDataType="xs:double">
+                  <Value>1.5</Value>
+                  <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAH608#004"/>
+               </Attribute>
+               <ExternalInterface ID="b0e2d6a0-2d8b-44c8-921b-bf4b43de906e" Name="ConnectionPoint"
+                                  RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+               <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="819f4954-892a-4a46-9091-b6f75ddd1332" Name="Conveyor4">
+               <Attribute Name="maxTransportationWeight" Unit="kg" AttributeDataType="xs:double">
+                  <Value>35.0</Value>
+                  <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAI721#002"/>
+               </Attribute>
+               <ExternalInterface ID="c45eca55-521a-492e-b094-472124d1ae65" Name="ConnectionPoint"
+                                  RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
+               <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalLink Name="InternalLink1"
+                          RefPartnerSideA="23e7138b-f28f-4f45-8c0b-ee7e0de7c08f:ConnectionPoint"
+                          RefPartnerSideB="819f4954-892a-4a46-9091-b6f75ddd1332:ConnectionPoint"/>
+            <RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"/>
+         </InternalElement>
+      </SystemUnitClass>
+  </SystemUnitClassLib>
+</CAEXFile>

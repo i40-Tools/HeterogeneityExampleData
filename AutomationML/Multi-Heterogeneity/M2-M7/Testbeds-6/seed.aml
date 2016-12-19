@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="seed.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="./Source/CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <AdditionalInformation AutomationMLVersion="2.0"/>
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20</LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples</WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+
+<InterfaceClassLib Name="NE150DemoProject">
+        <InterfaceClass Name="LIRCS+-A+-" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
+                	
+             	<Attribute Name="Cardinality" AttributeDataType="xs:string">
+             		<RefSemantic CorrespondingAttributePath="NE 160 v1.0 Annex 3.3.4" />
+				
+					<Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" >
+									<Value>1</Value>
+								</Attribute>
+					<Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" >
+									<Value>5</Value>
+								</Attribute>
+					</Attribute>
+						
+                 </InterfaceClass>
+	</InterfaceClassLib>
+
+    <SystemUnitClassLib Name="Industry Connector">
+        <Version>1.0</Version>
+        <SystemUnitClass Name="BASIC_27-44-01-05 Valve connector">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27440105</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#05-AFR414#002</Value>
+            </Attribute>
+        </SystemUnitClass>
+        <SystemUnitClass Name="BASIC_27-44-01-06 Sensor actuator adapter">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27440106</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#06-AFR417#002</Value>
+            </Attribute>
+        </SystemUnitClass>
+        <SystemUnitClass Name="BASIC_27-44-01-92 Industry connector (accessories)">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27440192</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#92-AFR426#002</Value>
+            </Attribute>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+</CAEXFile>

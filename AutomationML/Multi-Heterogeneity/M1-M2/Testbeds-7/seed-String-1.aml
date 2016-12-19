@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
+<CAEXFile FileName="seed-String-1.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+    <AdditionalInformation AutomationMLVersion="2.0" />
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20
+            </LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples
+            </WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+    <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
+    <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
+<InterfaceClassLib Name="NE150DemoProject">
+       <InterfaceClass Name="DemoEnterprise" ID="d812ea1e-eaa2-45f4-8c82-72ecc50236c5">
+            <InterfaceClass Name="DemoSite" ID="38d6171f-0cb1-48e0-925f-f03902af8ee2">
+                                 <Attribute Name="MeasurementRange" AttributeDataType="xs:string" Unit="%">
+                                    <Description>Actual measurement range start of sensor in field</Description>
+                                    <Value>0-100</Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
+                                </Attribute>
+</InterfaceClass>
+</InterfaceClass>
+
+</InterfaceClassLib>
+    <InterfaceClassLib Name="DistributionTransformer">
+        <Version>1.0</Version>
+        <InterfaceClass Name="BASIC_27-03-14-02 Single-phase distribution transformer (oil-cooled)">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value>9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value>27031402</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value>0173-1---BASIC_1_1#02-ACO096#009</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="GTIN">
+                <Description>internationally unique and unambiguous article number for products and services (Global Trade Item Number, formerly EAN)</Description>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO663#002"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Manufacturer name">
+                <Description> legally valid designation of the natural or judicial person which is directly responsible for the design, production, packaging and labeling of a product in respect to its being brought into circulation</Description>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO677#001"/>
+            </Attribute>
+        </InterfaceClass>
+    </InterfaceClassLib>
+
+</CAEXFile>

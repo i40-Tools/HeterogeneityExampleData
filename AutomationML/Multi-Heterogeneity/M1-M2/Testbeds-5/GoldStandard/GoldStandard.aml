@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CAEXFile FileName="GoldStandard.aml" SchemaVersion="2.15">
+  <AdditionalInformation AutomationMLVersion="2.0">
+      <attributes name="AutomationMLVersion" value="2.0"/>
+  </AdditionalInformation>
+  <AdditionalInformation>
+      <WriterHeader>
+         <WriterName>AutomationML e.V.</WriterName>
+         <WriterID>AutomationML e.V.</WriterID>
+         <WriterVendor>AutomationML e.V.</WriterVendor>
+         <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+         <WriterVersion>1.0</WriterVersion>
+         <WriterRelease>1.0</WriterRelease>
+         <LastWritingDateTime>2012-02-20</LastWritingDateTime>
+         <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+         <WriterProjectID>AutomationML Tutorial Examples</WriterProjectID>
+      </WriterHeader>
+  </AdditionalInformation>
+  <ExternalReference Alias="BaseRoleClassLib"
+                      Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+  <ExternalReference Alias="BaseInterfaceClassLib"
+                      Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+  <RoleClassLib Name="NE150DemoProject">
+      <RoleClass ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209" Name="LIRCS+-A+-">
+         <ExternalInterface ID="9864cd74-ee45-4732-81da-bbe2e99229b8" Name="AI Level HW"
+                            RefBaseClassPath="NE150InterfaceLibrary/HWSignal">
+            <Attribute Name="Cabinet-Subrack" AttributeDataType="xs:string">
+               <Description>Designation for control cabinet or mounting rack and Subrack</Description>
+               <Value>C03-LA</Value>
+               <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.3.1"/>
+            </Attribute>
+         </ExternalInterface>
+      </RoleClass>
+  </RoleClassLib>
+  <SystemUnitClassLib Name="Industry Connector">
+      <Version>1.0</Version>
+      <SystemUnitClass Name="BASIC_27-44-01-05 Valve connector">
+         <Attribute Name="eClassVersion" AttributeDataType="xs:string">
+            <Value>9.0</Value>
+         </Attribute>
+         <Attribute Name="eClassClassificationClass" AttributeDataType="xs:string">
+            <Value>27440105</Value>
+         </Attribute>
+         <Attribute Name="eClassIRDI" AttributeDataType="xs:string">
+            <Value>0173-1---BASIC_1_1#05-AFR414#002</Value>
+         </Attribute>
+      </SystemUnitClass>
+      <SystemUnitClass Name="BASIC_27-44-01-92 Industry connector (accessories)">
+         <Attribute Name="eClassVersion" AttributeDataType="xs:string">
+            <Value>9.0</Value>
+         </Attribute>
+         <Attribute Name="eClassClassificationClass" AttributeDataType="xs:string">
+            <Value>27440192</Value>
+         </Attribute>
+         <Attribute Name="eClassIRDI" AttributeDataType="xs:string">
+            <Value>0173-1---BASIC_1_1#92-AFR426#002</Value>
+         </Attribute>
+      </SystemUnitClass>
+      <SystemUnitClass Name="BASIC_27-44-01-06 Sensor actuator adapter">
+         <Attribute Name="eClassVersion" AttributeDataType="xs:string">
+            <Value>9.0</Value>
+         </Attribute>
+         <Attribute Name="eClassClassificationClass" AttributeDataType="xs:string">
+            <Value>27440106</Value>
+         </Attribute>
+         <Attribute Name="eClassIRDI" AttributeDataType="xs:string">
+            <Value>0173-1---BASIC_1_1#06-AFR417#002</Value>
+         </Attribute>
+      </SystemUnitClass>
+  </SystemUnitClassLib>
+</CAEXFile>
