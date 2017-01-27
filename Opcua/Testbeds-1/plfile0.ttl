@@ -1,0 +1,162 @@
+@base          <https://w3id.org/i40/instance#> .
+@prefix :      <https://w3id.org/i40/instance#> .
+@prefix UANodeSet.xsd: <http://opcfoundation.org/UA/2011/03/UANodeSet.xsd#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dtype: <https://w3id.org/i40#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+:NodeIdAlias12  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "DateTime" ;
+        :hasTextContent  "i=13" .
+
+:NodeIdAlias25  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "UInteger" ;
+        :hasTextContent  "i=28" .
+
+:NodeIdAlias4  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Int16" ;
+        :hasTextContent  "i=4" .
+
+:NodeIdAlias32  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasTypeDefinition" ;
+        :hasTextContent  "i=40" .
+
+:NodeIdAlias17  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "NodeId" ;
+        :hasTextContent  "i=17" .
+
+:NodeIdAlias11  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Double" ;
+        :hasTextContent  "i=11" .
+
+:NodeIdAlias9  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "UInt64" ;
+        :hasTextContent  "i=9" .
+
+:NodeIdAlias24  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Integer" ;
+        :hasTextContent  "i=27" .
+
+:NodeIdAlias3  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Byte" ;
+        :hasTextContent  "i=3" .
+
+:NodeIdAlias31  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasSubtype" ;
+        :hasTextContent  "i=45" .
+
+:NodeIdAlias16  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "XmlElement" ;
+        :hasTextContent  "i=16" .
+
+:NodeIdAlias29  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasEventSource" ;
+        :hasTextContent  "i=36" .
+
+:NodeIdAlias10  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Float" ;
+        :hasTextContent  "i=10" .
+
+:NodeIdAlias8  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Int64" ;
+        :hasTextContent  "i=8" .
+
+:NodeIdAlias23  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Number" ;
+        :hasTextContent  "i=26" .
+
+:UriTable1  a    UANodeSet.xsd:UriTable ;
+        :hasUri  "http://www.iosb.fraunhofer.de/Topology.aml" , "http://opcfoundation.org/UA/AML/" .
+
+:NodeIdAlias36  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Duration" ;
+        :hasTextContent  "i=290" .
+
+:NodeIdAlias2  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "SByte" ;
+        :hasTextContent  "i=2" .
+
+:NodeIdAlias30  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasNotifier" ;
+        :hasTextContent  "i=48" .
+
+:NodeIdAlias15  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Guid" ;
+        :hasTextContent  "i=14" .
+
+:NodeIdAlias28  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Organizes" ;
+        :hasTextContent  "i=35" .
+
+:NodeIdAlias7  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "UInt32" ;
+        :hasTextContent  "i=7" .
+
+:NodeIdAlias22  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Structure" ;
+        :hasTextContent  "i=22" .
+
+:NodeIdAlias35  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasDescription" ;
+        :hasTextContent  "i=39" .
+
+:NodeIdAlias1  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Boolean" ;
+        :hasTextContent  "i=1" .
+
+:UANodeSet1  a          UANodeSet.xsd:UANodeSet ;
+        :Aliases        :AliasTable1 ;
+        :NamespaceUris  :UriTable1 .
+
+:AliasTable1  a  UANodeSet.xsd:AliasTable ;
+        :Alias  :NodeIdAlias10 , :NodeIdAlias5 , :NodeIdAlias27 , :NodeIdAlias4 , :NodeIdAlias34 , :NodeIdAlias1 , :NodeIdAlias31 , :NodeIdAlias12 , :NodeIdAlias7 , :NodeIdAlias33 , :NodeIdAlias22 , :NodeIdAlias30 , :NodeIdAlias11 , :NodeIdAlias6 , :NodeIdAlias36 , :NodeIdAlias21 , :NodeIdAlias14 , :NodeIdAlias9 , :NodeIdAlias18 , :NodeIdAlias35 , :NodeIdAlias24 , :NodeIdAlias2 , :NodeIdAlias13 , :NodeIdAlias8 , :NodeIdAlias23 , :NodeIdAlias16 , :NodeIdAlias20 , :NodeIdAlias26 , :NodeIdAlias15 , :NodeIdAlias19 , :NodeIdAlias29 , :NodeIdAlias3 , :NodeIdAlias25 , :NodeIdAlias28 , :NodeIdAlias32 , :NodeIdAlias17 .
+
+:NodeIdAlias14  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "ByteString" ;
+        :hasTextContent  "i=15" .
+
+:NodeIdAlias27  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasProperty" ;
+        :hasTextContent  "i=46" .
+
+:NodeIdAlias6  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Int32" ;
+        :hasTextContent  "i=6" .
+
+:NodeIdAlias21  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "StatusCode" ;
+        :hasTextContent  "i=19" .
+
+:NodeIdAlias34  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasEncoding" ;
+        :hasTextContent  "i=38" .
+
+:NodeIdAlias19  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "QualifiedName" ;
+        :hasTextContent  "i=20" .
+
+:NodeIdAlias13  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "String" ;
+        :hasTextContent  "i=12" .
+
+:NodeIdAlias26  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasComponent" ;
+        :hasTextContent  "i=47" .
+
+:NodeIdAlias5  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "UInt16" ;
+        :hasTextContent  "i=5" .
+
+:NodeIdAlias20  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "LocalizedText" ;
+        :hasTextContent  "i=21" .
+
+:NodeIdAlias33  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasModellingRule" ;
+        :hasTextContent  "i=37" .
+
+:NodeIdAlias18  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "ExpandedNodeId" ;
+        :hasTextContent  "i=18" .
