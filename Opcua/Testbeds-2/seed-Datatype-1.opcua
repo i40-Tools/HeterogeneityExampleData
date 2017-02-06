@@ -1,39 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
-<CAEXFile FileName="seed.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
-  <AdditionalInformation AutomationMLVersion="2.0" />
-  <AdditionalInformation>
-    <WriterHeader>
-      <WriterName>AutomationML e.V.</WriterName>
-      <WriterID>AutomationML e.V.</WriterID>
-      <WriterVendor>AutomationML e.V.</WriterVendor>
-      <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
-      <WriterVersion>1.0</WriterVersion>
-      <WriterRelease>1.0</WriterRelease>
-      <LastWritingDateTime>2012-02-20
-      </LastWritingDateTime>
-      <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
-      <WriterProjectID>AutomationML Tutorial Examples
-      </WriterProjectID>
-    </WriterHeader>
-  </AdditionalInformation>
-  <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
-  <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
-  <InstanceHierarchy Name="MechatronicEngineering">
-    <InternalElement Name="AMLObject" RefBaseSystemUnitPath="" ID="74d0c8ef-ab53-462a-8225-306ed22dc0f3">
-      <Attribute Name="length" AttributeDataType="xs:integer">
-        <Value>35.00</Value>
-        <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5" />
-      </Attribute>
-    </InternalElement>
-  </InstanceHierarchy>
-</CAEXFile>
-
-
-
-
-
-<?xml version="1.0" encoding="utf-8"?>
 <UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
   <NamespaceUris>
     <Uri>http://opcfoundation.org/UA/AML/</Uri>
@@ -91,7 +56,6 @@
       <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5002</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=45</Reference>
       <Reference ReferenceType="HasComponent">ns=2;i=12</Reference>
-      <Reference ReferenceType="HasComponent">ns=2;i=15</Reference>
     </References>
   </UAObject>  
   <UAObject NodeId="ns=2;i=12" BrowseName="AMLObject">
@@ -100,12 +64,7 @@
     <References>
       <Reference ReferenceType="HasProperty">ns=2;i=13</Reference>
       <Reference ReferenceType="HasProperty">ns=2;i=14</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=1</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=2;i=35</Reference>
-      <Reference ReferenceType="ns=1;i=4001">ns=2;i=33</Reference>
-      <Reference ReferenceType="ns=1;i=4002">ns=2;i=33</Reference>
       <Reference ReferenceType="HasComponent">ns=2;i=18</Reference>
-      <Reference ReferenceType="HasComponent">ns=2;i=20</Reference>
     </References>
   </UAObject>
   <UAObject NodeId="ns=2;i=40" BrowseName="seed-Datatype-0.aml">
@@ -118,9 +77,6 @@
       <Reference ReferenceType="HasProperty">ns=2;i=43</Reference>
       <Reference ReferenceType="HasProperty">ns=2;i=44</Reference>
       <Reference ReferenceType="HasComponent">ns=2;i=45</Reference>
-      <Reference ReferenceType="HasComponent">ns=2;i=46</Reference>
-      <Reference ReferenceType="HasComponent">ns=2;i=47</Reference>
-      <Reference ReferenceType="HasComponent">ns=2;i=48</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5001</Reference>
     </References>
   </UAObject>
@@ -159,7 +115,7 @@
       <ListOfString xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
     </Value>
   </UAVariable>
-    <UAVariable NodeId="ns=2;i=18" BrowseName="length" ParentNodeId="ns=2;i=12" DataType="String">
+<UAVariable NodeId="ns=2;i=18" BrowseName="length" ParentNodeId="ns=2;i=12" DataType="String">
     <DisplayName>length</DisplayName>
     <Description></Description>
     <References>
@@ -170,7 +126,7 @@
     <Value>
     <ListOfString xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">35.0</String>
-       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">&lt;RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5" /&gt;</String>
+    <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">&lt;RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5" /&gt;</String>
     </ListOfString>
     </Value>
   </UAVariable>
