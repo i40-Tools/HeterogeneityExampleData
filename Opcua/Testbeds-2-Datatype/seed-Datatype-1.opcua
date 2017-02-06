@@ -122,13 +122,22 @@
       <Reference ReferenceType="HasProperty">ns=2;i=19</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=3007</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=6012</Reference>
     </References>
     <Value>
-    <ListOfString xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">35.0</String>
-    <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">&lt;RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5" /&gt;</String>
-    </ListOfString>
     </Value>
+  </UAVariable>
+<UAVariable NodeId="ns=2;i=6012" BrowseName="RefSemantic" ParentNodeId="ns=2;i=18" DataType="String" ValueRank="1">
+    <DisplayName>RefSemantic</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=18</Reference>
+      <Reference ReferenceType="HasModellingRule">Optional</Reference>
+    </References>
+      <Value>
+    <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">"NE 150 v1.0 Annex 1.1.5"</String>
+      </Value>
   </UAVariable>
   <UAVariable NodeId="ns=2;i=19" BrowseName="AdditionalInformation" ParentNodeId="ns=2;i=18" DataType="String">
     <DisplayName>AdditionalInformation</DisplayName>
