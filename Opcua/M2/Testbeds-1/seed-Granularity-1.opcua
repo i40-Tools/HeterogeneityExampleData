@@ -47,8 +47,8 @@
     <Alias Alias="Objects">i=85</Alias>
     <Alias Alias="Duration">i=290</Alias>
   </Aliases>
-  <UAObject NodeId="ns=2;i=1" BrowseName="MechatronicEngineering">
-    <DisplayName>MechatronicEngineering</DisplayName>
+  <UAObject NodeId="ns=2;i=1" BrowseName="InstanceHierarchy1">
+    <DisplayName>InstanceHierarchy1</DisplayName>
     <Description></Description>
     <References>
       <Reference ReferenceType="HasProperty">ns=2;i=2</Reference>
@@ -58,17 +58,29 @@
       <Reference ReferenceType="HasComponent">ns=2;i=12</Reference>
     </References>
   </UAObject>  
-  <UAObject NodeId="ns=2;i=12" BrowseName="AMLObject">
-    <DisplayName>AMLObject</DisplayName>
+  <UAObject NodeId="ns=2;i=12" BrowseName="InstanceMyMotor">
+    <DisplayName>InstanceMyMotor</DisplayName>
     <Description></Description>
     <References>
       <Reference ReferenceType="HasProperty">ns=2;i=13</Reference>
       <Reference ReferenceType="HasProperty">ns=2;i=14</Reference>
-      <Reference ReferenceType="HasComponent">ns=2;i=18</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=2;i=40" BrowseName="seed-Datatype-0.aml">
-    <DisplayName>Topology.aml</DisplayName>
+
+
+<UAObject NodeId="ns=2;i=6" BrowseName="ExampleEClassRoleClassLib">
+    <DisplayName>ExampleEClassRoleClassLib</DisplayName>
+    <Description></Description>
+    <References>
+      <Reference ReferenceType="HasProperty">ns=2;i=7</Reference>
+      <Reference ReferenceType="HasTypeDefinition">FolderType</Reference>
+      <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5005</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=47</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=33</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=2;i=40" BrowseName="seed-Datatype-1.aml">
+    <DisplayName>seed-Datatype-1.aml</DisplayName>
     <Description></Description>
     <References>
       <Reference ReferenceType="HasProperty">ns=2;i=41</Reference>
@@ -77,6 +89,7 @@
       <Reference ReferenceType="HasProperty">ns=2;i=43</Reference>
       <Reference ReferenceType="HasProperty">ns=2;i=44</Reference>
       <Reference ReferenceType="HasComponent">ns=2;i=45</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=47</Reference>
       <Reference ReferenceType="Organizes" IsForward="false">ns=1;i=5001</Reference>
     </References>
   </UAObject>
@@ -86,6 +99,15 @@
       <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=40</Reference>
       <Reference ReferenceType="HasTypeDefinition">FolderType</Reference>
       <Reference ReferenceType="HasComponent">ns=2;i=1</Reference>
+    </References>
+  </UAObject>
+
+<UAObject NodeId="ns=2;i=47" BrowseName="RoleClassLibs" ParentNodeId="ns=2;i=40">
+    <DisplayName>RoleClassLibs</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=40</Reference>
+      <Reference ReferenceType="HasTypeDefinition">FolderType</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=6</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=2;i=2" BrowseName="AdditionalInformation" ParentNodeId="ns=2;i=1" DataType="String">
@@ -115,28 +137,76 @@
       <ListOfString xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd" />
     </Value>
   </UAVariable>
-<UAVariable NodeId="ns=2;i=18" BrowseName="length" ParentNodeId="ns=2;i=12" DataType="String">
-    <DisplayName>length</DisplayName>
+<UAVariable NodeId="ns=2;i=7" BrowseName="Version" ParentNodeId="ns=2;i=6" DataType="String">
+    <DisplayName>Version</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
+    </References>
+    <Value>
+      <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0</String>
+    </Value>
+  </UAVariable>
+
+<UAVariable NodeId="ns=2;i=18" BrowseName="eClassVersion" ParentNodeId="ns=2;i=33" DataType="String">
+    <DisplayName>eClassVersion</DisplayName>
     <Description></Description>
     <References>
       <Reference ReferenceType="HasProperty">ns=2;i=19</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=3007</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=12</Reference>
-      <Reference ReferenceType="HasComponent">ns=2;i=6012</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=33</Reference>
     </References>
     <Value>
-     <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">35.0</String>
+     <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">9.0</String>
     </Value>
   </UAVariable>
-<UAVariable NodeId="ns=2;i=6012" BrowseName="RefSemantic" ParentNodeId="ns=2;i=18" DataType="String" ValueRank="1">
+
+
+<UAVariable NodeId="ns=2;i=28" BrowseName="eClassClassificationClass" ParentNodeId="ns=2;i=33" DataType="String">
+    <DisplayName>eClassClassificationClass</DisplayName>
+    <Description></Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=3007</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=33</Reference>
+    </References>
+    <Value>
+     <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">27022501</String>
+    </Value>
+  </UAVariable>
+
+<UAVariable NodeId="ns=2;i=38" BrowseName="eClassIRDI" ParentNodeId="ns=2;i=33" DataType="String">
+    <DisplayName>eClassIRDI</DisplayName>
+    <Description></Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=3007</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=33</Reference>
+    </References>
+    <Value>
+     <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">0173-1---BASIC_1_1#01-ABW077#009</String>
+    </Value>
+  </UAVariable>
+
+
+<UAVariable NodeId="ns=2;i=48" BrowseName="Cooling type" ParentNodeId="ns=2;i=33" DataType="String">
+    <DisplayName>Cooling type</DisplayName>
+    <Description>Summary of various types of cooling, for use as search criteria that limit a selection</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=3007</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=33</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=6012</Reference> 
+    </References>
+  </UAVariable>
+
+
+
+<UAVariable NodeId="ns=2;i=6012" BrowseName="RefSemantic" ParentNodeId="ns=2;i=48" DataType="String" ValueRank="1">
     <DisplayName>RefSemantic</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">PropertyType</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=18</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=2;i=48</Reference>
       <Reference ReferenceType="HasModellingRule">Optional</Reference>
     </References>
       <Value>
-    <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">NE 150 v1.0 Annex 1.1.5</String>
+    <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">ECLASS:0173-1#02-BAE122#006</String>
       </Value>
   </UAVariable>
   <UAVariable NodeId="ns=2;i=19" BrowseName="AdditionalInformation" ParentNodeId="ns=2;i=18" DataType="String">
@@ -189,4 +259,19 @@
       <String xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml</String>
     </Value>
   </UAVariable>
+
+<UAObjectType NodeId="ns=2;i=33" BrowseName="BASIC_27-02-25-01 DC engine (IEC)">
+    <DisplayName>BASIC_27-02-25-01 DC engine (IEC)</DisplayName>
+    <Description></Description>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=2;i=6</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1003</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=18</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=28</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=38</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=48</Reference>
+    </References>
+  </UAObjectType>
+
+
 </UANodeSet>
