@@ -1,0 +1,1494 @@
+@base          <https://w3id.org/i40/instance#> .
+@prefix :      <https://w3id.org/i40/instance#> .
+@prefix UANodeSet.xsd: <http://opcfoundation.org/UA/2011/03/UANodeSet.xsd#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix dtype: <https://w3id.org/i40#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+:LocalizedText64  a  UANodeSet.xsd:LocalizedText .
+
+:ListOfReferences30  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference96 .
+
+:ListOfReferences2  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference12 , :Reference11 , :Reference10 , :Reference9 , :Reference8 , :Reference7 .
+
+:UAObject12  a            UANodeSet.xsd:UAObject ;
+        :DisplayName      :LocalizedText23 ;
+        :References       :ListOfReferences12 ;
+        :hasBrowseName    "InstanceHierarchies"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId        "ns=2;i=45"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=40"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Anon_119  a    UANodeSet.xsd:Anon_1 .
+
+:LocalizedText34  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "ID" .
+
+:Reference73  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=9" .
+
+:Reference111  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias35  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasNotifier" ;
+        :hasTextContent  "i=48" .
+
+:Anon_17  a     UANodeSet.xsd:Anon_1 .
+
+:UAVariable16  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText43 ;
+        :References       :ListOfReferences31 ;
+        :Value            :Anon_116 ;
+        :hasBrowseName    "ID"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=24"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=23"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference43  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=12" .
+
+:Anon_120  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences42  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference110 .
+
+:Reference13  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=7" .
+
+:UAObject9  a             UANodeSet.xsd:UAObject ;
+        :Description      :LocalizedText18 ;
+        :DisplayName      :LocalizedText17 ;
+        :References       :ListOfReferences9 ;
+        :hasBrowseName    "PLCopenXMLInterface_instance_1"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId        "ns=2;i=26"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=15"^^UANodeSet.xsd:NodeIdDatatype .
+
+:ListOfReferences12  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference70 , :Reference69 , :Reference68 .
+
+:LocalizedText46  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:LocalizedText1  a       UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "ManufacturingSystem" .
+
+:Reference85  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:Reference123  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "ns=1;i=4001"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=33" .
+
+:NodeIdAlias2  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "SByte" ;
+        :hasTextContent  "i=2" .
+
+:LocalizedText16  a  UANodeSet.xsd:LocalizedText .
+
+:UAVariable28  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText56 ;
+        :References       :ListOfReferences43 ;
+        :Value            :Anon_128 ;
+        :hasBrowseName    "SchemaVersion"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=42"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=40"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference55  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=39" .
+
+:NodeIdAlias17  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "NodeId" ;
+        :hasTextContent  "i=17" .
+
+:Reference25  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=13" .
+
+:LocalizedText58  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "BaseInterfaceClassLib" .
+
+:ListOfReferences24  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference88 .
+
+:Reference97  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:LocalizedText28  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "Version" .
+
+:UAObjectType3  a       UANodeSet.xsd:UAObjectType ;
+        :Description    :LocalizedText64 ;
+        :DisplayName    :LocalizedText63 ;
+        :References     :ListOfReferences48 ;
+        :hasBrowseName  "ElectricScrewdriver"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId      "ns=2;i=35"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference67  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "Organizes"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=5001" .
+
+:Reference105  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias29  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasEncoding" ;
+        :hasTextContent  "i=38" .
+
+:Reference37  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "ns=1;i=4001"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=33" .
+
+:Anon_114  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences36  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference104 .
+
+:ListOfReferences8  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference48 , :Reference47 , :Reference46 , :Reference45 .
+
+:NodeIdAlias30  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasDescription" ;
+        :hasTextContent  "i=39" .
+
+:Anon_12  a     UANodeSet.xsd:Anon_1 .
+
+:UAVariable11  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText37 ;
+        :References       :ListOfReferences26 ;
+        :Value            :Anon_111 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=17"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=15"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference79  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=3" .
+
+:Reference117  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=34" .
+
+:UAObject4  a           UANodeSet.xsd:UAObject ;
+        :Description    :LocalizedText8 ;
+        :DisplayName    :LocalizedText7 ;
+        :References     :ListOfReferences4 ;
+        :hasBrowseName  "LibOfCommonTools"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId      "ns=2;i=9"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference49  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=27" .
+
+:Anon_126  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences48  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference124 , :Reference123 , :Reference122 , :Reference121 , :Reference120 .
+
+:LocalizedText41  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "ID" .
+
+:Reference19  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=10" .
+
+:Reference80  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:UAVariable6  a           UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText32 ;
+        :References       :ListOfReferences21 ;
+        :Value            :Anon_16 ;
+        :hasBrowseName    "Version"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=10"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=9"^^UANodeSet.xsd:NodeIdDatatype .
+
+:AliasTable1  a  UANodeSet.xsd:AliasTable ;
+        :Alias  :NodeIdAlias12 , :NodeIdAlias20 , :NodeIdAlias30 , :NodeIdAlias39 , :NodeIdAlias26 , :NodeIdAlias1 , :NodeIdAlias36 , :NodeIdAlias7 , :NodeIdAlias41 , :NodeIdAlias16 , :NodeIdAlias23 , :NodeIdAlias33 , :NodeIdAlias18 , :NodeIdAlias4 , :NodeIdAlias31 , :NodeIdAlias13 , :NodeIdAlias10 , :NodeIdAlias2 , :NodeIdAlias27 , :NodeIdAlias37 , :NodeIdAlias24 , :NodeIdAlias34 , :NodeIdAlias8 , :NodeIdAlias5 , :NodeIdAlias17 , :NodeIdAlias19 , :NodeIdAlias14 , :NodeIdAlias21 , :NodeIdAlias28 , :NodeIdAlias38 , :NodeIdAlias11 , :NodeIdAlias9 , :NodeIdAlias29 , :NodeIdAlias25 , :NodeIdAlias35 , :NodeIdAlias22 , :NodeIdAlias32 , :NodeIdAlias6 , :NodeIdAlias40 , :NodeIdAlias3 , :NodeIdAlias15 .
+
+:LocalizedText11  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "secondScrewdriver" .
+
+:LocalizedText7  a       UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "LibOfCommonTools" .
+
+:ListOfReferences18  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference82 .
+
+:UAVariable23  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText51 ;
+        :References       :ListOfReferences38 ;
+        :Value            :Anon_123 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=34"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=33"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference50  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=28" .
+
+:NodeIdAlias12  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "DateTime" ;
+        :hasTextContent  "i=13" .
+
+:NodeIdAlias8  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Int64" ;
+        :hasTextContent  "i=8" .
+
+:Reference20  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=11" .
+
+:LocalizedText53  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "ID" .
+
+:Reference92  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=3007" .
+
+:LocalizedText23  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "InstanceHierarchies" .
+
+:Reference6  a             UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=15" .
+
+:Reference62  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=44" .
+
+:Reference100  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias24  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Integer" ;
+        :hasTextContent  "i=27" .
+
+:Reference32  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=20" .
+
+:ListOfReferences31  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference97 .
+
+:ListOfReferences3  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference18 , :Reference17 , :Reference16 , :Reference15 , :Reference14 , :Reference13 .
+
+:UAObject13  a            UANodeSet.xsd:UAObject ;
+        :DisplayName      :LocalizedText24 ;
+        :References       :ListOfReferences13 ;
+        :hasBrowseName    "SystemUnitClassLibs"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId        "ns=2;i=46"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=40"^^UANodeSet.xsd:NodeIdDatatype .
+
+:LocalizedText35  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:Reference74  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=40" .
+
+:Reference112  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias36  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "FolderType" ;
+        :hasTextContent  "i=61" .
+
+:Anon_18  a     UANodeSet.xsd:Anon_1 .
+
+:UAVariable17  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText44 ;
+        :References       :ListOfReferences32 ;
+        :Value            :Anon_117 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=25"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=23"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference44  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=31" .
+
+:Anon_121  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences43  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference111 .
+
+:Reference14  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=8" .
+
+:UAVariable1  a           UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText27 ;
+        :References       :ListOfReferences16 ;
+        :Value            :Anon_11 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=2"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=1"^^UANodeSet.xsd:NodeIdDatatype .
+
+:LocalizedText47  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "refURI" .
+
+:LocalizedText2  a  UANodeSet.xsd:LocalizedText .
+
+:ListOfReferences13  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference73 , :Reference72 , :Reference71 .
+
+:Reference86  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:Reference124  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=37" .
+
+:NodeIdAlias3  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Byte" ;
+        :hasTextContent  "i=3" .
+
+:LocalizedText17  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "PLCopenXMLInterface_instance_1" .
+
+:UAVariable29  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText57 ;
+        :References       :ListOfReferences44 ;
+        :Value            :Anon_129 ;
+        :hasBrowseName    "BaseRoleClassLib"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=43"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=40"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference56  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=35" .
+
+:NodeIdAlias18  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "ExpandedNodeId" ;
+        :hasTextContent  "i=18" .
+
+:Reference26  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=14" .
+
+:LocalizedText59  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "Energy" .
+
+:Reference1  a             UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=2" .
+
+:ListOfReferences25  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference89 .
+
+:UAVariable30  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText58 ;
+        :References       :ListOfReferences45 ;
+        :Value            :Anon_130 ;
+        :hasBrowseName    "BaseInterfaceClassLib"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=44"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=40"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference98  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:LocalizedText29  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:Reference68  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=40" .
+
+:Reference106  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:LocalizedText60  a  UANodeSet.xsd:LocalizedText .
+
+:Reference38  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "ns=1;i=4002"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=33" .
+
+:Anon_115  a    UANodeSet.xsd:Anon_1 .
+
+:LocalizedText30  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "Version" .
+
+:ListOfReferences37  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference105 .
+
+:ListOfReferences9  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference53 , :Reference52 , :Reference51 , :Reference50 , :Reference49 .
+
+:NodeIdAlias31  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasTypeDefinition" ;
+        :hasTextContent  "i=40" .
+
+:Anon_13  a     UANodeSet.xsd:Anon_1 .
+
+:UAVariable12  a             UANodeSet.xsd:UAVariable ;
+        :Description         :LocalizedText39 ;
+        :DisplayName         :LocalizedText38 ;
+        :References          :ListOfReferences27 ;
+        :Value               :Anon_112 ;
+        :hasAccessLevel      "15"^^UANodeSet.xsd:AccessLevelDatatype ;
+        :hasBrowseName       "New Attribute"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType         "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId           "ns=2;i=18"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId     "ns=2;i=12"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasUserAccessLevel  "15"^^UANodeSet.xsd:AccessLevelDatatype .
+
+:Reference118  a           UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=6" .
+
+:UAObject5  a           UANodeSet.xsd:UAObject ;
+        :Description    :LocalizedText10 ;
+        :DisplayName    :LocalizedText9 ;
+        :References     :ListOfReferences5 ;
+        :hasBrowseName  "firstScrewdriver"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId      "ns=2;i=12"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Anon_127  a    UANodeSet.xsd:Anon_1 .
+
+:LocalizedText42  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:Reference81  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:UAVariable7  a           UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText33 ;
+        :References       :ListOfReferences22 ;
+        :Value            :Anon_17 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=11"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=9"^^UANodeSet.xsd:NodeIdDatatype .
+
+:LocalizedText8  a  UANodeSet.xsd:LocalizedText .
+
+:LocalizedText12  a  UANodeSet.xsd:LocalizedText .
+
+:ListOfReferences19  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference83 .
+
+:UAVariable24  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText52 ;
+        :References       :ListOfReferences39 ;
+        :Value            :Anon_124 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=36"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=35"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference51  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=15" .
+
+:NodeIdAlias13  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "String" ;
+        :hasTextContent  "i=12" .
+
+:NodeIdAlias9  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "UInt64" ;
+        :hasTextContent  "i=9" .
+
+:Reference21  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "FolderType" .
+
+:LocalizedText54  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:ListOfReferences20  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference84 .
+
+:Reference93  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=12" .
+
+:LocalizedText24  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "SystemUnitClassLibs" .
+
+:Reference7  a             UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=4" .
+
+:Reference63  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=45" .
+
+:Reference101  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=30" .
+
+:NodeIdAlias25  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "UInteger" ;
+        :hasTextContent  "i=28" .
+
+:Reference33  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=16" .
+
+:Anon_110  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences32  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference98 .
+
+:ListOfReferences4  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference24 , :Reference23 , :Reference22 , :Reference21 , :Reference20 , :Reference19 .
+
+:UAObject14  a            UANodeSet.xsd:UAObject ;
+        :DisplayName      :LocalizedText25 ;
+        :References       :ListOfReferences14 ;
+        :hasBrowseName    "RoleClassLibs"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId        "ns=2;i=47"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=40"^^UANodeSet.xsd:NodeIdDatatype .
+
+:LocalizedText36  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "ID" .
+
+:Reference75  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "FolderType" .
+
+:Reference113  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias37  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "PropertyType" ;
+        :hasTextContent  "i=68" .
+
+:Anon_19  a     UANodeSet.xsd:Anon_1 .
+
+:UAVariable18  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText45 ;
+        :References       :ListOfReferences33 ;
+        :Value            :Anon_118 ;
+        :hasBrowseName    "ID"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=27"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=26"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference45  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=24" .
+
+:Anon_122  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences44  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference112 .
+
+:Reference15  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "FolderType" .
+
+:UAVariable2  a           UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText28 ;
+        :References       :ListOfReferences17 ;
+        :Value            :Anon_12 ;
+        :hasBrowseName    "Version"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=4"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=3"^^UANodeSet.xsd:NodeIdDatatype .
+
+:LocalizedText48  a  UANodeSet.xsd:LocalizedText .
+
+:LocalizedText3  a       UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "MyInterfaces" .
+
+:ListOfReferences14  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference76 , :Reference75 , :Reference74 .
+
+:Reference87  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias4  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Int16" ;
+        :hasTextContent  "i=4" .
+
+:LocalizedText18  a  UANodeSet.xsd:LocalizedText .
+
+:Reference57  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=31" .
+
+:NodeIdAlias19  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "StatusCode" ;
+        :hasTextContent  "i=19" .
+
+:Reference27  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=1" .
+
+:Reference2  a             UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "FolderType" .
+
+:ListOfReferences26  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference90 .
+
+:Reference99  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias20  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "QualifiedName" ;
+        :hasTextContent  "i=20" .
+
+:Reference69  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "FolderType" .
+
+:Reference107  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:LocalizedText61  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "Tool" .
+
+:Reference39  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=23" .
+
+:Anon_116  a    UANodeSet.xsd:Anon_1 .
+
+:LocalizedText31  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:ListOfReferences38  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference106 .
+
+:Reference70  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=1" .
+
+:NodeIdAlias32  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasSubtype" ;
+        :hasTextContent  "i=45" .
+
+:Anon_14  a     UANodeSet.xsd:Anon_1 .
+
+:UAVariable13  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText40 ;
+        :References       :ListOfReferences28 ;
+        :Value            :Anon_113 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=19"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=18"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference40  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=26" .
+
+:Reference119  a           UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasSubtype"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=1003" .
+
+:Reference10  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "Organizes"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=5004" .
+
+:UAObject6  a           UANodeSet.xsd:UAObject ;
+        :Description    :LocalizedText12 ;
+        :DisplayName    :LocalizedText11 ;
+        :References     :ListOfReferences6 ;
+        :hasBrowseName  "secondScrewdriver"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId      "ns=2;i=15"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Anon_128  a    UANodeSet.xsd:Anon_1 .
+
+:LocalizedText43  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "ID" .
+
+:Reference82  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:UAVariable8  a           UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText34 ;
+        :References       :ListOfReferences23 ;
+        :Value            :Anon_18 ;
+        :hasBrowseName    "ID"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=13"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=12"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference120  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=36" .
+
+:LocalizedText13  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "EnergySupply" .
+
+:LocalizedText9  a       UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "firstScrewdriver" .
+
+:UAVariable25  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText53 ;
+        :References       :ListOfReferences40 ;
+        :Value            :Anon_125 ;
+        :hasBrowseName    "ID"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=38"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=37"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference52  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "i=" .
+
+:NodeIdAlias14  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "ByteString" ;
+        :hasTextContent  "i=15" .
+
+:Reference22  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "Organizes"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=5006" .
+
+:LocalizedText55  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:ListOfReferences21  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference85 .
+
+:Reference94  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:Reference8  a             UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=5" .
+
+:LocalizedText25  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "RoleClassLibs" .
+
+:Reference64  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=46" .
+
+:Reference102  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=3007" .
+
+:NodeIdAlias26  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Organizes" ;
+        :hasTextContent  "i=35" .
+
+:Reference34  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=17" .
+
+:Anon_111  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences33  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference99 .
+
+:ListOfReferences5  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference32 , :Reference31 , :Reference30 , :Reference29 , :Reference28 , :Reference27 , :Reference26 , :Reference25 .
+
+:UAObject15  a            UANodeSet.xsd:UAObject ;
+        :DisplayName      :LocalizedText26 ;
+        :References       :ListOfReferences15 ;
+        :hasBrowseName    "InterfaceClassLibs"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId        "ns=2;i=48"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=40"^^UANodeSet.xsd:NodeIdDatatype .
+
+:LocalizedText37  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:Reference76  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=6" .
+
+:Reference114  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=32" .
+
+:NodeIdAlias38  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Mandatory" ;
+        :hasTextContent  "i=78" .
+
+:UAVariable19  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText46 ;
+        :References       :ListOfReferences34 ;
+        :Value            :Anon_119 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=28"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=26"^^UANodeSet.xsd:NodeIdDatatype .
+
+:UAObject1  a           UANodeSet.xsd:UAObject ;
+        :Description    :LocalizedText2 ;
+        :DisplayName    :LocalizedText1 ;
+        :References     :ListOfReferences1 ;
+        :hasBrowseName  "ManufacturingSystem"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId      "ns=2;i=1"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference46  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=25" .
+
+:Anon_123  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences45  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference113 .
+
+:Reference16  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "Organizes"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=5005" .
+
+:UAVariable3  a           UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText29 ;
+        :References       :ListOfReferences18 ;
+        :Value            :Anon_13 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=5"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=3"^^UANodeSet.xsd:NodeIdDatatype .
+
+:LocalizedText49  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:LocalizedText4  a  UANodeSet.xsd:LocalizedText .
+
+:ListOfReferences15  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference79 , :Reference78 , :Reference77 .
+
+:UAVariable20  a             UANodeSet.xsd:UAVariable ;
+        :Description         :LocalizedText48 ;
+        :DisplayName         :LocalizedText47 ;
+        :References          :ListOfReferences35 ;
+        :Value               :Anon_120 ;
+        :hasAccessLevel      "15"^^UANodeSet.xsd:AccessLevelDatatype ;
+        :hasBrowseName       "refURI"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType         "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId           "ns=2;i=29"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId     "ns=2;i=26"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasUserAccessLevel  "15"^^UANodeSet.xsd:AccessLevelDatatype .
+
+:Reference88  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias5  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "UInt16" ;
+        :hasTextContent  "i=5" .
+
+:LocalizedText19  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "EnergySupply" .
+
+:Reference58  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=41" .
+
+:LocalizedText50  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:Reference28  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=35" .
+
+:Reference3  a             UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "Organizes"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=5002" .
+
+:LocalizedText20  a  UANodeSet.xsd:LocalizedText .
+
+:ListOfReferences27  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference93 , :Reference92 , :Reference91 .
+
+:UANodeSet1  a          UANodeSet.xsd:UANodeSet ;
+        :Aliases        :AliasTable1 ;
+        :NamespaceUris  :UriTable1 ;
+        :UAObject       :UAObject1 , :UAObject13 , :UAObject14 , :UAObject4 , :UAObject5 , :UAObject11 , :UAObject12 , :UAObject8 , :UAObject9 , :UAObject3 , :UAObject15 , :UAObject2 , :UAObject7 , :UAObject10 , :UAObject6 ;
+        :UAObjectType   :UAObjectType1 , :UAObjectType2 , :UAObjectType3 ;
+        :UAVariable     :UAVariable11 , :UAVariable13 , :UAVariable1 , :UAVariable7 , :UAVariable9 , :UAVariable26 , :UAVariable16 , :UAVariable21 , :UAVariable29 , :UAVariable14 , :UAVariable2 , :UAVariable8 , :UAVariable27 , :UAVariable5 , :UAVariable17 , :UAVariable22 , :UAVariable24 , :UAVariable19 , :UAVariable3 , :UAVariable15 , :UAVariable30 , :UAVariable10 , :UAVariable12 , :UAVariable6 , :UAVariable18 , :UAVariable23 , :UAVariable25 , :UAVariable20 , :UAVariable28 , :UAVariable4 .
+
+:NodeIdAlias21  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "LocalizedText" ;
+        :hasTextContent  "i=21" .
+
+:Reference108  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:LocalizedText62  a  UANodeSet.xsd:LocalizedText .
+
+:UAObject10  a            UANodeSet.xsd:UAObject ;
+        :Description      :LocalizedText20 ;
+        :DisplayName      :LocalizedText19 ;
+        :References       :ListOfReferences10 ;
+        :hasBrowseName    "EnergySupply"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId        "ns=2;i=37"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=35"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Anon_117  a    UANodeSet.xsd:Anon_1 .
+
+:LocalizedText32  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "Version" .
+
+:ListOfReferences39  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference107 .
+
+:Reference71  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=40" .
+
+:NodeIdAlias33  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasProperty" ;
+        :hasTextContent  "i=46" .
+
+:Anon_15  a     UANodeSet.xsd:Anon_1 .
+
+:UAVariable14  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText41 ;
+        :References       :ListOfReferences29 ;
+        :Value            :Anon_114 ;
+        :hasBrowseName    "ID"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=21"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=20"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference41  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=21" .
+
+:Reference11  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=48" .
+
+:ListOfReferences40  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference108 .
+
+:UAObject7  a             UANodeSet.xsd:UAObject ;
+        :Description      :LocalizedText14 ;
+        :DisplayName      :LocalizedText13 ;
+        :References       :ListOfReferences7 ;
+        :hasBrowseName    "EnergySupply"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId        "ns=2;i=20"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=12"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Anon_129  a    UANodeSet.xsd:Anon_1 .
+
+:LocalizedText44  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:ListOfReferences10  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference57 , :Reference56 , :Reference55 , :Reference54 .
+
+:Reference83  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:UAVariable9  a           UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText35 ;
+        :References       :ListOfReferences24 ;
+        :Value            :Anon_19 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=14"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=12"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference121  a           UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=9" .
+
+:LocalizedText14  a  UANodeSet.xsd:LocalizedText .
+
+:UAVariable26  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText54 ;
+        :References       :ListOfReferences41 ;
+        :Value            :Anon_126 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=39"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=37"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference53  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=29" .
+
+:NodeIdAlias15  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Guid" ;
+        :hasTextContent  "i=14" .
+
+:Anon_130  a    UANodeSet.xsd:Anon_1 .
+
+:Reference23  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=46" .
+
+:LocalizedText56  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "SchemaVersion" .
+
+:ListOfReferences22  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference86 .
+
+:Reference95  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:LocalizedText26  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "InterfaceClassLibs" .
+
+:Reference9  a             UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "FolderType" .
+
+:UAObjectType1  a       UANodeSet.xsd:UAObjectType ;
+        :Description    :LocalizedText60 ;
+        :DisplayName    :LocalizedText59 ;
+        :References     :ListOfReferences46 ;
+        :hasBrowseName  "Energy"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId      "ns=2;i=31"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference65  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=47" .
+
+:Reference103  a           UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=26" .
+
+:NodeIdAlias27  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasEventSource" ;
+        :hasTextContent  "i=36" .
+
+:Reference35  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=1" .
+
+:Anon_112  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences34  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference100 .
+
+:ListOfReferences6  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference40 , :Reference39 , :Reference38 , :Reference37 , :Reference36 , :Reference35 , :Reference34 , :Reference33 .
+
+:LocalizedText38  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "New Attribute" .
+
+:Reference77  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=40" .
+
+:Reference115  a           UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=3" .
+
+:NodeIdAlias39  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Optional" ;
+        :hasTextContent  "i=80" .
+
+:Reference47  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=15" .
+
+:UAObject2  a           UANodeSet.xsd:UAObject ;
+        :Description    :LocalizedText4 ;
+        :DisplayName    :LocalizedText3 ;
+        :References     :ListOfReferences2 ;
+        :hasBrowseName  "MyInterfaces"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId      "ns=2;i=3"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Anon_124  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences46  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference116 , :Reference115 , :Reference114 .
+
+:Reference17  a            UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=47" .
+
+:UAVariable4  a           UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText30 ;
+        :References       :ListOfReferences19 ;
+        :Value            :Anon_14 ;
+        :hasBrowseName    "Version"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=7"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=6"^^UANodeSet.xsd:NodeIdDatatype .
+
+:NodeIdAlias40  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Objects" ;
+        :hasTextContent  "i=85" .
+
+:LocalizedText5  a       UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "ManufacturingRoleClasses" .
+
+:ListOfReferences16  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference80 .
+
+:UriTable1  a    UANodeSet.xsd:UriTable ;
+        :hasUri  "http://www.iosb.fraunhofer.de/Topology.aml" , "http://opcfoundation.org/UA/AML/" .
+
+:UAVariable21  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText49 ;
+        :References       :ListOfReferences36 ;
+        :Value            :Anon_121 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=30"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=29"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference89  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias10  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Float" ;
+        :hasTextContent  "i=10" .
+
+:NodeIdAlias6  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Int32" ;
+        :hasTextContent  "i=6" .
+
+:Reference59  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=1002" .
+
+:LocalizedText51  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:Reference29  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "ns=1;i=4001"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=33" .
+
+:Reference90  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:LocalizedText21  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "Topology.aml" .
+
+:Reference4  a             UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=45" .
+
+:ListOfReferences28  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference94 .
+
+:Reference60  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=42" .
+
+:NodeIdAlias22  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Structure" ;
+        :hasTextContent  "i=22" .
+
+:Reference30  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "ns=1;i=4002"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=33" .
+
+:Reference109  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:LocalizedText63  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "ElectricScrewdriver" .
+
+:ListOfReferences1  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference6 , :Reference5 , :Reference4 , :Reference3 , :Reference2 , :Reference1 .
+
+:UAObject11  a          UANodeSet.xsd:UAObject ;
+        :Description    :LocalizedText22 ;
+        :DisplayName    :LocalizedText21 ;
+        :References     :ListOfReferences11 ;
+        :hasBrowseName  "Topology.aml"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId      "ns=2;i=40"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Anon_118  a    UANodeSet.xsd:Anon_1 .
+
+:LocalizedText33  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:Reference72  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "FolderType" .
+
+:Reference110  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias34  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasComponent" ;
+        :hasTextContent  "i=47" .
+
+:Anon_16  a     UANodeSet.xsd:Anon_1 .
+
+:UAVariable15  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText42 ;
+        :References       :ListOfReferences30 ;
+        :Value            :Anon_115 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=22"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=20"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference42  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=22" .
+
+:ListOfReferences41  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference109 .
+
+:Reference12  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=31" .
+
+:UAObject8  a             UANodeSet.xsd:UAObject ;
+        :Description      :LocalizedText16 ;
+        :DisplayName      :LocalizedText15 ;
+        :References       :ListOfReferences8 ;
+        :hasBrowseName    "EnergySupply"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId        "ns=2;i=23"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=15"^^UANodeSet.xsd:NodeIdDatatype .
+
+:LocalizedText45  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "ID" .
+
+:ListOfReferences11  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference58 , :Reference67 , :Reference66 , :Reference61 , :Reference60 , :Reference63 , :Reference62 , :Reference64 , :Reference65 , :Reference59 .
+
+:Reference84  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:Reference122  a           UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasSubtype"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=1003" .
+
+:NodeIdAlias1  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Boolean" ;
+        :hasTextContent  "i=1" .
+
+:LocalizedText15  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "EnergySupply" .
+
+:UAVariable27  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText55 ;
+        :References       :ListOfReferences42 ;
+        :Value            :Anon_127 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=41"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=40"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference54  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=38" .
+
+:NodeIdAlias16  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "XmlElement" ;
+        :hasTextContent  "i=16" .
+
+:Reference24  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=35" .
+
+:LocalizedText57  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "BaseRoleClassLib" .
+
+:ListOfReferences23  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference87 .
+
+:Reference96  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:LocalizedText27  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:UAObjectType2  a       UANodeSet.xsd:UAObjectType ;
+        :Description    :LocalizedText62 ;
+        :DisplayName    :LocalizedText61 ;
+        :References     :ListOfReferences47 ;
+        :hasBrowseName  "Tool"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId      "ns=2;i=33"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference66  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=48" .
+
+:Reference104  a           UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "PropertyType" .
+
+:NodeIdAlias28  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "HasModellingRule" ;
+        :hasTextContent  "i=37" .
+
+:Reference36  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=35" .
+
+:Anon_113  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences35  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference103 , :Reference102 , :Reference101 .
+
+:ListOfReferences7  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference44 , :Reference43 , :Reference42 , :Reference41 .
+
+:Anon_11  a     UANodeSet.xsd:Anon_1 .
+
+:LocalizedText39  a  UANodeSet.xsd:LocalizedText .
+
+:UAVariable10  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText36 ;
+        :References       :ListOfReferences25 ;
+        :Value            :Anon_110 ;
+        :hasBrowseName    "ID"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=16"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=15"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Reference78  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "FolderType" .
+
+:Reference116  a           UANodeSet.xsd:Reference ;
+        :hasIsForward      false ;
+        :hasReferenceType  "HasSubtype"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=1;i=1003" .
+
+:Reference48  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasTypeDefinition"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=31" .
+
+:UAObject3  a           UANodeSet.xsd:UAObject ;
+        :Description    :LocalizedText6 ;
+        :DisplayName    :LocalizedText5 ;
+        :References     :ListOfReferences3 ;
+        :hasBrowseName  "ManufacturingRoleClasses"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasNodeId      "ns=2;i=6"^^UANodeSet.xsd:NodeIdDatatype .
+
+:Anon_125  a    UANodeSet.xsd:Anon_1 .
+
+:ListOfReferences47  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference119 , :Reference118 , :Reference117 .
+
+:LocalizedText40  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:Reference18  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=33" .
+
+:UAVariable5  a           UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText31 ;
+        :References       :ListOfReferences20 ;
+        :Value            :Anon_15 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=8"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=6"^^UANodeSet.xsd:NodeIdDatatype .
+
+:NodeIdAlias41  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Duration" ;
+        :hasTextContent  "i=290" .
+
+:LocalizedText6  a  UANodeSet.xsd:LocalizedText .
+
+:LocalizedText10  a  UANodeSet.xsd:LocalizedText .
+
+:ListOfReferences17  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference81 .
+
+:UAVariable22  a          UANodeSet.xsd:UAVariable ;
+        :DisplayName      :LocalizedText50 ;
+        :References       :ListOfReferences37 ;
+        :Value            :Anon_122 ;
+        :hasBrowseName    "AdditionalInformation"^^UANodeSet.xsd:QualifiedNameDatatype ;
+        :hasDataType      "String"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasNodeId        "ns=2;i=32"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasParentNodeId  "ns=2;i=31"^^UANodeSet.xsd:NodeIdDatatype .
+
+:NodeIdAlias11  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Double" ;
+        :hasTextContent  "i=11" .
+
+:NodeIdAlias7  a         UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "UInt32" ;
+        :hasTextContent  "i=7" .
+
+:LocalizedText52  a      UANodeSet.xsd:LocalizedText ;
+        :hasTextContent  "AdditionalInformation" .
+
+:Reference91  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=19" .
+
+:LocalizedText22  a  UANodeSet.xsd:LocalizedText .
+
+:Reference5  a             UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=12" .
+
+:ListOfReferences29  a  UANodeSet.xsd:ListOfReferences ;
+        :Reference  :Reference95 .
+
+:Reference61  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasProperty"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=43" .
+
+:NodeIdAlias23  a        UANodeSet.xsd:NodeIdAlias ;
+        :hasAlias        "Number" ;
+        :hasTextContent  "i=26" .
+
+:Reference31  a            UANodeSet.xsd:Reference ;
+        :hasReferenceType  "HasComponent"^^UANodeSet.xsd:NodeIdDatatype ;
+        :hasTextContent    "ns=2;i=18" .

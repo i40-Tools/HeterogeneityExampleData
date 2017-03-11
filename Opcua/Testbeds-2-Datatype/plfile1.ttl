@@ -3,7 +3,7 @@
 	<https://w3id.org/i40/opcua/hasNamespaceUris>	<https://w3id.org/i40/opcua/NamespaceUris1> ;
 	<https://w3id.org/i40/opcua/hasAliases>	<https://w3id.org/i40/opcua/Aliases1> ;
 	<https://w3id.org/i40/opcua/hasUAObject>	<https://w3id.org/i40/opcua/UAObject1>, <https://w3id.org/i40/opcua/UAObject2>, <https://w3id.org/i40/opcua/UAObject3>, <https://w3id.org/i40/opcua/UAObject4> ;
-	<https://w3id.org/i40/opcua/hasUAVariable>	<https://w3id.org/i40/opcua/UAVariable1>, <https://w3id.org/i40/opcua/UAVariable2>, <https://w3id.org/i40/opcua/UAVariable3>, <https://w3id.org/i40/opcua/UAVariable4>, <https://w3id.org/i40/opcua/UAVariable5>, <https://w3id.org/i40/opcua/UAVariable6>, <https://w3id.org/i40/opcua/UAVariable7>, <https://w3id.org/i40/opcua/UAVariable8>, <https://w3id.org/i40/opcua/UAVariable9>, <https://w3id.org/i40/opcua/UAVariable10> .
+	<https://w3id.org/i40/opcua/hasUAVariable>	<https://w3id.org/i40/opcua/UAVariable1>, <https://w3id.org/i40/opcua/UAVariable2>, <https://w3id.org/i40/opcua/UAVariable3>, <https://w3id.org/i40/opcua/UAVariable4>, <https://w3id.org/i40/opcua/UAVariable5>, <https://w3id.org/i40/opcua/UAVariable6>, <https://w3id.org/i40/opcua/UAVariable7>, <https://w3id.org/i40/opcua/UAVariable8>, <https://w3id.org/i40/opcua/UAVariable9>, <https://w3id.org/i40/opcua/UAVariable10>, <https://w3id.org/i40/opcua/UAVariable11> .
 <https://w3id.org/i40/opcua/NamespaceUris1>
 	a	<https://w3id.org/i40/opcua/NamespaceUris> .
 <https://w3id.org/i40/opcua/Aliases1>
@@ -71,68 +71,69 @@
 	<https://w3id.org/i40/opcua/hasString>	"{74d0c8ef-ab53-462a-8225-306ed22dc0f3}"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/opcua/UAVariable3>
 	a	<https://w3id.org/i40/opcua/UAVariable> ;
-	<https://w3id.org/i40/opcua/hasBrowseName>	"AdditionalInformation"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasBrowseName>	"ID"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/hasDataType>	"String"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=14"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=12"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/opcua/hasDisplayName>	"AdditionalInformation" ;
+	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=1311"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=18"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasDisplayName>	"ID" ;
 	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References7> ;
 	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value3> .
 <https://w3id.org/i40/opcua/References7>
 	a	<https://w3id.org/i40/opcua/References> ;
 	<https://w3id.org/i40/opcua/hasValue>	"PropertyType" .
 <https://w3id.org/i40/opcua/Value3>
-	a	<https://w3id.org/i40/opcua/Value> .
+	a	<https://w3id.org/i40/opcua/Value> ;
+	<https://w3id.org/i40/opcua/hasString>	"{74d0c8ef-ab53-462a-8225-306ed22dc0f2}"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/opcua/UAVariable4>
+	a	<https://w3id.org/i40/opcua/UAVariable> ;
+	<https://w3id.org/i40/opcua/hasBrowseName>	"AdditionalInformation"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<http://purl.org/dc/elements/1.1/hasDataType>	"String"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=14"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=12"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasDisplayName>	"AdditionalInformation" ;
+	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References8> ;
+	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value4> .
+<https://w3id.org/i40/opcua/References8>
+	a	<https://w3id.org/i40/opcua/References> ;
+	<https://w3id.org/i40/opcua/hasValue>	"PropertyType" .
+<https://w3id.org/i40/opcua/Value4>
+	a	<https://w3id.org/i40/opcua/Value> .
+<https://w3id.org/i40/opcua/UAVariable5>
 	a	<https://w3id.org/i40/opcua/UAVariable> ;
 	<https://w3id.org/i40/opcua/hasBrowseName>	"length"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/hasDataType>	"String"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=18"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=12"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/opcua/hasDisplayName>	"length" ;
-	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References8> ;
-	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value4> .
-<https://w3id.org/i40/opcua/References8>
+	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References9> ;
+	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value5> .
+<https://w3id.org/i40/opcua/References9>
 	a	<https://w3id.org/i40/opcua/References> ;
 	<https://w3id.org/i40/opcua/hasValue>	"ns=2;i=19", "ns=1;i=3007", "ns=2;i=12", "ns=2;i=6012" .
-<https://w3id.org/i40/opcua/Value4>
+<https://w3id.org/i40/opcua/Value5>
 	a	<https://w3id.org/i40/opcua/Value> ;
 	<https://w3id.org/i40/opcua/hasString>	"35.0"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/i40/opcua/UAVariable5>
+<https://w3id.org/i40/opcua/UAVariable6>
 	a	<https://w3id.org/i40/opcua/UAVariable> ;
 	<https://w3id.org/i40/opcua/hasBrowseName>	"RefSemantic"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/hasDataType>	"String"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=6012"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=18"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/opcua/hasDisplayName>	"RefSemantic" ;
-	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References9> ;
-	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value5> .
-<https://w3id.org/i40/opcua/References9>
+	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References10> ;
+	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value6> .
+<https://w3id.org/i40/opcua/References10>
 	a	<https://w3id.org/i40/opcua/References> ;
 	<https://w3id.org/i40/opcua/hasValue>	"PropertyType", "ns=2;i=18", "Optional" .
-<https://w3id.org/i40/opcua/Value5>
+<https://w3id.org/i40/opcua/Value6>
 	a	<https://w3id.org/i40/opcua/Value> ;
 	<https://w3id.org/i40/opcua/hasString>	"NE 150 v1.0 Annex 1.1.5"^^<http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/i40/opcua/UAVariable6>
+<https://w3id.org/i40/opcua/UAVariable7>
 	a	<https://w3id.org/i40/opcua/UAVariable> ;
 	<https://w3id.org/i40/opcua/hasBrowseName>	"AdditionalInformation"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/hasDataType>	"String"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=19"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=18"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/opcua/hasDisplayName>	"AdditionalInformation" ;
-	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References10> ;
-	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value6> .
-<https://w3id.org/i40/opcua/References10>
-	a	<https://w3id.org/i40/opcua/References> ;
-	<https://w3id.org/i40/opcua/hasValue>	"PropertyType" .
-<https://w3id.org/i40/opcua/Value6>
-	a	<https://w3id.org/i40/opcua/Value> .
-<https://w3id.org/i40/opcua/UAVariable7>
-	a	<https://w3id.org/i40/opcua/UAVariable> ;
-	<https://w3id.org/i40/opcua/hasBrowseName>	"AdditionalInformation"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<http://purl.org/dc/elements/1.1/hasDataType>	"String"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=41"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=40"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<https://w3id.org/i40/opcua/hasDisplayName>	"AdditionalInformation" ;
 	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References11> ;
 	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value7> .
@@ -143,26 +144,25 @@
 	a	<https://w3id.org/i40/opcua/Value> .
 <https://w3id.org/i40/opcua/UAVariable8>
 	a	<https://w3id.org/i40/opcua/UAVariable> ;
-	<https://w3id.org/i40/opcua/hasBrowseName>	"SchemaVersion"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasBrowseName>	"AdditionalInformation"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/hasDataType>	"String"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=42"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=41"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=40"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/opcua/hasDisplayName>	"SchemaVersion" ;
+	<https://w3id.org/i40/opcua/hasDisplayName>	"AdditionalInformation" ;
 	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References12> ;
 	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value8> .
 <https://w3id.org/i40/opcua/References12>
 	a	<https://w3id.org/i40/opcua/References> ;
 	<https://w3id.org/i40/opcua/hasValue>	"PropertyType" .
 <https://w3id.org/i40/opcua/Value8>
-	a	<https://w3id.org/i40/opcua/Value> ;
-	<https://w3id.org/i40/opcua/hasString>	"2.15"^^<http://www.w3.org/2001/XMLSchema#string> .
+	a	<https://w3id.org/i40/opcua/Value> .
 <https://w3id.org/i40/opcua/UAVariable9>
 	a	<https://w3id.org/i40/opcua/UAVariable> ;
-	<https://w3id.org/i40/opcua/hasBrowseName>	"BaseRoleClassLib"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasBrowseName>	"SchemaVersion"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/hasDataType>	"String"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=43"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=42"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=40"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/opcua/hasDisplayName>	"BaseRoleClassLib" ;
+	<https://w3id.org/i40/opcua/hasDisplayName>	"SchemaVersion" ;
 	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References13> ;
 	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value9> .
 <https://w3id.org/i40/opcua/References13>
@@ -170,19 +170,34 @@
 	<https://w3id.org/i40/opcua/hasValue>	"PropertyType" .
 <https://w3id.org/i40/opcua/Value9>
 	a	<https://w3id.org/i40/opcua/Value> ;
-	<https://w3id.org/i40/opcua/hasString>	"Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"^^<http://www.w3.org/2001/XMLSchema#string> .
+	<https://w3id.org/i40/opcua/hasString>	"2.15"^^<http://www.w3.org/2001/XMLSchema#string> .
 <https://w3id.org/i40/opcua/UAVariable10>
 	a	<https://w3id.org/i40/opcua/UAVariable> ;
-	<https://w3id.org/i40/opcua/hasBrowseName>	"BaseInterfaceClassLib"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasBrowseName>	"BaseRoleClassLib"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/hasDataType>	"String"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=44"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=43"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=40"^^<http://www.w3.org/2001/XMLSchema#string> ;
-	<https://w3id.org/i40/opcua/hasDisplayName>	"BaseInterfaceClassLib" ;
+	<https://w3id.org/i40/opcua/hasDisplayName>	"BaseRoleClassLib" ;
 	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References14> ;
 	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value10> .
 <https://w3id.org/i40/opcua/References14>
 	a	<https://w3id.org/i40/opcua/References> ;
 	<https://w3id.org/i40/opcua/hasValue>	"PropertyType" .
 <https://w3id.org/i40/opcua/Value10>
+	a	<https://w3id.org/i40/opcua/Value> ;
+	<https://w3id.org/i40/opcua/hasString>	"Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/opcua/UAVariable11>
+	a	<https://w3id.org/i40/opcua/UAVariable> ;
+	<https://w3id.org/i40/opcua/hasBrowseName>	"BaseInterfaceClassLib"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<http://purl.org/dc/elements/1.1/hasDataType>	"String"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasNodeId>	"ns=2;i=44"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<http://purl.org/dc/elements/1.1/parentNodeId>	"ns=2;i=40"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/opcua/hasDisplayName>	"BaseInterfaceClassLib" ;
+	<https://w3id.org/i40/opcua/hasReferences>	<https://w3id.org/i40/opcua/References15> ;
+	<https://w3id.org/i40/opcua/hasValue>	<https://w3id.org/i40/opcua/Value11> .
+<https://w3id.org/i40/opcua/References15>
+	a	<https://w3id.org/i40/opcua/References> ;
+	<https://w3id.org/i40/opcua/hasValue>	"PropertyType" .
+<https://w3id.org/i40/opcua/Value11>
 	a	<https://w3id.org/i40/opcua/Value> ;
 	<https://w3id.org/i40/opcua/hasString>	"Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"^^<http://www.w3.org/2001/XMLSchema#string> .
