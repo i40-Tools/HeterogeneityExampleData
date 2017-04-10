@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
-<CAEXFile FileName="seed.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
+<CAEXFile FileName="GoldStandard.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
 	<AdditionalInformation AutomationMLVersion="2.0" />
 	<AdditionalInformation>
 		<WriterHeader>
@@ -21,12 +21,11 @@
 	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
 	<InstanceHierarchy Name="InstanceHierarchy1">
 		<Version>1.0.0</Version>
-		<InternalElement Name="InstanceMyMotor" ID="3fc3ade7-aa58-44a4-ab37-fa7e7665a74e">
-	        </InternalElement>
+		<InternalElement Name="InstanceMyMotor" ID="3fc3ade7-aa58-44a4-ab37-fa7e7665a74e"></InternalElement>
 	</InstanceHierarchy>
-<InterfaceClassLib Name="UserDefinedClassLib">
-    		<Version>1.0.0</Version>
-		<InterfaceClass Name="BASIC_27-02-25-01 DC engine (IEC)">
+	<RoleClassLib Name="ExampleEClassRoleClassLib">
+		<Version>1.0.0</Version>
+		<RoleClass Name="BASIC_27-02-25-01 DC engine (IEC)">
 			<Attribute Name="eClassVersion" AttributeDataType="xs:string">
 				<Value>9.0</Value>
 			</Attribute>
@@ -49,6 +48,6 @@
 EAN)</Description>
 				<RefSemantic CorrespondingAttributePath="0173-1#02-AAO663#002" />
 			</Attribute>
-		</InterfaceClass>
-	</InterfaceClassLib>
+		</RoleClass>
+	</RoleClassLib>
 </CAEXFile>

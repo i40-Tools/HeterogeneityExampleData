@@ -1,5 +1,5 @@
 <https://w3id.org/i40/aml/CAEXFile1>
-        <https://w3id.org/i40/aml/hasInterfaceClassLib>  <https://w3id.org/i40/aml/InterfaceClassLib1> ;
+        <https://w3id.org/i40/aml/hasRoleClassLib>  <https://w3id.org/i40/aml/RoleClassLib1> ;
         <https://w3id.org/i40/aml/hasInstanceHierarchy>  <https://w3id.org/i40/aml/InstanceHierarchy1> ;
         <https://w3id.org/i40/aml/hasExternalReference>  <https://w3id.org/i40/aml/ExternalReference2> ;
         <https://w3id.org/i40/aml/hasExternalReference>  <https://w3id.org/i40/aml/ExternalReference1> ;
@@ -13,16 +13,6 @@
         <https://w3id.org/i40/aml/hasRefSemantic>  <https://w3id.org/i40/aml/RefSemantic1> ;
         <https://w3id.org/i40/aml/hasAttributeName>  "Construction form of DC motor" ;
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
-
-<https://w3id.org/i40/aml/InterfaceClass1>
-        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute6> ;
-        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute5> ;
-        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute4> ;
-        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute3> ;
-        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute2> ;
-        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute1> ;
-        <https://w3id.org/i40/aml/hasAttributeName>  "BASIC_27-02-25-01 DC engine (IEC)" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/InterfaceClass> .
 
 <https://w3id.org/i40/aml/ExternalReference1>
         <https://w3id.org/i40/aml/refBaseClassPath>  "Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" ;
@@ -84,10 +74,15 @@
         <https://w3id.org/i40/aml/hasAttributeName>  "GTIN" ;
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
 
-<https://w3id.org/i40/aml/InterfaceClassLib1>
-        <https://w3id.org/i40/aml/hasInterfaceClass>  <https://w3id.org/i40/aml/InterfaceClass1> ;
-        <https://w3id.org/i40/aml/hasAttributeName>  "UserDefinedClassLib" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/InterfaceClassLib> .
+<https://w3id.org/i40/aml/RoleClass1>
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute6> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute5> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute4> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute3> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute2> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute1> ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "BASIC_27-02-25-01 DC engine (IEC)" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RoleClass> .
 
 <https://w3id.org/i40/aml/AdditionalInformation1>
         <https://w3id.org/i40/aml/hasAutomationMLVersion>  "2.0" ;
@@ -102,3 +97,9 @@
         <https://w3id.org/i40/aml/refBaseClassPath>  "Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" ;
         <https://w3id.org/i40/aml/externalReferenceAlias>  "BaseInterfaceClassLib" ;
         <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/ExternalReference> .
+
+<https://w3id.org/i40/aml/RoleClassLib1>
+        <https://w3id.org/i40/aml/hasRoleClass>  <https://w3id.org/i40/aml/RoleClass1> ;
+        <https://w3id.org/i40/aml/hasVersion>  "1.0.0" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "ExampleEClassRoleClassLib" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RoleClassLib> .
