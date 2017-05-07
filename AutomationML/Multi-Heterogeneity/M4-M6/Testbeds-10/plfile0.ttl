@@ -1,0 +1,202 @@
+<https://w3id.org/i40/aml/CAEXFile1>
+        <https://w3id.org/i40/aml/hasRoleClassLib>  <https://w3id.org/i40/aml/RoleClassLib1> ;
+        <https://w3id.org/i40/aml/hasExternalReference>  <https://w3id.org/i40/aml/ExternalReference1> ;
+        <https://w3id.org/i40/aml/hasAdditionalInfomation>  <https://w3id.org/i40/aml/AdditionalInformation2> ;
+        <https://w3id.org/i40/aml/hasInstanceHierarchy>  <https://w3id.org/i40/aml/InstanceHierarchy1> ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/CAEXFile> ;
+        <https://w3id.org/i40/aml/hasAdditionalInfomation>  <https://w3id.org/i40/aml/AdditionalInformation1> ;
+        <https://w3id.org/i40/aml/hasSchemaVersion>  "2.15" ;
+        <https://w3id.org/i40/aml/hasSystemUnitClassLib>  <https://w3id.org/i40/aml/SystemUnitClassLib1> ;
+        <https://w3id.org/i40/aml/hasExternalReference>  <https://w3id.org/i40/aml/ExternalReference2> ;
+        <https://w3id.org/i40/aml/hasFileName>  "seed-Mapping-0.aml" .
+
+<https://w3id.org/i40/aml/SystemUnitClassLib1>
+        <https://w3id.org/i40/aml/hasSystemUnitClass>  <https://w3id.org/i40/aml/SystemUnitClass1> ;
+        <https://w3id.org/i40/aml/hasVersion>  "1.0" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "AssembleSystem" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/SystemUnitClassLib> .
+
+<https://w3id.org/i40/aml/RoleRequirements1>
+        <https://w3id.org/i40/aml/refBaseRoleClassPath>  "ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RoleRequirements> .
+
+<https://w3id.org/i40/aml/Attribute4>
+        <https://w3id.org/i40/aml/hasAttributeValue>  "27440209" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "eClassClassificationClass" ;
+        <https://w3id.org/i40/aml/hasDataType>  "xs:string" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
+
+<https://w3id.org/i40/aml/InternalElement2>
+        <https://w3id.org/i40/aml/hasRoleRequirements>  <https://w3id.org/i40/aml/RoleRequirements1> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute9> ;
+        <https://w3id.org/i40/aml/RefBaseSystemUnitPath>  "Resources/RollerConveyor" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "LiftUpGate" ;
+        <http://purl.org/dc/elements/1.1/identifier>  "{6aa1bd9a-701a-43a6-bc04-c414d30e0f93}" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/InternalElement> .
+
+<https://w3id.org/i40/aml/ExternalReference1>
+        <https://w3id.org/i40/aml/refBaseClassPath>  "Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" ;
+        <https://w3id.org/i40/aml/externalReferenceAlias>  "BaseRoleClassLib" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/ExternalReference> .
+
+<https://w3id.org/i40/aml/Attribute3>
+        <https://w3id.org/i40/aml/hasAttributeValue>  "9.0" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "eClassVersion" ;
+        <https://w3id.org/i40/aml/hasDataType>  "xs:string" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
+
+<https://w3id.org/i40/aml/Attribute9>
+        <https://w3id.org/i40/aml/hasRefSemantic>  <https://w3id.org/i40/aml/RefSemantic1> ;
+        <https://w3id.org/i40/aml/hasAttributeValue>  "1.5" ;
+        <https://w3id.org/i40/aml/hasUnit>  "m/s" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "maxConveyingSpeed" ;
+        <https://w3id.org/i40/aml/hasDataType>  "xs:double" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
+
+<https://w3id.org/i40/aml/InternalElement1>
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute2> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute1> ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "Material" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/InternalElement> .
+
+<https://w3id.org/i40/aml/RefSemantic2>
+        <https://w3id.org/i40/aml/hasCorrespondingAttributePath>  "ECLASS:0173-1#02-BAF316#002" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RefSemantic> .
+
+<https://w3id.org/i40/aml/SystemUnitClass1>
+        <https://w3id.org/i40/aml/hasInternalElement>  <https://w3id.org/i40/aml/InternalElement4> ;
+        <https://w3id.org/i40/aml/hasInternalElement>  <https://w3id.org/i40/aml/InternalElement3> ;
+        <https://w3id.org/i40/aml/hasInternalElement>  <https://w3id.org/i40/aml/InternalElement2> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute8> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute7> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute6> ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "BASIC_36-12-04-01 Conveyor" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/SystemUnitClass> .
+
+<https://w3id.org/i40/aml/Attribute2>
+        <https://w3id.org/i40/aml/hasAttributeValue>  "Almunium" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "materialname" ;
+        <https://w3id.org/i40/aml/hasDataType>  "xs:string" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
+
+<https://w3id.org/i40/aml/Attribute8>
+        <https://w3id.org/i40/aml/hasAttributeValue>  "0173-1---BASIC_1_1#01-AKL503#010" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "eClassIRDI" ;
+        <https://w3id.org/i40/aml/hasDataType>  "xs:string" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
+
+<https://w3id.org/i40/aml/InternalElement6>
+        <https://w3id.org/i40/aml/hasRoleRequirements>  <https://w3id.org/i40/aml/RoleRequirements4> ;
+        <https://w3id.org/i40/aml/RefBaseSystemUnitPath>  "{71fc6d29-7797-4e3f-a659-ac69198e464f}" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "TransferToSubAssembly" ;
+        <http://purl.org/dc/elements/1.1/identifier>  "{2dd897fb-92ea-48ec-af81-84252f1d91ca}" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/InternalElement> .
+
+<https://w3id.org/i40/aml/RefSemantic1>
+        <https://w3id.org/i40/aml/hasCorrespondingAttributePath>  "ECLASS:0173-1#02-BAF685#003" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RefSemantic> .
+
+<https://w3id.org/i40/aml/InstanceHierarchy1>
+        <https://w3id.org/i40/aml/hasInternalElement>  <https://w3id.org/i40/aml/InternalElement1> ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "AutomationMLPropertySetRoleClassLib" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/InstanceHierarchy> .
+
+<https://w3id.org/i40/aml/RoleRequirements4>
+        <https://w3id.org/i40/aml/refBaseRoleClassPath>  "ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RoleRequirements> .
+
+<https://w3id.org/i40/aml/Attribute1>
+        <https://w3id.org/i40/aml/hasAttributeValue>  "Metal" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "submaterial" ;
+        <https://w3id.org/i40/aml/hasDataType>  "xs:string" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
+
+<https://w3id.org/i40/aml/Attribute7>
+        <https://w3id.org/i40/aml/hasAttributeValue>  "36120401" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "eClassClassificationClass" ;
+        <https://w3id.org/i40/aml/hasDataType>  "xs:string" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
+
+<https://w3id.org/i40/aml/InternalElement5>
+        <https://w3id.org/i40/aml/hasRoleRequirements>  <https://w3id.org/i40/aml/RoleRequirements3> ;
+        <https://w3id.org/i40/aml/RefBaseSystemUnitPath>  "{6aa1bd9a-701a-43a6-bc04-c414d30e0f93}" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "LiftUpGate" ;
+        <http://purl.org/dc/elements/1.1/identifier>  "{8d9c05b1-0504-40a9-9559-4043b4c2e0fa}" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/InternalElement> .
+
+<https://w3id.org/i40/aml/AdditionalInformation2>
+        <https://w3id.org/i40/aml/hasLastWritingDateTime>  "2012-02-20\n            "^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+        <https://w3id.org/i40/aml/hasWriterID>  "AutomationML e.V." ;
+        <https://w3id.org/i40/aml/hasWriterRelease>  "1.0" ;
+        <https://w3id.org/i40/aml/hasWriterProjectID>  "AutomationML Tutorial Examples\n            " ;
+        <https://w3id.org/i40/aml/hasWriterVendorURL>  "www.AutomationML.org" ;
+        <https://w3id.org/i40/aml/hasWriterName>  "AutomationML e.V." ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/AdditionalInformation> ;
+        <https://w3id.org/i40/aml/hasWriterProjectTitle>  "AutomationML Tutorial Examples" ;
+        <https://w3id.org/i40/aml/hasWriterVersion>  "1.0" ;
+        <https://w3id.org/i40/aml/hasWriterVendor>  "AutomationML e.V." .
+
+<https://w3id.org/i40/aml/RoleRequirements3>
+        <https://w3id.org/i40/aml/refBaseRoleClassPath>  "ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RoleRequirements> .
+
+<https://w3id.org/i40/aml/Attribute6>
+        <https://w3id.org/i40/aml/hasAttributeValue>  "9.0" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "eClassVersion" ;
+        <https://w3id.org/i40/aml/hasDataType>  "xs:string" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
+
+<https://w3id.org/i40/aml/Attribute10>
+        <https://w3id.org/i40/aml/hasRefSemantic>  <https://w3id.org/i40/aml/RefSemantic2> ;
+        <https://w3id.org/i40/aml/hasAttributeValue>  "2" ;
+        <https://w3id.org/i40/aml/hasUnit>  "kg" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  " Max.load capacity" ;
+        <https://w3id.org/i40/aml/hasDataType>  "xs:double" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
+
+<https://w3id.org/i40/aml/RoleClass1>
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute5> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute4> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute3> ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "BASIC_27-44-02-09 Connector (appliance)" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RoleClass> .
+
+<https://w3id.org/i40/aml/InternalElement4>
+        <https://w3id.org/i40/aml/hasInternalElement>  <https://w3id.org/i40/aml/InternalElement6> ;
+        <https://w3id.org/i40/aml/hasInternalElement>  <https://w3id.org/i40/aml/InternalElement5> ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "ConveyorGroup" ;
+        <http://purl.org/dc/elements/1.1/identifier>  "{aa490a5b-1ee8-42ea-bd48-8aff922ee835}" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/InternalElement> .
+
+<https://w3id.org/i40/aml/AdditionalInformation1>
+        <https://w3id.org/i40/aml/hasAutomationMLVersion>  "2.0" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/AdditionalInformation> .
+
+<https://w3id.org/i40/aml/RoleRequirements2>
+        <https://w3id.org/i40/aml/refBaseRoleClassPath>  "ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RoleRequirements> .
+
+<https://w3id.org/i40/aml/Attribute5>
+        <https://w3id.org/i40/aml/hasAttributeValue>  "0173-1---BASIC_1_1#09-AAB896#014" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "eClassIRDI" ;
+        <https://w3id.org/i40/aml/hasDataType>  "xs:string" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
+
+<https://w3id.org/i40/aml/InternalElement3>
+        <https://w3id.org/i40/aml/hasRoleRequirements>  <https://w3id.org/i40/aml/RoleRequirements2> ;
+        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute10> ;
+        <https://w3id.org/i40/aml/RefBaseSystemUnitPath>  "Resources/RollerConveyor" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "TransferToSubAssembly" ;
+        <http://purl.org/dc/elements/1.1/identifier>  "{71fc6d29-7797-4e3f-a659-ac69198e464f}" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/InternalElement> .
+
+<https://w3id.org/i40/aml/ExternalReference2>
+        <https://w3id.org/i40/aml/refBaseClassPath>  "Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" ;
+        <https://w3id.org/i40/aml/externalReferenceAlias>  "BaseInterfaceClassLib" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/ExternalReference> .
+
+<https://w3id.org/i40/aml/RoleClassLib1>
+        <https://w3id.org/i40/aml/hasRoleClass>  <https://w3id.org/i40/aml/RoleClass1> ;
+        <https://w3id.org/i40/aml/hasVersion>  "1.0" ;
+        <https://w3id.org/i40/aml/hasAttributeName>  "ConnectorSystem" ;
+        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RoleClassLib> .
