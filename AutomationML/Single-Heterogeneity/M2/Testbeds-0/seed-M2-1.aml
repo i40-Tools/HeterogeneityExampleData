@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2014 sp1 (http://www.altova.com) by Forschungszentrum Deutschland (ABB AG) -->
+<CAEXFile FileName="seed-M2-0.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>AutomationML Editor</WriterName>
+			<WriterID>916578CA-FE0D-474E-A4FC-9E1719892369</WriterID>
+			<WriterVendor>AutomationML e.V.</WriterVendor>
+			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+			<WriterVersion>4.1.5</WriterVersion>
+			<WriterRelease>4.1.5.0</WriterRelease>
+			<LastWritingDateTime>2017-05-09T17:46:48.1609414+02:00</LastWritingDateTime>
+			<WriterProjectTitle>unspecified</WriterProjectTitle>
+			<WriterProjectID>unspecified</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<InstanceHierarchy Name="NE150DemoProject">
+		<InternalElement Name="DemoEnterprise" ID="d812ea1e-eaa2-45f4-8c82-72ecc50236c5">
+			<InternalElement Name="DemoSite" ID="38d6171f-0cb1-48e0-925f-f03902af8ee2">
+				<InternalElement Name="DemoArea" ID="33a47300-eb7e-4831-9448-b358d4246dcd">
+					<InternalElement Name="L 1001" RefBaseSystemUnitPath="NE150SUCLibrary/PCELoop" ID="044a8a9d-458e-4632-a19d-f240a0e64e95">
+						<Attribute Name="PCEDescription" AttributeDataType="xs:string">
+							<Description>Complete PCE description</Description>
+							<Value>Level Control B1000</Value>
+							<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.1.3" />
+						</Attribute>
+						<InternalElement Name="LIRCS+-A+-" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
+							<Attribute Name="FlowchartNumber" AttributeDataType="xs:string">
+								<Description>Drawing number of P&amp;I flowchart (pipework and instrumentation flowchart)</Description>
+								<Value>1000_4</Value>
+								<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5" />
+							</Attribute>
+							<ExternalInterface Name="AI Level SW" RefBaseClassPath="NE150InterfaceLibrary/SWSignal" ID="91a89c81-b794-421c-8f24-458f51307f72">
+								<Attribute Name="SoftwareSignalName" AttributeDataType="xs:string">
+									<Description>Unequivocal PCS input or output name</Description>
+									<Value>L1001_PV</Value>
+									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex" />
+								</Attribute>
+							</ExternalInterface>
+
+							<InternalElement Name="R" RefBaseSystemUnitPath="NE150SUCLibrary/Registration" ID="f92f11e1-aa50-468a-8162-9060e3ded837">
+								<Attribute Name="OperatorDisplayName" AttributeDataType="xs:string">
+									<Description>The signal must be depicted on this operator display</Description>
+									<Value>Trend01</Value>
+									<RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
+								</Attribute>
+								
+							</InternalElement>
+							<InternalLink Name="LinkSetPointSWHW" RefPartnerSideA="5df276b3-b22c-4c5e-903e-bb3be141c892:SetPointSW" RefPartnerSideB="adb2ebf7-dc6f-479b-abfe-64a4fd69c209:SetPointHW" />
+							<RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+						</InternalElement>
+						<RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+					</InternalElement>
+					<InternalLink Name="LinkBinarySwitchMax" RefPartnerSideA="d79dcc28-876e-4731-a924-3d992c84542e:DI Switch L &gt; max" RefPartnerSideB="d6d7f6dd-d460-43b0-bcda-c269ce2fe1e6:DO MV SW" />
+				</InternalElement>
+			</InternalElement>
+		</InternalElement>
+	</InstanceHierarchy>
+</CAEXFile>
