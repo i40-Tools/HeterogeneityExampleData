@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CAEXFile FileName="seed-Granularity-0.aml" SchemaVersion="2.15">
+    <AdditionalInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AutomationMLVersion="2.0"/>
+    <AdditionalInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20
+			</LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples
+			</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+    <ExternalReference Alias="314389-S4JEQJ" Path="30340-RRRQ0N"/>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+    <InstanceHierarchy Name="InstanceHierarchy1">
+        <Version>1.0.0</Version>
+        <InternalElement ID="3fc3ade7-aa58-44a4-ab37-fa7e7665a74e" Name="InstanceMyMotor"/>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="NE150DemoProject">
+        <InternalElement RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209" Name="LIRCS+-A+-">
+            <Attribute AttributeDataType="xs:string" Name="Cardinality">
+                <RefSemantic CorrespondingAttributePath="NE 160 v1.0 Annex 3.3.4"/>
+                <Attribute AttributeDataType="xs:unsignedInt" Name="MinOccur">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </Attribute>
+                <Attribute AttributeDataType="xs:unsignedInt" Name="MaxOccur">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                </Attribute>
+            </Attribute>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="NE150DemoProject">
+        <InternalElement RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209" Name="LIRCS+-A+-">
+            <Attribute AttributeDataType="xs:string" Name="PipeWork FlowchartNumber">
+                <Description>Drawing number of P&amp;I flowchart (pipework)</Description>
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1000</Value>
+                <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Instrumental FlowchartNumber">
+                <Description>Drawing number of P&amp;I flowchart (instrumentation flowchart)</Description>
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">4</Value>
+                <RefSemantic CorrespondingAttributePath="NE 160 v1.0 Annex 1.1.5"/>
+            </Attribute>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="ConveyorSystem">
+        <InternalElement ID="acf9f51b-3fbd-4f30-891d-f8daca50ed17" Name="Connection">
+            <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor1">
+                <InternalElement ID="eff50f8d-bc86-403b-a17b-08356b15485a" Name="InPort">
+                    <Attribute AttributeDataType="xs:double" Unit="m/s" Name="maxConveyingSpeed">
+                        <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1.5</Value>
+                        <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
+                    </Attribute>
+                    <ExternalInterface RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" ID="51e272d6-0252-4ebd-b865-2ca7a202a68e" Name="ConnectionPoint"/>
+                    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+                </InternalElement>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"/>
+            </InternalElement>
+            <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor2">
+                <InternalElement ID="c56f14f2-9a68-43f2-b0a2-46204ed2a21c" Name="InPort2">
+                    <Attribute AttributeDataType="xs:double" Unit="kg" Name=" Max.load capacity">
+                        <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</Value>
+                        <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF316#002"/>
+                    </Attribute>
+                    <ExternalInterface RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" ID="c50f79eb-6634-4c7e-a32f-54bdef05cace" Name="ConnectionPoint"/>
+                    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+                </InternalElement>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalLink RefPartnerSideA="eff50f8d-bc86-403b-a17b-08356b15485a:ConnectionPoint" RefPartnerSideB="c56f14f2-9a68-43f2-b0a2-46204ed2a21c:ConnectionPoint" Name="PortLink"/>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"/>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InterfaceClassLib ID="20224640-9437-4162-7688-955809781383" Name="818425-0PROXF"/>
+    <InterfaceClassLib ID="20445664-8973-7896-6323-804929927279" Name="404922-OR9ULA"/>
+    <InterfaceClassLib ID="20170285-7736-3841-5627-176107409404" Name="448251-BP03XX"/>
+    <InterfaceClassLib ID="20098697-7626-2917-8254-758697326202" Name="177538-6FCPFB"/>
+    <RoleClassLib Name="ExampleEClassRoleClassLib">
+        <Version>1.0.0</Version>
+        <RoleClass Name="BASIC_27-02-25-01 DC engine (IEC)">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">27022501</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0173-1---BASIC_1_1#01-ABW077#009</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Construction form of DC motor">
+                <Description>Arrangement of machine parts in reference to anchorage, arrangement of bearings and shafts</Description>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAE069#007"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="Cooling type">
+                <Description>Summary of various types of cooling, for use as search criteria that limit a selection</Description>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAE122#006"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="GTIN">
+                <Description>internationally unique and unambiguous article number for products and services (Global Trade Item Number, formerly
+EAN)</Description>
+                <RefSemantic CorrespondingAttributePath="0173-1#02-AAO663#002"/>
+            </Attribute>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationMLPropertySetRoleClassLib">
+        <Description>AutomationML Property Set Role Class Library</Description>
+        <Version>1.0</Version>
+        <RoleClass RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties" Name="Material">
+            <Attribute AttributeDataType="xs:string" Name="ManufactureAddress">
+                <Attribute AttributeDataType="xs:string" Name="Country">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Germany</Value>
+                </Attribute>
+            </Attribute>
+        </RoleClass>
+    </RoleClassLib>
+    <SystemUnitClassLib Name="Conveyor">
+        <Version>1.0</Version>
+        <SystemUnitClass Name="BASIC_36-12-04-01 Conveyor">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">36120401</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0173-1---BASIC_1_1#01-AKL503#010</Value>
+            </Attribute>
+            <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor1">
+                <Attribute AttributeDataType="xs:double" Unit="m/s" Name="maxConveyingSpeed">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor2">
+                <Attribute AttributeDataType="xs:double" Unit="kg" Name=" Max.load capacity">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF316#002"/>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="33bb9cd2-e6b5-44bd-8aef-a2d25250374d" Name="ConveyorGroup">
+                <InternalElement ID="1e26835f-f4e4-481f-ad41-faa04bf987da" Name="Conveyor1">
+                    <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+                </InternalElement>
+                <InternalElement ID="b02c2987-dd42-4408-98c0-be0d240f1d5c" Name="Conveyor2">
+                    <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+                </InternalElement>
+            </InternalElement>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+    <SystemUnitClassLib Name="SystemA">
+        <SystemUnitClass Name="Robot">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Robot"/>
+        </SystemUnitClass>
+        <SystemUnitClass Name="Tool">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Tool"/>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+    <SystemUnitClassLib Name="SystemB">
+        <SystemUnitClass Name="ActiveObject">
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Tool"/>
+            <SupportedRoleClass RefRoleClassPath="AutomationMLMIRoleClassLib/ManufacturingEquipment/Robot"/>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+    <SystemUnitClassLib Name="SystemAMapping">
+        <SystemUnitClass RefBaseClassPath="SystemA/Robot" Name="RobotMapping">
+            <InternalElement RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject" ID="{8301bf6f-3034-455d-95cf-44c128b8baeb}" Name="ActiveObjectMappingObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedSystemUnitClassPathReference">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">SystemB/ActiveObject</Value>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping"/>
+            </InternalElement>
+        </SystemUnitClass>
+        <SystemUnitClass RefBaseClassPath="SystemA/Tool" Name="ToolMapping">
+            <InternalElement RefBaseSystemUnitPath="MappingSystemUnitClassLib/SystemUnitClassMappingObject" ID="{9be13bdb-13f6-42c5-9be3-db3142b385af}" Name="ActiveObjetcMappingObject">
+                <Attribute AttributeDataType="xs:string" Name="MappedSystemUnitClassPathReference">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">SystemB/ActiveObject</Value>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="MappingRoleClassLib/SystemUnitClassMapping"/>
+            </InternalElement>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+</CAEXFile>
