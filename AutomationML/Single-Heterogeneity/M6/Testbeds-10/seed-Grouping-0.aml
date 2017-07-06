@@ -43,16 +43,16 @@
                 <Value>0173-1---BASIC_1_1#01-AKL503#010</Value>
             </Attribute>
             <InternalElement ID="{6aa1bd9a-701a-43a6-bc04-c414d30e0f93}" Name="LiftUpGate" RefBaseSystemUnitPath="Resources/RollerConveyor">
-                <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
-                    <Value>1.5</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
+                <Attribute AttributeDataType="xs:string" Name="Guidelines,norms">
+                    <Value>yes</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAP002#002"/>
                 </Attribute>
                 <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
             </InternalElement>
             <InternalElement ID="{71fc6d29-7797-4e3f-a659-ac69198e464f}" Name="TransferToSubAssembly" RefBaseSystemUnitPath="Resources/RollerConveyor">
-                <Attribute AttributeDataType="xs:double" Name=" Max.load capacity" Unit="kg">
-                    <Value>2</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF316#002"/>
+                 <Attribute AttributeDataType="xs:string" Name="Certificates and permits">
+                    <Value>yes</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAB392#010"/>
                 </Attribute>
                 <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
             </InternalElement>

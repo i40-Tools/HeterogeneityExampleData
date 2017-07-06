@@ -15,19 +15,19 @@
             <WriterProjectID>AutomationML Tutorial Examples </WriterProjectID>
         </WriterHeader>
     </AdditionalInformation>
-    <InstanceHierarchy Name="ConveyorSystem">
-        <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor1" RefBaseSystemUnitPath="Resources/RollerConveyor">
-            <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
-                <Value>10</Value>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
-            </Attribute>
+    <InstanceHierarchy Name="ConveyorSystem(01)">
+        <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor01" RefBaseSystemUnitPath="Resources/RollerConveyor">
+            <Attribute AttributeDataType="xs:string" Name="Guidelines,norms">
+                    <Value>yes</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAP002#002"/>
+                </Attribute>
             <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
         </InternalElement>
-        <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor2" RefBaseSystemUnitPath="Resources/RollerConveyor">
-            <Attribute AttributeDataType="xs:double" Name=" Max.load capacity" Unit="kg">
-                <Value>2</Value>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF316#002"/>
-            </Attribute>
+        <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor02" RefBaseSystemUnitPath="Resources/RollerConveyor">
+            <Attribute AttributeDataType="xs:string" Name="Certificates and permits">
+                    <Value>yes</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAB392#010"/>
+                </Attribute>
             <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
         </InternalElement>
     </InstanceHierarchy>
