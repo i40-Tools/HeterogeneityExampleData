@@ -17,7 +17,7 @@
     </AdditionalInformation>
     <SystemUnitClassLib Name="Conveyor">
         <Version>1.0</Version>
-        <SystemUnitClass Name="BASIC_36-12-04-01 Conveyor">
+        <SystemUnitClass Name="BASIC_36-12-04-01 ConveyorSystem">
             <Attribute AttributeDataType="xs:string" Name="eClassVersion">
                 <Value>9.0</Value>
             </Attribute>
@@ -27,25 +27,25 @@
             <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
                 <Value>0173-1---BASIC_1_1#01-AKL503#010</Value>
             </Attribute>
-            <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor1">
-                <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
+            <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor01">
+                <Attribute AttributeDataType="xs:double" Name="Guidelines,norms" Unit="m/s">
                     <Value>10</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAP002#002"/>
                 </Attribute>
                 <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
             </InternalElement>
-            <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor2">
-                <Attribute AttributeDataType="xs:double" Name=" Max.load capacity" Unit="kg">
+            <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor02">
+                <Attribute AttributeDataType="xs:double" Name="Certificates and permits" Unit="kg">
                     <Value>2</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF316#002"/>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAB392#010"/>
                 </Attribute>
                 <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
             </InternalElement>
             <InternalElement ID="33bb9cd2-e6b5-44bd-8aef-a2d25250374d" Name="ConveyorGroup">
-                <InternalElement ID="1e26835f-f4e4-481f-ad41-faa04bf987da" Name="Conveyor1">
+                <InternalElement ID="1e26835f-f4e4-481f-ad41-faa04bf987da" Name="Conveyor01">
                     <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
                 </InternalElement>
-                <InternalElement ID="b02c2987-dd42-4408-98c0-be0d240f1d5c" Name="Conveyor2">
+                <InternalElement ID="b02c2987-dd42-4408-98c0-be0d240f1d5c" Name="Conveyor02">
                     <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
                 </InternalElement>
             </InternalElement>

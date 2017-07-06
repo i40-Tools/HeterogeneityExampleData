@@ -11,13 +11,13 @@
     </AdditionalInformation>
     <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
-    <ExternalReference Alias="314389-S4JEQJ" Path="30340-RRRQ0N"/>
+    <ExternalReference Alias="486988-UB3I3R" Path="22600-CBV09K"/>
     <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
     <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
     <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
-    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
     <InstanceHierarchy Name="InstanceHierarchy1">
         <Version>1.0.0</Version>
@@ -33,20 +33,6 @@
                 <Attribute AttributeDataType="xs:unsignedInt" Name="MaxOccur">
                     <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5</Value>
                 </Attribute>
-            </Attribute>
-        </InternalElement>
-    </InstanceHierarchy>
-    <InstanceHierarchy Name="NE150DemoProject">
-        <InternalElement RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209" Name="LIRCS+-A+-">
-            <Attribute AttributeDataType="xs:integer" Name="PipeWork FlowchartNumber">
-                <Description>Drawing number of P&amp;I flowchart (pipework)</Description>
-                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1000</Value>
-                <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:integer" Name="Instrumental FlowchartNumber">
-                <Description>Drawing number of P&amp;I flowchart (instrumentation flowchart)</Description>
-                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">4</Value>
-                <RefSemantic CorrespondingAttributePath="NE 160 v1.0 Annex 1.1.5"/>
             </Attribute>
         </InternalElement>
     </InstanceHierarchy>
@@ -75,10 +61,24 @@
             <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
         </InternalElement>
     </InstanceHierarchy>
-    <InterfaceClassLib ID="20224640-9437-4162-7688-955809781383" Name="818425-0PROXF"/>
-    <InterfaceClassLib ID="20445664-8973-7896-6323-804929927279" Name="404922-OR9ULA"/>
-    <InterfaceClassLib ID="20170285-7736-3841-5627-176107409404" Name="448251-BP03XX"/>
-    <InterfaceClassLib ID="20098697-7626-2917-8254-758697326202" Name="177538-6FCPFB"/>
+    <InstanceHierarchy Name="NE150DemoProject">
+        <InternalElement RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209" Name="LIRCS+-A+-">
+            <Attribute AttributeDataType="xs:integer" Name="PipeWork FlowchartNumber">
+                <Description>Drawing number of P&amp;I flowchart (pipework)</Description>
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1000</Value>
+                <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:integer" Name="Instrumental FlowchartNumber">
+                <Description>Drawing number of P&amp;I flowchart (instrumentation flowchart)</Description>
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">4</Value>
+                <RefSemantic CorrespondingAttributePath="NE 160 v1.0 Annex 1.1.5"/>
+            </Attribute>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InterfaceClassLib ID="20817136-5755-1477-5561-406747125995" Name="200542-5U61TG"/>
+    <InterfaceClassLib ID="20031858-9983-8128-8026-458082652666" Name="213826-GF1KWN"/>
+    <InterfaceClassLib ID="20874467-8378-3858-8589-186504230095" Name="236393-62ZZX9"/>
+    <InterfaceClassLib ID="20155418-0886-5057-6228-968313985256" Name="882104-IJA0KU"/>
     <RoleClassLib Name="ExampleEClassRoleClassLib">
         <Version>1.0.0</Version>
         <RoleClass Name="BASIC_27-02-25-01 DC engine (IEC)">
