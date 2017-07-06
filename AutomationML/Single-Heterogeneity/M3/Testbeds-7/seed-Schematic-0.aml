@@ -29,9 +29,9 @@
             </Attribute>
         </RoleClass>
     </RoleClassLib>
-    <SystemUnitClassLib Name="Conveyor">
+    <SystemUnitClassLib Name="Conveyor(001)">
         <Version>1.0</Version>
-        <SystemUnitClass Name="BASIC_36-12-04-01 Conveyor">
+        <SystemUnitClass Name="BASIC_36-12-04-01 Conveyor(001)">
             <Attribute AttributeDataType="xs:string" Name="eClassVersion">
                 <Value>9.0</Value>
             </Attribute>
@@ -42,19 +42,19 @@
                 <Value>0173-1---BASIC_1_1#01-AKL503#010</Value>
             </Attribute>
             <InternalElement ID="acf9f51b-3fbd-4f30-891d-f8daca50ed17" Name="Connection">
-                <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor1">
-                    <Attribute AttributeDataType="xs:double" Name="maxConveyingSpeed" Unit="m/s">
-                        <Value>1.5</Value>
-                        <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF685#003"/>
-                    </Attribute>
+                <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor001">
+                    <Attribute AttributeDataType="xs:double" Name="Offerer/supplier ID">
+                    <Value>1234</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAP796#002"/>
+                </Attribute>
                     <ExternalInterface ID="51e272d6-0252-4ebd-b865-2ca7a202a68e" Name="ConnectionPoint" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
                     <RoleRequirements RefBaseRoleClassPath="Industry microcomputer/BASIC_19-20-06-11 Connection technology (Industry microcomputer)"/>
                 </InternalElement>
-                <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor2">
-                    <Attribute AttributeDataType="xs:double" Name=" Max.load capacity" Unit="kg">
-                        <Value>2</Value>
-                        <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF316#002"/>
-                    </Attribute>
+                <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor002">
+                    <Attribute AttributeDataType="xs:double" Name="Performance unit">
+                    <Value>2</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF577#004"/>
+                </Attribute>
                     <ExternalInterface ID="c50f79eb-6634-4c7e-a32f-54bdef05cace" Name="ConnectionPoint" RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector"/>
                     <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
                 </InternalElement>
