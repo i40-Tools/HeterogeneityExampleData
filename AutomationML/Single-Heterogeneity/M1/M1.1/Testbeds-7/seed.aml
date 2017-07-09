@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
 <CAEXFile FileName="seed.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
 	<AdditionalInformation AutomationMLVersion="2.0" />
@@ -19,6 +19,22 @@
 	</AdditionalInformation>
 	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
 	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
+
+<InstanceHierarchy Name="NE150DemoProject1" ID="33a47300-eb7e-4831-9448-b358d4246dc1">
+        <InternalElement Name="DemoArea" ID="33a47300-eb7e-4831-9448-b358d4246dcd">
+                    <InternalElement Name="L 1001" RefBaseSystemUnitPath="NE150SUCLibrary/PCELoop" ID="044a8a9d-458e-4632-a19d-f240a0e64e95">
+                    <InternalElement Name="A+" RefBaseSystemUnitPath="NE150SUCLibrary/Alarm" ID="6e85d76c-e243-457f-b87a-c1f414eb7f23">
+                      <Attribute Name="OperatorDisplay" AttributeDataType="xs:string">
+                                    <Description>The signal must be depicted on this operator display</Description>
+                                    <Value>Alarm2-H-99</Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
+                                </Attribute>
+                               </InternalElement>
+                             </InternalElement>
+  </InternalElement>
+
+    </InstanceHierarchy>
+
 <InterfaceClassLib Name="NE150DemoProject">
 	<InterfaceClass Name="DemoEnterprise" ID="d812ea1e-eaa2-45f4-8c82-72ecc50236c5">
 			<InterfaceClass Name="DemoSite" ID="38d6171f-0cb1-48e0-925f-f03902af8ee2">
@@ -36,5 +52,7 @@
 
 			</InterfaceClass>
 </InterfaceClassLib>
+
+
 
 </CAEXFile>

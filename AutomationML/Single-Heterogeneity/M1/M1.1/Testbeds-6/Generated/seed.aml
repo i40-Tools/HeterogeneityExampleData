@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CAEXFile FileName="seed.aml" SchemaVersion="2.15">
+    <AdditionalInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" AutomationMLVersion="2.0"/>
+    <AdditionalInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20
+			</LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples
+			</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
+    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="BaseSystemUnitClassLib" Path="Libs/SystemUnitClass Libraries/AutomationMLSystemUnitClassLib.aml"/>
+    <ExternalReference Alias="AutomationMLBaseRoleClassLib" Path="Libs\RoleClass Libraries\AutomationMLBaseRoleClassLib.aml"/>
+    <InstanceHierarchy ID="20083593-3179-7650-0349-738184821127" Name="98749-K6D555">
+        <InternalElement RefBaseSystemUnitPath="666904-26V70V" ID="20467501-5894-8318-7801-253432354683" Name="484360-3JAZPO" ChangeMode="state">
+            <ExternalInterface RefBaseClassPath="492653-LE60S4" ID="20034825-7724-7656-1835-293344565537" Name="117723-1CCSF5"/>
+            <SupportedRoleClass RefRoleClassPath="477888-NCNZI2"/>
+            <InternalLink RefPartnerSideA="connection A20296279-1860-0924-5226-114611571883" RefPartnerSideB="connection B20524973-7282-9153-7179-516882340414" ID="20807982-6933-1367-5590-874986933594" Name="309720-DSA5X3"/>
+        </InternalElement>
+        <InternalElement RefBaseSystemUnitPath="234182-ABHO6X" ID="20521079-5597-1538-9951-025634219819" Name="560784-6TKTMU" ChangeMode="state">
+            <ExternalInterface RefBaseClassPath="514135-CUIGG4" ID="20269876-8377-0521-6816-175483856465" Name="324304-1HTYLC"/>
+            <SupportedRoleClass RefRoleClassPath="392976-MZWUW5"/>
+            <InternalLink RefPartnerSideA="connection A20831912-1402-8026-8200-538742524644" RefPartnerSideB="connection B20483755-0586-0531-7635-629231936620" ID="20464803-8517-9820-5672-464378054553" Name="415929-ES5NR6"/>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="ConveyorSystem">
+        <InternalElement ID="acf9f51b-3fbd-4f30-891d-f8daca50ed17" Name="Connection">
+            <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor001">
+                <Attribute AttributeDataType="xs:double" Name="Offerer/supplier ID">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1234</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAP796#002"/>
+                </Attribute>
+                <ExternalInterface RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" ID="51e272d6-0252-4ebd-b865-2ca7a202a68e" Name="ConnectionPoint"/>
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor002">
+                <Attribute AttributeDataType="xs:double" Name="Performance unit">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</Value>
+                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF577#004"/>
+                </Attribute>
+                <ExternalInterface RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" ID="c50f79eb-6634-4c7e-a32f-54bdef05cace" Name="ConnectionPoint"/>
+                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+            </InternalElement>
+            <InternalLink RefPartnerSideA="45e20f8e-7351-4af9-bdfd-3c019674de55:ConnectionPoint" RefPartnerSideB="11b59bf6-44f6-4650-939f-d8e2551912a7:ConnectionPoint" Name="PortLink"/>
+            <RoleRequirements RefBaseRoleClassPath="BaseRoleClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"/>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InterfaceClassLib Name="NE150DemoProject">
+        <InterfaceClass ID="c9c2093c-1e11-415d-a629-a1c8aa6ef1d3" Name="A-">
+            <Attribute AttributeDataType="xs:string" Name="OperatorDisplay">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5"/>
+                <Attribute AttributeDataType="xs:string" Name="OperatorDisplayName">
+                    <Description>The signal must be depicted on this operator display</Description>
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Alarm1</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:string" Name="LimitValueType">
+                    <Description>Definition of direction and criticality</Description>
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">L</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:double" Unit="%" Name="LimitValue">
+                    <Description>Value that triggers an alarm if exceed/undershot</Description>
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:double" Unit="%" Name="LimitValueHysteresis">
+                    <Description>Definition of dead zone around the limit value within which no further switching function occurs</Description>
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0.5</Value>
+                </Attribute>
+            </Attribute>
+        </InterfaceClass>
+    </InterfaceClassLib>
+    <RoleClassLib Name="NE150DemoProject2">
+        <RoleClass ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209" Name="LIRCS+-A+-">
+            <ExternalInterface RefBaseClassPath="NE150InterfaceLibrary/HWSignal" ID="9864cd74-ee45-4732-81da-bbe2e99229b8" Name="AI Level HW">
+                <Attribute AttributeDataType="xs:string" Name="Cabinet-Subrack">
+                    <Description>Designation for control cabinet or mounting rack and Subrack</Description>
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">C03-LA</Value>
+                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.3.1"/>
+                </Attribute>
+            </ExternalInterface>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib ID="20732790-1123-7012-4825-407811761103" Name="Role class Lib Name 762747-TFWJ29">
+        <RoleClass RefBaseClassPath="Ref base path882114-P2OEDR" ID="20654651-2095-2925-8873-721389341464" Name="Role class Name 729440-V96EC7">
+            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20729966-8733-7423-9691-870936135380" Name="752898-BHWW">
+                <RefSemantic CorrespondingAttributePath="10197674-7O0S-G5RR"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20008874-0302-9510-0352-160248694040" Name="727524-U50M">
+                <RefSemantic CorrespondingAttributePath="10288546-RC2J-UCJ7"/>
+            </Attribute>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="Ref base path408027-JZ6GBL" ID="20306283-1377-7027-4775-316822297055" Name="Role class Name 510854-E8FUQS">
+            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20460784-5581-3406-0795-367290937464" Name="685745-YF3F">
+                <RefSemantic CorrespondingAttributePath="10287294-HKU2-D4TN"/>
+            </Attribute>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib ID="20882272-6600-1000-1142-167124118808" Name="Role class Lib Name 353561-IO1U7S">
+        <RoleClass RefBaseClassPath="Ref base path726715-2MLR8G" ID="20819694-1148-7594-5264-113811855119" Name="Role class Name 54195-QA7U72">
+            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20806933-6431-2269-1409-026111212238" Name="178709-N7WN">
+                <RefSemantic CorrespondingAttributePath="10659774-UC8Y-Y1F5"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20697654-6257-8021-7849-424506893527" Name="137865-NILA">
+                <RefSemantic CorrespondingAttributePath="10365957-ECK5-0PM3"/>
+            </Attribute>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="Ref base path823225-U1YF6W" ID="20541600-6184-3668-6310-750348894374" Name="Role class Name 670949-DTE4GU">
+            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20835450-6459-6495-4878-900210067886" Name="642048-DQ5S">
+                <RefSemantic CorrespondingAttributePath="10698128-6F6W-SO5T"/>
+            </Attribute>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="CommunicationCable">
+        <Version>1.0</Version>
+        <RoleClass Name="BASIC_27-06-18-01 Data cable">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">27061801 </Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0173-1---BASIC_1_1#01-AKE197#013</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="BASIC_27-06-18-02 Coaxial cable">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">27061802</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0173-1---BASIC_1_1#02-AFZ688#015</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass Name="BASIC_27-06-18-05 Telecommunications cable">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">27061805</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0173-1---BASIC_1_1#05-AKE200#015</Value>
+            </Attribute>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="SystemA">
+        <RoleClass Name="Robot"/>
+        <RoleClass Name="Tool"/>
+    </RoleClassLib>
+    <RoleClassLib Name="SystemB">
+        <RoleClass Name="ActiveObject"/>
+    </RoleClassLib>
+    <RoleClassLib Name="SystemAMapping">
+        <RoleClass RefBaseClassPath="SystemA/Robot" Name="RobotMapping">
+            <Attribute AttributeDataType="xs:string" Name="MappedRoleClassPathReference">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">SystemB/ActiveObject</Value>
+            </Attribute>
+        </RoleClass>
+        <RoleClass RefBaseClassPath="SystemA/Tool" Name="ToolMapping">
+            <Attribute AttributeDataType="xs:string" Name="MappedRoleClassPathReference">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">SystemB/ActiveObject</Value>
+            </Attribute>
+        </RoleClass>
+    </RoleClassLib>
+    <SystemUnitClassLib Name="NE150DemoProject3">
+        <SystemUnitClass ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c203" Name="LIRCS+-A+-(3)">
+            <InternalElement RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="8a38e7be-bbfc-4a91-a244-1974990c7bc2" Name="TIRC">
+                <Attribute AttributeDataType="xs:string" Name="PCEInitial-FlowchartNumber">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.1.2"/>
+                    <Attribute AttributeDataType="xs:string" Name="PCEInitial">
+                        <Description>PCE category, e.g.: L</Description>
+                        <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">T</Value>
+                    </Attribute>
+                    <Attribute AttributeDataType="xs:string" Name="FlowchartNumber">
+                        <Description>Drawing number of P&amp;I flowchart (pipework and instrumentation flowchart)</Description>
+                        <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1000-4</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+    <SystemUnitClassLib ID="20102026-0346-3293-9225-974615005954" Name="342375-SLV74G">
+        <SystemUnitClass ID="20622771-0437-6379-4426-031371003682" Name="409949-OQL8O4">
+            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20168581-6564-6749-9589-774810113470" Name="448604-TVI9PW">
+                <RefSemantic CorrespondingAttributePath="10322786-M2PC-K62V"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20719180-7838-7981-6313-536850540597" Name="169931-HXKV8Q">
+                <RefSemantic CorrespondingAttributePath="10704529-S4SR-F715"/>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="300644-MC7Y9J" ID="20140640-0336-4919-0515-471392646291" Name="607019-K3NJ3S">
+                <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20190647-8751-7834-1694-152169323241" Name="420848-I069WG">
+                    <RefSemantic CorrespondingAttributePath="10401327-X88V-XCLO"/>
+                </Attribute>
+                <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20259825-2208-6723-2206-364812679732" Name="455609-OMP0B0">
+                    <RefSemantic CorrespondingAttributePath="10441681-TXCF-YPQ8"/>
+                </Attribute>
+            </ExternalInterface>
+            <InternalElement RefBaseSystemUnitPath="138482-NVQZE8" ID="20123560-9265-7087-0142-600205448735" Name="163161-AJ11WV" ChangeMode="state">
+                <ExternalInterface RefBaseClassPath="331101-D6TENQ" ID="20708425-9857-0429-4525-297077249909" Name="519055-BG57T5"/>
+                <SupportedRoleClass RefRoleClassPath="816449-CE5SCV"/>
+                <InternalLink RefPartnerSideA="connection A20889476-4385-9636-4069-484414121094" RefPartnerSideB="connection B20822614-3230-6789-3989-070216809594" ID="20293431-9829-2937-0633-768253285165" Name="313653-EQXE76"/>
+            </InternalElement>
+            <SupportedRoleClass RefRoleClassPath="567677-0E8MHR"/>
+            <InternalLink RefPartnerSideA="connection A20357660-5140-5326-2904-860302161854" RefPartnerSideB="connection B20043406-2779-4813-0556-253040326656" ID="20058761-0027-7482-6025-427883420381" Name="137350-C2DN8E"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="20729315-0294-5093-3382-901692903092" Name="808085-EIA2KB">
+            <ExternalInterface RefBaseClassPath="413261-V3B69S" ID="20233298-9880-2136-2047-876734540206" Name="518638-N1AGKV"/>
+            <InternalElement RefBaseSystemUnitPath="679592-BBXB1M" ID="20611035-2225-8368-5996-053613423328" Name="732675-SL63B7" ChangeMode="state">
+                <ExternalInterface RefBaseClassPath="884819-Z6WXID" ID="20135340-7113-9845-4300-579089215863" Name="197156-AWK8LR"/>
+                <SupportedRoleClass RefRoleClassPath="863009-NEKXF2"/>
+                <InternalLink RefPartnerSideA="connection A20351283-7234-7136-5303-124664988499" RefPartnerSideB="connection B20142400-9142-2763-9314-024588844999" ID="20823966-7779-8517-6443-181170053731" Name="245121-B2KK1K"/>
+            </InternalElement>
+            <SupportedRoleClass RefRoleClassPath="223951-RX9QF2"/>
+            <InternalLink RefPartnerSideA="connection A20326700-4405-2485-9925-851444498247" RefPartnerSideB="connection B20265390-9478-7625-5459-521656956575" ID="20836282-9186-4669-1290-092052717317" Name="403181-WFNCI1"/>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+    <SystemUnitClassLib ID="20240297-6498-4258-5058-473533759649" Name="445423-756RL7">
+        <SystemUnitClass ID="20157114-1172-4546-5677-892359079929" Name="106149-FZC57E">
+            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20092355-7695-2613-9678-092409895705" Name="598996-O4BHKQ">
+                <RefSemantic CorrespondingAttributePath="10424093-6ZUM-GT19"/>
+            </Attribute>
+            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20262403-2795-1970-7468-643040568111" Name="555356-BK95AF">
+                <RefSemantic CorrespondingAttributePath="10725199-IJDW-70DA"/>
+            </Attribute>
+            <ExternalInterface RefBaseClassPath="30815-EAXP7E" ID="20663693-7625-3679-3178-695666289356" Name="286599-EOVVTE">
+                <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20693452-8391-7116-3712-863112519410" Name="757715-W8E76X">
+                    <RefSemantic CorrespondingAttributePath="10668800-2HUG-CX7F"/>
+                </Attribute>
+                <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20842404-2555-2903-5297-608928586455" Name="147459-4U8NWN">
+                    <RefSemantic CorrespondingAttributePath="10663896-46NN-X083"/>
+                </Attribute>
+            </ExternalInterface>
+            <InternalElement RefBaseSystemUnitPath="79878-ZJQR55" ID="20525740-4382-9117-5909-207453376084" Name="389166-6LPB9Z" ChangeMode="state">
+                <ExternalInterface RefBaseClassPath="438757-297FFN" ID="20668539-9584-1559-3163-424391066468" Name="59017-HCCRCB"/>
+                <SupportedRoleClass RefRoleClassPath="278659-0JHIP1"/>
+                <InternalLink RefPartnerSideA="connection A20413414-3786-4290-9004-680273266031" RefPartnerSideB="connection B20422565-1068-5414-4081-899570404138" ID="20576179-6544-2015-2830-822350139432" Name="312560-I7LWJJ"/>
+            </InternalElement>
+            <SupportedRoleClass RefRoleClassPath="859915-6FB22V"/>
+            <InternalLink RefPartnerSideA="connection A20171413-3729-9772-2495-875923295497" RefPartnerSideB="connection B20539275-7522-9293-3887-215001545191" ID="20460905-0901-0026-9392-229692445852" Name="535857-TSM6PO"/>
+        </SystemUnitClass>
+        <SystemUnitClass ID="20537932-2717-1726-3354-440441637946" Name="522146-ASUV7R">
+            <ExternalInterface RefBaseClassPath="83852-9WQ7IY" ID="20147433-0352-5001-2983-518758327943" Name="424256-W6RHP0"/>
+            <InternalElement RefBaseSystemUnitPath="856479-NIP33R" ID="20555045-4943-0464-8382-926575037818" Name="479129-JG3HJJ" ChangeMode="state">
+                <ExternalInterface RefBaseClassPath="622650-Q6CLHC" ID="20214120-0052-4839-1890-824044474045" Name="764409-EBYFPB"/>
+                <SupportedRoleClass RefRoleClassPath="647263-X8R95P"/>
+                <InternalLink RefPartnerSideA="connection A20531741-3766-1583-6267-719389909589" RefPartnerSideB="connection B20443712-5191-4651-3850-936567529982" ID="20613366-1309-3131-9872-564560626928" Name="697396-V1VV06"/>
+            </InternalElement>
+            <SupportedRoleClass RefRoleClassPath="296742-SR2T0L"/>
+            <InternalLink RefPartnerSideA="connection A20028884-4677-6414-1165-173055674441" RefPartnerSideB="connection B20887539-0463-4096-7736-874209736286" ID="20700147-4592-1715-7930-749255487325" Name="830208-72OGIJ"/>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+    <SystemUnitClassLib Name="NE150DemoProject">
+        <SystemUnitClass ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209" Name="LIRCS+-A+-">
+            <Attribute AttributeDataType="xs:string" Name="Cardinality">
+                <RefSemantic CorrespondingAttributePath="NE 160 v1.0 Annex 3.3.4"/>
+                <Attribute AttributeDataType="xs:unsignedInt" Name="MinOccur">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</Value>
+                </Attribute>
+                <Attribute AttributeDataType="xs:unsignedInt" Name="MaxOccur">
+                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5</Value>
+                </Attribute>
+            </Attribute>
+        </SystemUnitClass>
+    </SystemUnitClassLib>
+</CAEXFile>

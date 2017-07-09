@@ -20,6 +20,33 @@
     <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
     <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
 
+
+
+<InterfaceClassLib Name="NE150DemoProject0">
+        <InterfaceClass Name="A-(0)" ID="c9c2093c-1e11-415d-a629-a1c8aa6ef1d0">
+                    <Attribute Name="OperatorDisplay" AttributeDataType="xs:string">
+                                    <Value></Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
+         <Attribute Name="OperatorDisplayName" AttributeDataType="xs:string">
+									<Description>The signal must be depicted on this operator display</Description>
+									<Value>Alarm1</Value>
+								</Attribute>
+								<Attribute Name="LimitValueType" AttributeDataType="xs:string">
+									<Description>Definition of direction and criticality</Description>
+									<Value>L</Value>
+								</Attribute>
+								<Attribute Name="LimitValue" AttributeDataType="xs:double" Unit="%" >
+									<Description>Value that triggers an alarm if exceed/undershot</Description>
+									<Value>1</Value>
+								</Attribute>
+								<Attribute Name="LimitValueHysteresis" AttributeDataType="xs:double" Unit="%">
+									<Description>Definition of dead zone around the limit value within which no further switching function occurs</Description>
+									<Value>0.5</Value>
+								</Attribute>
+								</Attribute>
+                            </InterfaceClass>
+    </InterfaceClassLib>
+
 <RoleClassLib Name="NE150DemoProject">
 <RoleClass Name="A-" ID="c9c2093c-1e11-415d-a629-a1c8aa6ef1d3">
     <ExternalInterface Name="DI Alarm L &lt; min" RefBaseClassPath="NE150InterfaceLibrary/SWSignal" ID="a28eab6e-f177-414b-ac46-02786481c2e3">
@@ -43,4 +70,44 @@
                                 </ExternalInterface>
 </RoleClass>
     </RoleClassLib>
+
+
+<RoleClassLib Name="NE150DemoProject2">
+            <RoleClass Name="LIRCS+-A+-"  ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
+                    <ExternalInterface Name="AI Level HW" RefBaseClassPath="NE150InterfaceLibrary/HWSignal" ID="9864cd74-ee45-4732-81da-bbe2e99229b8">
+						 <Attribute Name="Cabinet-Subrack" AttributeDataType="xs:string">
+                                    <Value></Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.3.1" />
+								<Attribute Name="Cabinet" AttributeDataType="xs:string">
+									<Description>Designation for control cabinet or mounting rack</Description>
+									<Value>C03</Value>
+								</Attribute>
+								<Attribute Name="Subrack" AttributeDataType="xs:string">
+									<Description>Designation of subassembly rack / drawer / rack</Description>
+									<Value>LA</Value>
+								</Attribute>
+							   </Attribute>	
+	                            </ExternalInterface>
+              </RoleClass>
+    </RoleClassLib>
+<SystemUnitClassLib Name="NE150DemoProject3">
+            <SystemUnitClass Name="LIRCS+-A+-(3)"  ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c203">
+                    <InternalElement Name="TIRC" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="8a38e7be-bbfc-4a91-a244-1974990c7bc2">
+							<Attribute Name="PCEInitial-FlowchartNumber" AttributeDataType="xs:string">
+                                <Value></Value>
+                                <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.1.2" />
+							<Attribute Name="PCEInitial" AttributeDataType="xs:string">
+								<Description>PCE category, e.g.: L</Description>
+								<Value>T</Value>
+							</Attribute>
+							<Attribute Name="FlowchartNumber" AttributeDataType="xs:string">
+								<Description>Drawing number of P&amp;I flowchart (pipework and instrumentation flowchart)</Description>
+								<Value>1000-4</Value>
+							</Attribute>
+							</Attribute>
+						    
+            </InternalElement>
+
+</SystemUnitClass>
+    </SystemUnitClassLib>
 </CAEXFile>

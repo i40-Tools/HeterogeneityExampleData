@@ -1,63 +1,86 @@
-<https://w3id.org/i40/aml/ExternalReference1>
-        <https://w3id.org/i40/aml/refBaseClassPath>  "Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" ;
-        <https://w3id.org/i40/aml/externalReferenceAlias>  "BaseRoleClassLib" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/ExternalReference> .
-
-<https://w3id.org/i40/aml/Attribute1>
-        <https://w3id.org/i40/aml/hasRefSemantic>  <https://w3id.org/i40/aml/RefSemantic1> ;
-        <https://w3id.org/i40/aml/hasAttributeValue>  "C03-LA" ;
-        <https://w3id.org/i40/aml/hasAttributeName>  "Cabinet-Subrack" ;
-        <https://w3id.org/i40/aml/hasDataType>  "xs:string" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/Attribute> .
-
-<https://w3id.org/i40/aml/ExternalInterface1>
-        <https://w3id.org/i40/aml/hasAttribute>  <https://w3id.org/i40/aml/Attribute1> ;
-        <https://w3id.org/i40/aml/refBaseClassPath>  "NE150InterfaceLibrary/HWSignal" ;
-        <https://w3id.org/i40/aml/hasAttributeName>  "AI Level HW" ;
-        <http://purl.org/dc/elements/1.1/identifier>  "9864cd74-ee45-4732-81da-bbe2e99229b8" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/ExternalInterface> .
-
 <https://w3id.org/i40/aml/CAEXFile1>
-        <https://w3id.org/i40/aml/hasRoleClassLib>  <https://w3id.org/i40/aml/RoleClassLib1> ;
-        <https://w3id.org/i40/aml/hasExternalReference>  <https://w3id.org/i40/aml/ExternalReference2> ;
-        <https://w3id.org/i40/aml/hasExternalReference>  <https://w3id.org/i40/aml/ExternalReference1> ;
-        <https://w3id.org/i40/aml/hasAdditionalInfomation>  <https://w3id.org/i40/aml/AdditionalInformation2> ;
-        <https://w3id.org/i40/aml/hasAdditionalInfomation>  <https://w3id.org/i40/aml/AdditionalInformation1> ;
-        <https://w3id.org/i40/aml/hasSchemaVersion>  "2.15" ;
-        <https://w3id.org/i40/aml/hasFileName>  "seed-String-1.aml" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/CAEXFile> .
-
-<https://w3id.org/i40/aml/AdditionalInformation2>
-        <https://w3id.org/i40/aml/hasLastWritingDateTime>  "2012-02-20\n            "^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-        <https://w3id.org/i40/aml/hasWriterID>  "AutomationML e.V." ;
-        <https://w3id.org/i40/aml/hasWriterRelease>  "1.0" ;
-        <https://w3id.org/i40/aml/hasWriterProjectID>  "AutomationML Tutorial Examples\n            " ;
-        <https://w3id.org/i40/aml/hasWriterVendorURL>  "www.AutomationML.org" ;
-        <https://w3id.org/i40/aml/hasWriterName>  "AutomationML e.V." ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/AdditionalInformation> ;
-        <https://w3id.org/i40/aml/hasWriterProjectTitle>  "AutomationML Tutorial Examples" ;
-        <https://w3id.org/i40/aml/hasWriterVersion>  "1.0" ;
-        <https://w3id.org/i40/aml/hasWriterVendor>  "AutomationML e.V." .
-
-<https://w3id.org/i40/aml/RoleClassLib1>
-        <https://w3id.org/i40/aml/hasRoleClass>  <https://w3id.org/i40/aml/RoleClass1> ;
-        <https://w3id.org/i40/aml/hasAttributeName>  "NE150DemoProject" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RoleClassLib> .
-
-<https://w3id.org/i40/aml/ExternalReference2>
-        <https://w3id.org/i40/aml/refBaseClassPath>  "Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" ;
-        <https://w3id.org/i40/aml/externalReferenceAlias>  "BaseInterfaceClassLib" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/ExternalReference> .
-
-<https://w3id.org/i40/aml/RoleClass1>
-        <https://w3id.org/i40/aml/hasExternalInterface>  <https://w3id.org/i40/aml/ExternalInterface1> ;
-        <https://w3id.org/i40/aml/hasAttributeName>  "LIRCS+-A+-" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RoleClass> .
-
-<https://w3id.org/i40/aml/RefSemantic1>
-        <https://w3id.org/i40/aml/hasCorrespondingAttributePath>  "NE 150 v1.0 Annex 2.3.1" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/RefSemantic> .
-
+	a	<https://w3id.org/i40/aml/CAEXFile> ;
+	<https://w3id.org/i40/aml/hasFileName>	"seed-String-1.aml" ;
+	<https://w3id.org/i40/aml/hasSchemaVersion>	"2.15" ;
+	<https://w3id.org/i40/aml/hasAdditionalInfomation>	<https://w3id.org/i40/aml/AdditionalInformation1>, <https://w3id.org/i40/aml/AdditionalInformation2> ;
+	<https://w3id.org/i40/aml/hasExternalReference>	<https://w3id.org/i40/aml/ExternalReference1>, <https://w3id.org/i40/aml/ExternalReference2> ;
+	<https://w3id.org/i40/aml/hasInstanceHierarchy>	<https://w3id.org/i40/aml/InstanceHierarchy1> ;
+	<https://w3id.org/i40/aml/hasRoleClassLib>	<https://w3id.org/i40/aml/RoleClassLib1> .
 <https://w3id.org/i40/aml/AdditionalInformation1>
-        <https://w3id.org/i40/aml/hasAutomationMLVersion>  "2.0" ;
-        <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>  <https://w3id.org/i40/aml/AdditionalInformation> .
+	a	<https://w3id.org/i40/aml/AdditionalInformation> ;
+	<https://w3id.org/i40/aml/hasAutomationMLVersion>	"2.0"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/AdditionalInformation2>
+	a	<https://w3id.org/i40/aml/AdditionalInformation> ;
+	<https://w3id.org/i40/aml/hasWriterName>	"AutomationML e.V." ;
+	<https://w3id.org/i40/aml/hasWriterID>	"AutomationML e.V."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasWriterVendor>	"AutomationML e.V."^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasWriterVendorURL>	"www.AutomationML.org"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasWriterVersion>	"1.0"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasWriterRelease>	"1.0"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasLastWritingDateTime>	"""2012-02-20
+            """^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	<https://w3id.org/i40/aml/hasWriterProjectTitle>	"AutomationML Tutorial Examples"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasWriterProjectID>	"""AutomationML Tutorial Examples
+            """^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/ExternalReference1>
+	a	<https://w3id.org/i40/aml/ExternalReference> ;
+	<https://w3id.org/i40/aml/externalReferenceAlias>	"BaseRoleClassLib"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/refBaseClassPath>	"Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/ExternalReference2>
+	a	<https://w3id.org/i40/aml/ExternalReference> ;
+	<https://w3id.org/i40/aml/externalReferenceAlias>	"BaseInterfaceClassLib"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/refBaseClassPath>	"Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/InstanceHierarchy1>
+	a	<https://w3id.org/i40/aml/InstanceHierarchy> ;
+	<http://purl.org/dc/elements/1.1/identifier>	"33a47300-eb7e-4831-9448-b358d4246dc3"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"NE150DemoProject"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasInternalElement>	<https://w3id.org/i40/aml/InternalElement1> .
+<https://w3id.org/i40/aml/InternalElement1>
+	a	<https://w3id.org/i40/aml/InternalElement> ;
+	<http://purl.org/dc/elements/1.1/identifier>	"33a47300-eb7e-4831-9448-b358d4246dcd"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"DemoArea"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasInternalElement>	<https://w3id.org/i40/aml/InternalElement2> .
+<https://w3id.org/i40/aml/InternalElement2>
+	a	<https://w3id.org/i40/aml/InternalElement> ;
+	<http://purl.org/dc/elements/1.1/identifier>	"044a8a9d-458e-4632-a19d-f240a0e64e95"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"L 1001"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/RefBaseSystemUnitPath>	"NE150SUCLibrary/PCELoop"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasInternalElement>	<https://w3id.org/i40/aml/InternalElement3> .
+<https://w3id.org/i40/aml/InternalElement3>
+	a	<https://w3id.org/i40/aml/InternalElement> ;
+	<http://purl.org/dc/elements/1.1/identifier>	"6e85d76c-e243-457f-b87a-c1f414eb7f23"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"A+"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/RefBaseSystemUnitPath>	"NE150SUCLibrary/Alarm"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute1> .
+<https://w3id.org/i40/aml/Attribute1>
+	a	<https://w3id.org/i40/aml/Attribute> ;
+	<https://w3id.org/i40/aml/hasDataType>	"xs:string"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"OperatorDisplay"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeValue>	"Alarm2-H-99"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic1> .
+<https://w3id.org/i40/aml/RefSemantic1>
+	a	<https://w3id.org/i40/aml/RefSemantic> ;
+	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"NE 150 v1.0 Annex 3.1.5"^^<http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/i40/aml/RoleClassLib1>
+	a	<https://w3id.org/i40/aml/RoleClassLib> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"NE150DemoProject2"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRoleClass>	<https://w3id.org/i40/aml/RoleClass1> .
+<https://w3id.org/i40/aml/RoleClass1>
+	a	<https://w3id.org/i40/aml/RoleClass> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"LIRCS+-A+-"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasExternalInterface>	<https://w3id.org/i40/aml/ExternalInterface1> .
+<https://w3id.org/i40/aml/ExternalInterface1>
+	a	<https://w3id.org/i40/aml/ExternalInterface> ;
+	<http://purl.org/dc/elements/1.1/identifier>	"9864cd74-ee45-4732-81da-bbe2e99229b8"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"AI Level HW"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/refBaseClassPath>	"NE150InterfaceLibrary/HWSignal"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttribute>	<https://w3id.org/i40/aml/Attribute2> .
+<https://w3id.org/i40/aml/Attribute2>
+	a	<https://w3id.org/i40/aml/Attribute> ;
+	<https://w3id.org/i40/aml/hasDataType>	"xs:string"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeName>	"Cabinet-Subrack"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasAttributeValue>	"C03-LA"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	<https://w3id.org/i40/aml/hasRefSemantic>	<https://w3id.org/i40/aml/RefSemantic2> .
+<https://w3id.org/i40/aml/RefSemantic2>
+	a	<https://w3id.org/i40/aml/RefSemantic> ;
+	<https://w3id.org/i40/aml/hasCorrespondingAttributePath>	"NE 150 v1.0 Annex 2.3.1"^^<http://www.w3.org/2001/XMLSchema#string> .

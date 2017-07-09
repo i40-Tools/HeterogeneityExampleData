@@ -19,13 +19,17 @@
     </AdditionalInformation>
     <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
     <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
-<InstanceHierarchy Name="NE150DemoProject">
-                <InternalElement Name="LIRCS+-A+-" RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
-                            <Attribute Name="FlowchartNumber" AttributeDataType="xs:string">
-                                <Description>Drawing number of P&amp;I flowchart (pipework and instrumentation flowchart)</Description>
-                                <Value>1000_4</Value>
-                                <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 1.1.5" />
-                            </Attribute>
-                    </InternalElement>
-    </InstanceHierarchy>
+<RoleClassLib Name="AutomationMLPropertySetRoleClassLib">
+        <Description>AutomationML Property Set Role Class Library</Description>
+        <Version>1.0</Version>
+
+         <RoleClass Name="ContactData" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Administrative">
+                <Attribute Name="MailAddress" AttributeDataType="xs:string">
+                     <Value>Endenicher Allee/Bonn/Nordrhein-Westfalen/Germany</Value>
+                   <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.3.4" />
+                </Attribute>
+                <RoleClass Name="Manufacturer" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Administrative/ContactData" />
+                <RoleClass Name="Supplier" RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Administrative/ContactData" />
+            </RoleClass>
+</RoleClassLib>
 </CAEXFile>

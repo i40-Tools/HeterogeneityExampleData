@@ -1,41 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Mit XMLSpy v2011 rel. 3 (http://www.altova.com) von Josef Prinz (INPRO) bearbeitet -->
 <CAEXFile FileName="seed.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Source/CAEX_ClassModel_V2.15.xsd">
-	<AdditionalInformation AutomationMLVersion="2.0" />
-	<AdditionalInformation>
-		<WriterHeader>
-			<WriterName>AutomationML e.V.</WriterName>
-			<WriterID>AutomationML e.V.</WriterID>
-			<WriterVendor>AutomationML e.V.</WriterVendor>
-			<WriterVendorURL>www.AutomationML.org</WriterVendorURL>
-			<WriterVersion>1.0</WriterVersion>
-			<WriterRelease>1.0</WriterRelease>
-			<LastWritingDateTime>2012-02-20
-			</LastWritingDateTime>
-			<WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
-			<WriterProjectID>AutomationML Tutorial Examples
-			</WriterProjectID>
-		</WriterHeader>
-	</AdditionalInformation>
-	<ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
-	<ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
-       
-<RoleClassLib Name="NE150DemoProject">
-	    	<RoleClass Name="LIRCS+-A+-"  ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
-					<ExternalInterface Name="AI Level HW" RefBaseClassPath="NE150InterfaceLibrary/HWSignal" ID="9864cd74-ee45-4732-81da-bbe2e99229b8">
-							 <Attribute Name="Cabinet-Subrack" AttributeDataType="xs:string">
-                                    <Value></Value>
+    <AdditionalInformation AutomationMLVersion="2.0" />
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML e.V.</WriterName>
+            <WriterID>AutomationML e.V.</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>1.0</WriterVersion>
+            <WriterRelease>1.0</WriterRelease>
+            <LastWritingDateTime>2012-02-20
+            </LastWritingDateTime>
+            <WriterProjectTitle>AutomationML Tutorial Examples</WriterProjectTitle>
+            <WriterProjectID>AutomationML Tutorial Examples
+            </WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+    <ExternalReference Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml" Alias="BaseRoleClassLib" />
+    <ExternalReference Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml" Alias="BaseInterfaceClassLib" />
+
+
+
+<InstanceHierarchy Name="NE150DemoProject">
+	 <InternalElement Name="DemoArea" ID="33a47300-eb7e-4831-9448-b358d4246dcd">
+					<InternalElement Name="L 1001" RefBaseSystemUnitPath="NE150SUCLibrary/PCELoop" ID="044a8a9d-458e-4632-a19d-f240a0e64e95">
+				    <InternalElement Name="A+" RefBaseSystemUnitPath="NE150SUCLibrary/Alarm" ID="6e85d76c-e243-457f-b87a-c1f414eb7f23">
+                      <Attribute Name="OperatorDisplay" AttributeDataType="xs:string">
+                                    <Value>Alarm2-H-99</Value>
+                                    <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5" />
+								<Attribute Name="OperatorDisplayName" AttributeDataType="xs:string">
+									<Description>The signal must be depicted on this operator display</Description>
+									<Value>Alarm2</Value>
+								</Attribute>
+								<Attribute Name="LimitValueType" AttributeDataType="xs:string">
+									<Description>Definition of direction and criticality</Description>
+									<Value>H</Value>
+								</Attribute>
+								<Attribute Name="LimitValue" AttributeDataType="xs:double" Unit="%">
+									<Description>Value that triggers an alarm if exceed/undershot</Description>
+									<Value>99</Value>
+								</Attribute>
+								</Attribute>
+            </InternalElement>								
+</InternalElement>
+</InternalElement>
+	</InstanceHierarchy>
+<RoleClassLib Name="NE150DemoProject2">
+            <RoleClass Name="LIRCS+-A+-"  ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209">
+                    <ExternalInterface Name="AI Level HW" RefBaseClassPath="NE150InterfaceLibrary/HWSignal" ID="9864cd74-ee45-4732-81da-bbe2e99229b8">
+                            <Attribute Name="Cabinet-Subrack" AttributeDataType="xs:string">
+                                    <Description>Designation for control cabinet or mounting rack and Subrack</Description>
+                                    <Value>C03-LA</Value>
                                     <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.3.1" />
-								<Attribute Name="Cabinet" AttributeDataType="xs:string">
-									<Description>Designation for control cabinet or mounting rack</Description>
-									<Value>C03</Value>
-								</Attribute>
-								<Attribute Name="Subrack" AttributeDataType="xs:string">
-									<Description>Designation of subassembly rack / drawer / rack</Description>
-									<Value>LA</Value>
-								</Attribute>
-							   </Attribute>	
-							</ExternalInterface>
+                                </Attribute>
+                    
+                     </ExternalInterface>
 </RoleClass>
-	</RoleClassLib>
+    </RoleClassLib>
 </CAEXFile>

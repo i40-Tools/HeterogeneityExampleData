@@ -7,8 +7,13 @@ b) "seed-String-0.aml"
 
 It contains the following conflicts:
 
-1: pair (FlowchartNumber),(PipeWork FlowchartNumber)
+1: pair (Address),(StreetAndNumber)
 
-2: pair (FlowchartNumber),(instrumentation flowchart)
+2: pair (Address),(City)
 
-One file has flowchart defined with pipework and instrmentation where other has the value concatinated.
+3: pair (Address),(State)
+
+4: pair (Address),(Country)
+
+
+One file has address defined with different parts whereas one file has all the address concatenated.
