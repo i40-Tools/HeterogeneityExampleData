@@ -22,73 +22,243 @@
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
     <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
-    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
+    <ExternalReference Alias="AutomationMLBaseRoleClassLib" Path="Libs\RoleClass Libraries\AutomationMLBaseRoleClassLib.aml"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
     <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
     <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
-    <ExternalReference Alias="BaseRoleClassLib" Path="Libs/RoleClass Libraries/AutomationMLBaseRoleClassLib.aml"/>
-    <ExternalReference Alias="BaseInterfaceClassLib" Path="Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml"/>
-    <InstanceHierarchy ID="20599439-1910-0616-7594-889141010400" Name="416211-IBQ4OM">
-        <InternalElement RefBaseSystemUnitPath="320207-ZVITPG" ID="20539439-0534-3461-3536-398508641749" Name="686678-63TAPE" ChangeMode="state">
-            <ExternalInterface RefBaseClassPath="604696-YBR6O7" ID="20250994-6192-6145-8897-945769116618" Name="590488-6VGILH"/>
-            <SupportedRoleClass RefRoleClassPath="337139-HU6TOH"/>
-            <InternalLink RefPartnerSideA="connection A20105513-9633-9461-8437-725551353531" RefPartnerSideB="connection B20052403-6315-0758-5404-589261145889" ID="20702081-8096-6362-7673-923077418177" Name="490535-22DPRA"/>
-        </InternalElement>
-    </InstanceHierarchy>
-    <InstanceHierarchy Name="AssemblySystem">
-        <InternalElement RefBaseSystemUnitPath="Resources/RollerConveyor" ID="{6aa1bd9a-701a-43a6-bc04-c414d30e0f93}" Name="LiftUpGate">
-            <Attribute AttributeDataType="xs:string" Name="Guidelines,norms">
-                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">yes</Value>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAP002#002"/>
-            </Attribute>
-            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
-        </InternalElement>
-        <InternalElement RefBaseSystemUnitPath="Resources/RollerConveyor" ID="{71fc6d29-7797-4e3f-a659-ac69198e464f}" Name="TransferToSubAssembly">
-            <Attribute AttributeDataType="xs:string" Name="Certificates and permits">
-                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">yes</Value>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAB392#010"/>
-            </Attribute>
-            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
-        </InternalElement>
-        <InternalElement RefBaseSystemUnitPath="Resources/AssemblyStation" ID="{ac026999-a2e2-4a86-8c97-39685607e49a}" Name="SubAssembly">
-            <Attribute AttributeDataType="xs:double" Unit="kg" Name="Net weight">
-                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">12.5</Value>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAD875#006"/>
-            </Attribute>
-            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
-        </InternalElement>
-        <InternalElement RefBaseSystemUnitPath="Resources/AssemblyStation" ID="{22612ce1-4b89-4bb1-8a37-9c0ae4a13bdf}" Name="MainAssemblyStation">
-            <Attribute AttributeDataType="xs:double" Unit="kg" Name="Weight of the contained material">
-                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">311.0</Value>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO188#001"/>
-            </Attribute>
-            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
-        </InternalElement>
-        <InternalElement RefBaseSystemUnitPath="Resources/RollerConveyor" ID="{9facd06a-1725-4d18-95f7-4814ba2e4cf8}" Name="TransferToMainAssembly">
-            <Attribute AttributeDataType="xs:string" Name="RoHS attention of conformity">
-                <DefaultValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">yes</DefaultValue>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO191#004"/>
-            </Attribute>
-            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
-        </InternalElement>
-        <InternalElement RefBaseSystemUnitPath="Resources/RollerConveyor" ID="{72bf71e8-15fd-4882-9d35-00a12d1aa995}" Name="EndStop">
-            <Attribute AttributeDataType="xs:string" Name="Product check date according to RoHS">
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAO221#001"/>
-            </Attribute>
-            <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
-        </InternalElement>
-    </InstanceHierarchy>
-    <InstanceHierarchy Name="InstanceHierarchy1">
-        <Version>1.0.0</Version>
-        <InternalElement ID="3fc3ade7-aa58-44a4-ab37-fa7e7665a74e" Name="InstanceMyMotor"/>
-    </InstanceHierarchy>
+    <InstanceHierarchy ID="20040315-2110-4752-4736-908566463534" Name="282726-VCDBDL"/>
+    <InstanceHierarchy ID="20203751-6420-2020-5964-142499524086" Name="642477-AWYFWF"/>
+    <InstanceHierarchy ID="20038648-7011-5611-9535-786890565584" Name="63796-YOEGB7"/>
+    <InstanceHierarchy ID="20892528-4301-7397-3841-827152969636" Name="607713-5YC8F9"/>
+    <InstanceHierarchy ID="20623217-5331-7530-6439-265475555221" Name="782199-T72PQD"/>
+    <InstanceHierarchy ID="20037801-6993-1859-1276-985613168045" Name="134373-FV92DT"/>
+    <InstanceHierarchy ID="20208659-1072-0849-3616-261352537479" Name="824307-ZHYS9H"/>
+    <InstanceHierarchy ID="20153951-0634-0343-9549-884653897050" Name="48641-ML5CM9"/>
+    <InstanceHierarchy ID="20388667-9404-9009-1110-505438263227" Name="708866-BZJ3XN"/>
+    <InstanceHierarchy ID="20778012-1212-5858-2693-219970166428" Name="693747-IDLFF2"/>
+    <InstanceHierarchy ID="20855632-0335-3957-0103-553126260554" Name="162946-2IL7UA"/>
+    <InstanceHierarchy ID="20623554-4345-6009-4001-862606243254" Name="619555-CCU7DL"/>
+    <InstanceHierarchy ID="20715935-3301-8551-8236-866098240074" Name="613197-45RKGZ"/>
+    <InstanceHierarchy ID="20797059-0633-4140-1974-165043655460" Name="878000-50311S"/>
+    <InstanceHierarchy ID="20275762-3515-7556-3515-319488699681" Name="106732-POVHWA"/>
+    <InstanceHierarchy ID="20892558-3236-8034-5141-263982006927" Name="838985-2SHGYI"/>
+    <InstanceHierarchy ID="20186635-0961-9680-4057-061529428710" Name="198850-9DOLBF"/>
+    <InstanceHierarchy ID="20072369-2375-5272-7705-798071830348" Name="266756-QSNGAL"/>
+    <InstanceHierarchy ID="20610267-6489-6340-3724-095907321541" Name="775942-3LJD2T"/>
+    <InstanceHierarchy ID="20820031-4099-3304-2351-253339459822" Name="545731-Z56G1C"/>
+    <InstanceHierarchy ID="20772054-3439-4859-0199-464920912643" Name="375522-BL9MUK"/>
+    <InstanceHierarchy ID="20264382-0324-9525-4210-655909968537" Name="389559-T9IJSV"/>
+    <InstanceHierarchy ID="20246695-0334-5377-8270-328770683481" Name="478432-FFI0EK"/>
+    <InstanceHierarchy ID="20314856-0985-8144-8263-211954893345" Name="515773-3XB0R8"/>
+    <InstanceHierarchy ID="20739950-3619-9482-8768-142143045387" Name="835781-EJBYME"/>
+    <InstanceHierarchy ID="20857074-6141-9982-2595-588938409010" Name="53209-4EXIJV"/>
+    <InstanceHierarchy ID="20532510-7294-1737-5590-424558426336" Name="42323-V92F6U"/>
+    <InstanceHierarchy ID="20143275-3930-7463-1149-996473919056" Name="686615-KQLC4V"/>
+    <InstanceHierarchy ID="20541020-2100-6551-0316-754128201007" Name="800110-13B2U5"/>
+    <InstanceHierarchy ID="20873680-6158-1413-9622-851582581106" Name="473514-HNT7V7"/>
+    <InstanceHierarchy ID="20422504-6430-6206-1815-062092163317" Name="662735-8X4ADK"/>
+    <InstanceHierarchy ID="20646134-8735-3296-9093-970452944923" Name="457727-JVXRK7"/>
+    <InstanceHierarchy ID="20197024-0613-2839-2702-107570806676" Name="453824-VDKUQ6"/>
+    <InstanceHierarchy ID="20682608-9007-1198-4986-157851970600" Name="661115-PXOU1Z"/>
+    <InstanceHierarchy ID="20268434-6630-7105-0122-669648654428" Name="45468-CM0D3S"/>
+    <InstanceHierarchy ID="20508177-0042-1201-5325-454620160866" Name="704047-CRCYAZ"/>
+    <InstanceHierarchy ID="20014550-9059-0880-4435-453948136918" Name="850072-I3WA0Z"/>
+    <InstanceHierarchy ID="20744817-0032-2777-2313-173599285275" Name="686358-JO6H89"/>
+    <InstanceHierarchy ID="20119822-9856-6665-6435-014334527597" Name="647566-ZRN25M"/>
+    <InstanceHierarchy ID="20747094-1206-2869-1070-728455136454" Name="861817-ULVQ8L"/>
+    <InstanceHierarchy ID="20587229-4332-7257-2490-105508036509" Name="597770-6J7O0I"/>
+    <InstanceHierarchy ID="20420453-5502-2707-1109-221602409875" Name="120376-PNTP65"/>
+    <InstanceHierarchy ID="20020936-6531-3906-3452-943381128246" Name="162879-GOVUXP"/>
+    <InstanceHierarchy ID="20830102-1763-3425-1151-145385112468" Name="157920-26O8LC"/>
+    <InstanceHierarchy ID="20171350-9877-5210-2605-717370106057" Name="163421-Q2G1Z4"/>
+    <InstanceHierarchy ID="20146693-6358-5683-6008-225797855334" Name="84970-DEWX8Z"/>
+    <InstanceHierarchy ID="20857171-2661-6748-1309-215404813873" Name="783071-A98WS9"/>
+    <InstanceHierarchy ID="20443609-4624-2080-5128-389108874510" Name="598676-AUXHEN"/>
+    <InstanceHierarchy ID="20832146-0628-0620-7367-104322361365" Name="550985-ENTHB0"/>
+    <InstanceHierarchy ID="20765528-8258-9902-5080-095249929277" Name="58655-DSU5H9"/>
+    <InstanceHierarchy ID="20755977-7300-1301-1627-255936276691" Name="790335-7LXXZE"/>
+    <InstanceHierarchy ID="20727703-0829-3855-4993-475958521763" Name="359587-MINXCW"/>
+    <InstanceHierarchy ID="20792013-8886-4245-4365-597406398644" Name="140810-6H9P63"/>
+    <InstanceHierarchy ID="20010577-5936-6182-7004-614759654942" Name="25093-IG6W8H"/>
+    <InstanceHierarchy ID="20806093-0315-6340-0457-997343248794" Name="680388-8IERRU"/>
+    <InstanceHierarchy ID="20632708-1652-9717-3633-032965862851" Name="170533-21RB8Q"/>
+    <InstanceHierarchy ID="20473298-3221-2460-0959-690641613120" Name="569949-FXPXQ3"/>
+    <InstanceHierarchy ID="20776863-8996-5581-7655-733817299031" Name="315953-IWE5AZ"/>
+    <InstanceHierarchy ID="20260755-7867-9631-3710-360285921543" Name="127195-XOJSMU"/>
+    <InstanceHierarchy ID="20207413-2161-6357-7686-199101480256" Name="549360-K54939"/>
+    <InstanceHierarchy ID="20250272-2044-1967-9845-487880689985" Name="501790-RYNTRG"/>
+    <InstanceHierarchy ID="20405290-0270-5404-7928-137326148540" Name="174461-RSRC38"/>
+    <InstanceHierarchy ID="20728030-7380-5164-0316-055432630745" Name="728492-Q3E5A2"/>
+    <InstanceHierarchy ID="20824433-2355-5850-1950-060121406164" Name="65910-79MBEI"/>
+    <InstanceHierarchy ID="20611992-0230-0194-9556-973449530989" Name="659756-QXHXXF"/>
+    <InstanceHierarchy ID="20274256-7885-2473-7649-009454115486" Name="867072-GFUFON"/>
+    <InstanceHierarchy ID="20556011-6633-7007-4221-605663519749" Name="175883-OZIGO5"/>
+    <InstanceHierarchy ID="20155510-3818-7119-5980-138261859803" Name="714914-ONJYZS"/>
+    <InstanceHierarchy ID="20522652-9890-9261-3654-624978974512" Name="379604-HPGNYB"/>
+    <InstanceHierarchy ID="20709319-0528-7615-5213-821793674342" Name="169982-1PVGXJ"/>
+    <InstanceHierarchy ID="20709484-4554-4268-5474-538245540931" Name="333687-CBBPXU"/>
+    <InstanceHierarchy ID="20139229-0543-5461-0735-671956322525" Name="156192-ERZV7V"/>
+    <InstanceHierarchy ID="20813829-4766-1673-2540-058154004347" Name="196330-WNP5GB"/>
+    <InstanceHierarchy ID="20552513-7482-5124-6483-862760024858" Name="534754-FYDW5Q"/>
+    <InstanceHierarchy ID="20155947-1030-3142-6144-648477401640" Name="795577-Q0IOO7"/>
+    <InstanceHierarchy ID="20043002-7912-9229-9101-056166375483" Name="861791-8AI42V"/>
+    <InstanceHierarchy ID="20037686-7418-7960-0672-648747710483" Name="21257-OYP2X3"/>
+    <InstanceHierarchy ID="20015186-9430-3568-8616-017532552433" Name="8833-ADHKXA"/>
+    <InstanceHierarchy ID="20044011-7276-5799-8322-525871619220" Name="854089-CGIURE"/>
+    <InstanceHierarchy ID="20808698-6555-1559-3244-731307260706" Name="296497-P4WY0R"/>
+    <InstanceHierarchy ID="20699074-5846-1328-0870-948827206927" Name="832086-4VZ2EO"/>
+    <InstanceHierarchy ID="20565698-8629-5980-1010-682483824238" Name="288364-HSRR95"/>
+    <InstanceHierarchy ID="20356777-7247-2242-0621-609046407700" Name="703426-WZN7MF"/>
+    <InstanceHierarchy ID="20568284-9520-7845-2744-364184466057" Name="532357-9MTFNO"/>
+    <InstanceHierarchy ID="20434691-6634-2080-5064-193935646513" Name="803632-Q7YRWW"/>
+    <InstanceHierarchy ID="20062040-1249-0239-0990-743787580303" Name="249384-MNOBLZ"/>
+    <InstanceHierarchy ID="20778968-4208-9572-3275-110941153253" Name="568835-SRM716"/>
+    <InstanceHierarchy ID="20760973-7023-9421-1869-515635454810" Name="612038-X3VUZ2"/>
+    <InstanceHierarchy ID="20477078-0811-7792-2528-129263332134" Name="174137-MSD2C5"/>
+    <InstanceHierarchy ID="20058753-0065-6836-2372-952818990531" Name="356905-K9A4SI"/>
+    <InstanceHierarchy ID="20838409-2658-1521-7402-982758095374" Name="45129-4PFXE5"/>
+    <InstanceHierarchy ID="20449937-9919-1494-4307-850508441151" Name="75939-HMQVG6"/>
+    <InstanceHierarchy ID="20344555-5249-1418-5743-280482332216" Name="846593-3HB3FM"/>
+    <InstanceHierarchy ID="20544852-0323-8328-4249-702423956969" Name="19716-T6MPPC"/>
+    <InstanceHierarchy ID="20301480-4889-8531-2111-746346595826" Name="808408-I3N9EX"/>
+    <InstanceHierarchy ID="20629624-4858-4725-8252-042615303219" Name="724451-X7DOBG"/>
+    <InstanceHierarchy ID="20359649-7812-3233-2791-858157717327" Name="183150-VBW1NF"/>
+    <InstanceHierarchy ID="20299903-3635-3482-9320-910335696866" Name="29701-T3USJS"/>
+    <InstanceHierarchy ID="20365777-9477-1766-7965-251432521127" Name="770706-W52EXV"/>
+    <InstanceHierarchy ID="20849839-7548-3068-7768-424073364057" Name="550962-19FLSX"/>
+    <InstanceHierarchy ID="20532953-0424-7818-1931-893059653998" Name="666258-ZV6P43"/>
+    <InstanceHierarchy ID="20770904-1107-3061-2959-766126414421" Name="716724-Z66JHC"/>
+    <InstanceHierarchy ID="20258294-8939-3287-7173-491177143464" Name="337206-IBAGPD"/>
+    <InstanceHierarchy ID="20129667-4591-6626-4066-662931461004" Name="63376-5XN5K2"/>
+    <InstanceHierarchy ID="20836002-3501-2386-7376-933617341745" Name="614652-ZYQLMS"/>
+    <InstanceHierarchy ID="20165706-7513-7929-0586-280906232881" Name="20812-QMT010"/>
+    <InstanceHierarchy ID="20178722-2496-1559-5387-155483950713" Name="400596-D90NTG"/>
+    <InstanceHierarchy ID="20019954-5164-9666-7049-124598644125" Name="594919-102UFN"/>
+    <InstanceHierarchy ID="20251247-5248-4358-3134-019197362611" Name="888136-WNPFUJ"/>
+    <InstanceHierarchy ID="20803294-9906-8860-8669-514971977550" Name="29612-CQUB8T"/>
+    <InstanceHierarchy ID="20751147-2659-2535-5996-279286055192" Name="331190-XY7BKQ"/>
+    <InstanceHierarchy ID="20448259-6837-9977-1580-635545689471" Name="267111-QS0HB7"/>
+    <InstanceHierarchy ID="20478000-7865-4087-5171-048057245780" Name="441999-Q4X5LJ"/>
+    <InstanceHierarchy ID="20733894-1440-8928-1836-485640173911" Name="860868-CDEGRS"/>
+    <InstanceHierarchy ID="20535150-5706-2681-9574-142217985770" Name="746086-LM1K7V"/>
+    <InstanceHierarchy ID="20753442-1579-5895-9970-045181599832" Name="214497-RWJ4MN"/>
+    <InstanceHierarchy ID="20054222-2242-9409-2860-625706999147" Name="879473-UTXMQE"/>
+    <InstanceHierarchy ID="20768784-4173-0044-8675-486198757548" Name="399915-T3KGTV"/>
+    <InstanceHierarchy ID="20585574-8109-0055-4855-378189984258" Name="618787-RTEXXM"/>
+    <InstanceHierarchy ID="20591182-4101-0018-0917-040623632617" Name="196646-QX50A0"/>
+    <InstanceHierarchy ID="20715366-8744-1777-7345-513153270827" Name="238723-ANVQFV"/>
+    <InstanceHierarchy ID="20759429-1521-2659-3393-260166008558" Name="59042-8VPVS6"/>
+    <InstanceHierarchy ID="20288516-1298-4258-8866-329899356958" Name="287688-SFQ39O"/>
+    <InstanceHierarchy ID="20434596-3242-4402-9425-656799746525" Name="421135-VCTZGL"/>
+    <InstanceHierarchy ID="20893968-1568-2594-2139-852178673806" Name="114411-NPV167"/>
+    <InstanceHierarchy ID="20378474-5328-6784-6273-779201480680" Name="222776-JHXQIY"/>
+    <InstanceHierarchy ID="20490216-5557-6968-9876-866682612177" Name="243213-BGRL36"/>
+    <InstanceHierarchy ID="20439046-9978-2827-1169-398440807573" Name="519521-EE1LDM"/>
+    <InstanceHierarchy ID="20696895-4685-1740-2592-563331684753" Name="474806-CLTGA5"/>
+    <InstanceHierarchy ID="20578750-4633-7620-8942-020195800020" Name="285186-G9ZNS5"/>
+    <InstanceHierarchy ID="20568558-5317-7077-3619-856352544348" Name="99222-6TS9HU"/>
+    <InstanceHierarchy ID="20799600-8928-8539-1810-826800852025" Name="258354-SC5CV3"/>
+    <InstanceHierarchy ID="20062595-7757-5867-8869-979605414509" Name="40288-VTY2OY"/>
+    <InstanceHierarchy ID="20451215-0326-4077-0982-578322340791" Name="338525-GYM334"/>
+    <InstanceHierarchy ID="20886606-6583-6761-7550-296641326059" Name="470677-RZX8UY"/>
+    <InstanceHierarchy ID="20616492-1990-0872-9800-541700844061" Name="443539-I02LFM"/>
+    <InstanceHierarchy ID="20455442-7708-8167-6692-645371226207" Name="574325-TN7XWB"/>
+    <InstanceHierarchy ID="20619410-2145-6818-1150-066479589728" Name="188984-9B4W8I"/>
+    <InstanceHierarchy ID="20463389-9896-9735-8739-947861776945" Name="182570-3U8ITU"/>
+    <InstanceHierarchy ID="20497408-6521-6990-8863-852425564131" Name="85731-J6IDBR"/>
+    <InstanceHierarchy ID="20267496-2533-4694-0016-396192947931" Name="889778-77F41F"/>
+    <InstanceHierarchy ID="20072755-8925-3106-7726-244034690725" Name="843291-L633BK"/>
+    <InstanceHierarchy ID="20192771-3156-5103-1439-110902201688" Name="651414-1RHK6H"/>
+    <InstanceHierarchy ID="20845544-0231-8687-3282-026888095383" Name="810089-SFB9AB"/>
+    <InstanceHierarchy ID="20590694-3587-4023-5888-756495680754" Name="847316-IDPH5W"/>
+    <InstanceHierarchy ID="20273513-1555-8587-9670-948582232434" Name="481015-PQSDLP"/>
+    <InstanceHierarchy ID="20563366-9133-2849-2506-298146382610" Name="22405-GJP3M5"/>
+    <InstanceHierarchy ID="20762813-6079-9544-0647-722724455083" Name="669516-K0411J"/>
+    <InstanceHierarchy ID="20843195-6470-0301-9418-919431985513" Name="25878-Q00RUP"/>
+    <InstanceHierarchy ID="20826683-0482-4829-6307-446524123764" Name="530402-BN677A"/>
+    <InstanceHierarchy ID="20703040-4493-8395-3693-682414931199" Name="73287-KTZEJC"/>
+    <InstanceHierarchy ID="20182896-7033-2639-7034-799218776058" Name="428798-9FHGCL"/>
+    <InstanceHierarchy ID="20386361-6968-8674-0156-791156496753" Name="128185-U5KPE9"/>
+    <InstanceHierarchy ID="20453498-5771-8836-1517-078716383516" Name="133722-D3H14T"/>
+    <InstanceHierarchy ID="20236743-8759-9768-2753-500897026558" Name="475504-I56DGA"/>
+    <InstanceHierarchy ID="20245151-1221-3124-9110-865884784833" Name="732690-I1ZOCV"/>
+    <InstanceHierarchy ID="20546487-5570-9792-3441-739503667193" Name="480142-X8OTT4"/>
+    <InstanceHierarchy ID="20046113-3238-1639-5406-333388373155" Name="289270-IQIEQS"/>
+    <InstanceHierarchy ID="20050919-9613-7170-2040-254486211380" Name="833014-OIT1ZU"/>
+    <InstanceHierarchy ID="20543447-6758-5906-2308-405282883821" Name="240412-EUDRN1"/>
+    <InstanceHierarchy ID="20582567-5231-5793-1437-443900156896" Name="429597-Z85QMN"/>
+    <InstanceHierarchy ID="20325230-1056-5737-7735-344879034332" Name="322934-ZC7IG1"/>
+    <InstanceHierarchy ID="20101825-0603-8489-2767-135819731972" Name="725963-6E1QY6"/>
+    <InstanceHierarchy ID="20877488-4792-4750-8187-463988940039" Name="84502-89W2AR"/>
+    <InstanceHierarchy ID="20022247-8414-6830-3701-993848515121" Name="303860-IFO1FS"/>
+    <InstanceHierarchy ID="20515483-1508-1501-3897-230829009145" Name="13684-6O6M6Z"/>
+    <InstanceHierarchy ID="20558170-6446-4136-7934-000774345014" Name="483065-E2124A"/>
+    <InstanceHierarchy ID="20048531-6641-5422-8455-241447507305" Name="282244-HLL5JJ"/>
+    <InstanceHierarchy ID="20030722-4787-1973-6126-770623246625" Name="226407-5E9MO6"/>
+    <InstanceHierarchy ID="20304412-0115-5917-3891-584169597323" Name="142294-D5J943"/>
+    <InstanceHierarchy ID="20864548-0589-7229-4259-937939234912" Name="405297-JHA6WD"/>
+    <InstanceHierarchy ID="20538574-8977-6215-1468-422118534243" Name="883093-P2AMQ9"/>
+    <InstanceHierarchy ID="20611380-4449-3718-6332-364213606102" Name="283161-P2ASQE"/>
+    <InstanceHierarchy ID="20218726-5502-4970-1913-305970618031" Name="711507-TF7GL3"/>
+    <InstanceHierarchy ID="20399535-0091-6389-0020-260395449389" Name="166501-PMIDK6"/>
+    <InstanceHierarchy ID="20246644-8694-9283-0319-222057133929" Name="105917-9M3CAZ"/>
+    <InstanceHierarchy ID="20278390-4970-3992-8572-595270214888" Name="536777-5F8PMT"/>
+    <InstanceHierarchy ID="20380574-2144-7963-8101-737898153999" Name="113357-VDM89X"/>
+    <InstanceHierarchy ID="20147895-1194-9886-4722-060019371934" Name="523321-GZV2K0"/>
+    <InstanceHierarchy ID="20084752-4989-8579-5577-184587380621" Name="176572-Q7EU0B"/>
+    <InstanceHierarchy ID="20371775-2476-8678-7553-028218495091" Name="24698-YCQ0YR"/>
+    <InstanceHierarchy ID="20749254-3020-9747-1321-941723961936" Name="434247-Y27HLU"/>
+    <InstanceHierarchy ID="20884628-9766-9605-0121-761787094936" Name="145547-PU0NG5"/>
+    <InstanceHierarchy ID="20061069-4029-6407-8058-707902245122" Name="245543-WS8B2I"/>
+    <InstanceHierarchy ID="20496597-9403-1897-5062-173511923446" Name="726042-L6I147"/>
+    <InstanceHierarchy ID="20760106-5128-6898-1113-549950277404" Name="89970-5RDHHG"/>
+    <InstanceHierarchy ID="20717369-8803-3690-5892-095112792158" Name="542436-V9LA17"/>
+    <InstanceHierarchy ID="20790316-8737-9212-5903-106340062673" Name="627138-NVGFF8"/>
+    <InstanceHierarchy ID="20886025-0266-7380-9850-087361123262" Name="75385-89FA1M"/>
+    <InstanceHierarchy ID="20015182-7788-2846-0472-398055805329" Name="887632-IUMIJT"/>
+    <InstanceHierarchy ID="20537559-2523-5195-9403-537103847442" Name="411589-56Z1BX"/>
+    <InstanceHierarchy ID="20898039-7820-2404-9162-213213222636" Name="160805-GLIZSA"/>
+    <InstanceHierarchy ID="20184885-5601-0068-6801-091328303319" Name="130949-0WBNHI"/>
+    <InstanceHierarchy ID="20714581-4142-4624-7772-588527878275" Name="744628-L0GNIN"/>
+    <InstanceHierarchy ID="20873281-1594-5498-0046-273212829231" Name="271507-XHGYV5"/>
+    <InstanceHierarchy ID="20157247-4524-2278-0512-535206434571" Name="117757-E2VZY0"/>
+    <InstanceHierarchy ID="20211143-6895-5624-9047-394159138091" Name="106957-UAMD0B"/>
+    <InstanceHierarchy ID="20000426-8115-5224-8009-942059799109" Name="808561-UF6SY1"/>
+    <InstanceHierarchy ID="20512646-8947-8503-0705-658253795463" Name="380651-53H2B5"/>
+    <InstanceHierarchy ID="20361082-5688-3174-2440-632173480746" Name="810318-K25671"/>
+    <InstanceHierarchy ID="20783578-1700-9829-0612-181225691862" Name="712001-3DTCE8"/>
+    <InstanceHierarchy ID="20686226-2243-5302-1525-952716461159" Name="356422-Z8CF1X"/>
+    <InstanceHierarchy ID="20532866-7368-2039-8118-923366043080" Name="520945-R72Q65"/>
+    <InstanceHierarchy ID="20207378-6344-5308-9912-555341805573" Name="107420-JISF4F"/>
+    <InstanceHierarchy ID="20889250-2074-0270-0054-224992943398" Name="117244-R6OI1M"/>
+    <InstanceHierarchy ID="20322529-3785-6419-8887-473374452485" Name="731488-8IK8JI"/>
+    <InstanceHierarchy ID="20823529-6750-8418-6091-621938352482" Name="290494-QKN4EU"/>
+    <InstanceHierarchy ID="20720248-6521-6892-8102-168193266653" Name="53823-RTBRW1"/>
+    <InstanceHierarchy ID="20319069-7148-2768-0168-325673514440" Name="183063-FVNOX3"/>
+    <InstanceHierarchy ID="20154088-6730-0095-8172-867167019700" Name="44369-Q3RD84"/>
     <InstanceHierarchy Name="NE150DemoProject">
-        <InternalElement RefBaseSystemUnitPath="NE150SUCLibrary/PCERequest" ID="adb2ebf7-dc6f-479b-abfe-64a4fd69c209" Name="LIRCS+-A+-">
-            <Attribute AttributeDataType="xs:string" Name="PCEManufacture">
+        <InternalElement ID="d812ea1e-eaa2-45f4-8c82-72ecc50236c5" Name="DemoEnterprise">
+            <Attribute AttributeDataType="xs:dateTime" Name="ManufactureDate">
                 <Description>PCE Manufacture Date</Description>
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2014</Value>
                 <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 2.1.2"/>
             </Attribute>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="ConveyorSystem(01)">
+        <InternalElement RefBaseSystemUnitPath="Resources/RollerConveyor" ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor01">
+            <Attribute AttributeDataType="xs:string" Name="Guidelines,norms">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">yes</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAP002#002"/>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
+        </InternalElement>
+        <InternalElement RefBaseSystemUnitPath="Resources/RollerConveyor" ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor02">
+            <Attribute AttributeDataType="xs:string" Name="Certificates and permits">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">yes</Value>
+                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAB392#010"/>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="ConnectorSystem/BASIC_27-44-02-09 Connector (appliance)"/>
         </InternalElement>
     </InstanceHierarchy>
     <InterfaceClassLib Name="NE150DemoProject">
@@ -101,33 +271,37 @@
             </Attribute>
         </InterfaceClass>
     </InterfaceClassLib>
-    <RoleClassLib ID="20140994-4805-5377-0094-336281549816" Name="Role class Lib Name 512173-W808ML">
-        <RoleClass RefBaseClassPath="Ref base path133994-IAQQ39" ID="20622330-4776-8627-4947-705677753933" Name="Role class Name 366954-D4N95B">
-            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20651255-9975-5565-2885-332541079194" Name="16930-J66Z">
-                <RefSemantic CorrespondingAttributePath="10158079-XGUM-47WH"/>
+    <InterfaceClassLib Name="NE150DemoProject">
+        <InterfaceClass ID="c9c2093c-1e11-415d-a629-a1c8aa6ef1d3" Name="A-">
+            <Attribute AttributeDataType="xs:string" Name="OperatorDisplay">
+                <Description>The signal must be depicted on this operator display with limitValue type, limit Value and LimitValueHysteresis
+                                    </Description>
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Alarm1-L-1-0.5</Value>
+                <RefSemantic CorrespondingAttributePath="NE 150 v1.0 Annex 3.1.5"/>
             </Attribute>
-            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20546266-3356-0984-2241-520756812954" Name="459712-IFPC">
-                <RefSemantic CorrespondingAttributePath="10239938-5O88-P1ZR"/>
+        </InterfaceClass>
+    </InterfaceClassLib>
+    <RoleClassLib Name="CommunicationCable">
+        <RoleClass Name="BASIC_27-06-18-01 Data cable">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9.0</Value>
             </Attribute>
-        </RoleClass>
-        <RoleClass RefBaseClassPath="Ref base path198557-EPU0FR" ID="20725323-1962-2368-8182-000390743347" Name="Role class Name 383565-UD1HIJ">
-            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20898589-7115-0382-5679-592124349587" Name="637433-8KP1">
-                <RefSemantic CorrespondingAttributePath="10246622-9SDG-XR8P"/>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">27061801 </Value>
             </Attribute>
-        </RoleClass>
-    </RoleClassLib>
-    <RoleClassLib ID="20849504-2242-7321-5777-606820906860" Name="Role class Lib Name 290014-RNBBD6">
-        <RoleClass RefBaseClassPath="Ref base path758139-2YTKTN" ID="20191741-6502-2255-9533-188184783118" Name="Role class Name 832408-3ABLW1">
-            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20724874-4850-1821-7595-109136095529" Name="133721-PPOY">
-                <RefSemantic CorrespondingAttributePath="10445550-ADPA-VM6A"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20220775-5083-0939-2235-520417139740" Name="535785-Z3FK">
-                <RefSemantic CorrespondingAttributePath="10248886-LGVT-ZWST"/>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0173-1---BASIC_1_1#01-AKE197#013</Value>
             </Attribute>
         </RoleClass>
-        <RoleClass RefBaseClassPath="Ref base path592079-JFDRDL" ID="20777318-5754-1091-2633-988815844300" Name="Role class Name 190077-8D6XGV">
-            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20877840-5063-7202-2771-960445845137" Name="141311-4C2N">
-                <RefSemantic CorrespondingAttributePath="10470224-4X19-60P7"/>
+        <RoleClass Name="BASIC_27-06-18-05 Telecommunications cable">
+            <Attribute AttributeDataType="xs:string" Name="eClassVersion">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9.0</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">27061805</Value>
+            </Attribute>
+            <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0173-1---BASIC_1_1#05-AKE200#015</Value>
             </Attribute>
         </RoleClass>
     </RoleClassLib>
@@ -144,94 +318,20 @@
             </Attribute>
         </RoleClass>
     </RoleClassLib>
-    <RoleClassLib Name="ExampleEClassRoleClassLib">
-        <Version>1.0.0</Version>
-        <RoleClass Name="BASIC_27-02-25-01 DC engine (IEC)">
+    <RoleClassLib Name="ConnectorSystem">
+        <Version>1.0</Version>
+        <RoleClass Name="BASIC_27-44-02-09 Connector (appliance)">
             <Attribute AttributeDataType="xs:string" Name="eClassVersion">
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">9.0</Value>
             </Attribute>
             <Attribute AttributeDataType="xs:string" Name="eClassClassificationClass">
-                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">27022501</Value>
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">27440209</Value>
             </Attribute>
             <Attribute AttributeDataType="xs:string" Name="eClassIRDI">
-                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0173-1---BASIC_1_1#01-ABW077#009</Value>
-            </Attribute>
-            <Attribute AttributeDataType="xs:string" Name="Cooling type">
-                <Description>Summary of various types of cooling, for use as search criteria that limit a selection</Description>
-                <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAE122#006"/>
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0173-1---BASIC_1_1#09-AAB896#014</Value>
             </Attribute>
         </RoleClass>
     </RoleClassLib>
-    <SystemUnitClassLib ID="20391444-3861-4080-3812-466770565554" Name="398571-S96QNT">
-        <SystemUnitClass ID="20704863-2644-0010-9151-521686689262" Name="736791-N9I74Q">
-            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20845770-0436-4827-7745-786309494095" Name="379502-LAX6AZ">
-                <RefSemantic CorrespondingAttributePath="10273175-I0HX-QGR7"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20784067-9636-2895-8604-336595295551" Name="759085-5ILXJ8">
-                <RefSemantic CorrespondingAttributePath="10017757-QZVO-KWO7"/>
-            </Attribute>
-            <ExternalInterface RefBaseClassPath="390744-YQ85OT" ID="20624258-7306-4840-4516-404126324339" Name="737137-57NPQI">
-                <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20742658-5758-8710-1989-467445070067" Name="507129-3IKBQ2">
-                    <RefSemantic CorrespondingAttributePath="10573099-F2ZC-CJXX"/>
-                </Attribute>
-                <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20718558-9111-7982-1780-504797106438" Name="507848-I4TLWE">
-                    <RefSemantic CorrespondingAttributePath="10081606-GVYM-5KIM"/>
-                </Attribute>
-            </ExternalInterface>
-            <InternalElement RefBaseSystemUnitPath="724222-0EJNCF" ID="20825811-4709-1001-8932-256362018681" Name="366888-RIGNA4" ChangeMode="state">
-                <ExternalInterface RefBaseClassPath="598893-CN2VW0" ID="20861653-0063-5284-4121-939000860866" Name="626004-R6AA47"/>
-                <SupportedRoleClass RefRoleClassPath="484565-EBVBHS"/>
-                <InternalLink RefPartnerSideA="connection A20542531-2957-3058-1573-272723535704" RefPartnerSideB="connection B20876369-3733-9529-9710-174903522298" ID="20051789-4083-1202-2203-983013835253" Name="96766-6PCVFZ"/>
-            </InternalElement>
-            <SupportedRoleClass RefRoleClassPath="559978-9PWY4S"/>
-            <InternalLink RefPartnerSideA="connection A20709878-0848-9072-4353-875812779910" RefPartnerSideB="connection B20617216-1804-7927-7065-227783937671" ID="20898046-7114-3305-1084-632846042287" Name="33550-NMOV0P"/>
-        </SystemUnitClass>
-        <SystemUnitClass ID="20608011-8871-5601-5162-421501639491" Name="585383-GSFH67">
-            <ExternalInterface RefBaseClassPath="867766-9UDI08" ID="20428110-9436-9504-8761-085429063842" Name="312166-RH0CPL"/>
-            <InternalElement RefBaseSystemUnitPath="577131-9HTTOW" ID="20352156-6401-1014-6633-110082983730" Name="631383-I3RKOJ" ChangeMode="state">
-                <ExternalInterface RefBaseClassPath="765011-GIREDO" ID="20493205-7049-4153-7295-385775566915" Name="60719-N2ZEEM"/>
-                <SupportedRoleClass RefRoleClassPath="416932-5XGEPS"/>
-                <InternalLink RefPartnerSideA="connection A20414605-3309-7180-1522-446109718036" RefPartnerSideB="connection B20230442-0027-4739-2995-077641034431" ID="20652792-0082-4164-0217-878972128500" Name="178217-2K7NQW"/>
-            </InternalElement>
-            <SupportedRoleClass RefRoleClassPath="553003-MY09MM"/>
-            <InternalLink RefPartnerSideA="connection A20222925-3335-3665-2968-283827290235" RefPartnerSideB="connection B20378015-2178-3953-5391-043446518112" ID="20348217-0308-3442-9439-944167179568" Name="19816-5GDRMZ"/>
-        </SystemUnitClass>
-    </SystemUnitClassLib>
-    <SystemUnitClassLib ID="20620138-4948-3106-4003-241641159455" Name="1200-6US6GF">
-        <SystemUnitClass ID="20401810-9933-2477-4181-358020953369" Name="480290-49BW54">
-            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20260352-8640-0879-1956-290233309983" Name="231843-AUCW9W">
-                <RefSemantic CorrespondingAttributePath="10659677-2TEH-L5JG"/>
-            </Attribute>
-            <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20212720-0121-8825-7921-833111195152" Name="380794-4WT0IB">
-                <RefSemantic CorrespondingAttributePath="10508149-EBH2-MYIK"/>
-            </Attribute>
-            <ExternalInterface RefBaseClassPath="896936-UO8C7I" ID="20660234-6915-5159-5397-883355469805" Name="321847-BGTI6M">
-                <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20458424-9655-6497-2084-620871311652" Name="205703-J5OIM0">
-                    <RefSemantic CorrespondingAttributePath="10169258-DT3K-G7OL"/>
-                </Attribute>
-                <Attribute AttributeDataType="xs:datatype" Unit="xs:anyUnit" ID="20173522-1946-4285-7462-590788277866" Name="411157-U5CTSZ">
-                    <RefSemantic CorrespondingAttributePath="10378372-4Z1N-FARO"/>
-                </Attribute>
-            </ExternalInterface>
-            <InternalElement RefBaseSystemUnitPath="896738-MUNEBB" ID="20164527-1781-0383-2572-037422962600" Name="762149-FMBC8E" ChangeMode="state">
-                <ExternalInterface RefBaseClassPath="130178-ZE1R0K" ID="20099768-8758-1699-6383-210371255708" Name="619089-RWARFL"/>
-                <SupportedRoleClass RefRoleClassPath="136304-5KHKB2"/>
-                <InternalLink RefPartnerSideA="connection A20267777-1592-5469-4850-634018579229" RefPartnerSideB="connection B20283229-4595-9374-2728-791898221606" ID="20255217-9367-6470-4206-839006987563" Name="18466-ZPX32Y"/>
-            </InternalElement>
-            <SupportedRoleClass RefRoleClassPath="538175-0S8R39"/>
-            <InternalLink RefPartnerSideA="connection A20069826-8763-4874-7180-995168187124" RefPartnerSideB="connection B20871547-8069-8302-2206-024050055469" ID="20281638-0375-3147-2571-462506059422" Name="788100-LW1HDJ"/>
-        </SystemUnitClass>
-        <SystemUnitClass ID="20393598-0415-4352-6978-183517385376" Name="484436-74YVIQ">
-            <ExternalInterface RefBaseClassPath="754937-HZXJL2" ID="20103427-9639-1259-5362-932047634104" Name="797691-OG4H17"/>
-            <InternalElement RefBaseSystemUnitPath="173488-SDISKS" ID="20291148-1039-5905-7121-209698947668" Name="655243-UUZ9VV" ChangeMode="state">
-                <ExternalInterface RefBaseClassPath="613247-O7HMWZ" ID="20134538-4261-7760-9573-153340984592" Name="570449-4MA80Z"/>
-                <SupportedRoleClass RefRoleClassPath="12856-KJ5YLA"/>
-                <InternalLink RefPartnerSideA="connection A20823488-2862-4764-7865-499165804218" RefPartnerSideB="connection B20571601-3642-5569-4922-655937234531" ID="20011881-8054-6806-1980-682899886132" Name="273819-E7L6RX"/>
-            </InternalElement>
-            <SupportedRoleClass RefRoleClassPath="418609-NWHVVA"/>
-            <InternalLink RefPartnerSideA="connection A20304134-9767-5928-9995-998028673800" RefPartnerSideB="connection B20222093-2026-4162-2117-004704224314" ID="20216729-3175-3760-5245-975938594516" Name="446142-BVT26N"/>
-        </SystemUnitClass>
-    </SystemUnitClassLib>
     <SystemUnitClassLib Name="Conveyor(001)">
         <Version>1.0</Version>
         <SystemUnitClass Name="BASIC_36-12-04-01 Conveyor(001)">
@@ -245,21 +345,27 @@
                 <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">0173-1---BASIC_1_1#01-AKL503#010</Value>
             </Attribute>
             <InternalElement ID="45e20f8e-7351-4af9-bdfd-3c019674de55" Name="Conveyor001">
-                <Attribute AttributeDataType="xs:double" Name="Offerer/supplier ID">
-                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1234</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAP796#002"/>
-                </Attribute>
-                <ExternalInterface RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" ID="51e272d6-0252-4ebd-b865-2ca7a202a68e" Name="ConnectionPoint"/>
-                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+                <InternalElement ID="eff50f8d-bc86-403b-a17b-08356b15485a" Name="InPort">
+                    <Attribute AttributeDataType="xs:double" Name="Offerer/supplier ID">
+                        <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1234</Value>
+                        <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-AAP796#002"/>
+                    </Attribute>
+                    <ExternalInterface RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" ID="51e272d6-0252-4ebd-b865-2ca7a202a68e" Name="ConnectionPoint"/>
+                    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+                </InternalElement>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource"/>
             </InternalElement>
             <InternalElement ID="11b59bf6-44f6-4650-939f-d8e2551912a7" Name="Conveyor002">
-                <Attribute AttributeDataType="xs:double" Name="Performance unit">
-                    <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</Value>
-                    <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF577#004"/>
-                </Attribute>
-                <ExternalInterface RefBaseClassPath="BaseInterfaceClassLib@AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" ID="c50f79eb-6634-4c7e-a32f-54bdef05cace" Name="ConnectionPoint"/>
-                <InternalLink RefPartnerSideA="45e20f8e-7351-4af9-bdfd-3c019674de55:ConnectionPoint" RefPartnerSideB="11b59bf6-44f6-4650-939f-d8e2551912a7:ConnectionPoint" Name="PortLink"/>
-                <RoleRequirements RefBaseRoleClassPath="BaseInterfaceClassLib@AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+                <InternalElement ID="c56f14f2-9a68-43f2-b0a2-46204ed2a21c" Name="InPort2">
+                    <Attribute AttributeDataType="xs:double" Name="Performance unit">
+                        <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2</Value>
+                        <RefSemantic CorrespondingAttributePath="ECLASS:0173-1#02-BAF577#004"/>
+                    </Attribute>
+                    <ExternalInterface RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" ID="c50f79eb-6634-4c7e-a32f-54bdef05cace" Name="ConnectionPoint"/>
+                    <InternalLink RefPartnerSideA="eff50f8d-bc86-403b-a17b-08356b15485a:ConnectionPoint" RefPartnerSideB="c56f14f2-9a68-43f2-b0a2-46204ed2a21c:ConnectionPoint" Name="PortLink"/>
+                    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
+                </InternalElement>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Port"/>
             </InternalElement>
         </SystemUnitClass>
     </SystemUnitClassLib>
@@ -268,7 +374,7 @@
         <Version>1.0</Version>
         <SystemUnitClass RefBaseClassPath="AutomationMLPropertySetRoleClassLib/Technical/Mechanical/PhysicalProperties" Name="Material">
             <Attribute AttributeDataType="xs:decimal" Name="Amortization">
-                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">3.5</Value>
+                <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">2.5</Value>
             </Attribute>
         </SystemUnitClass>
     </SystemUnitClassLib>

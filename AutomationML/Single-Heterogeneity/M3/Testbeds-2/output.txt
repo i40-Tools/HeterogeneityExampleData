@@ -1,9 +1,54 @@
-sameAttribute(' Max.load capacity',' Max.load capacity').
-sameAttribute(maxConveyingSpeed,maxConveyingSpeed).
-sameIdentifier('Conveyor1','Conveyor1').
-sameIdentifier('ConnectionPoint','ConnectionPoint').
-sameIdentifier('InPort2','InPort2').
-sameIdentifier('ConnectionPoint','ConnectionPoint').
-sameIdentifier('Conveyor2','Conveyor2').
-sameIdentifier('InPort','InPort').
+aml1:Conveyor001	aml2:Conveyor001	1
+aml1:ConnectionPoint	aml2:ConnectionPoint	1
+aml1:InPort2	aml2:InPort2	1
+aml1:Conveyor002	aml2:Conveyor002	1
+aml1:InPort	aml2:InPort	1
+aml1:Connection	aml2:InPort2	1
+aml1:AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector	aml2:AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector	1
+aml1:45e20f8e-7351-4af9-bdfd-3c019674de55	aml2:45e20f8e-7351-4af9-bdfd-3c019674de55	1
+aml1:c50f79eb-6634-4c7e-a32f-54bdef05cace	aml2:51e272d6-0252-4ebd-b865-2ca7a202a68e	1
+aml1:c56f14f2-9a68-43f2-b0a2-46204ed2a21c	aml2:c56f14f2-9a68-43f2-b0a2-46204ed2a21c	1
+aml1:11b59bf6-44f6-4650-939f-d8e2551912a7	aml2:11b59bf6-44f6-4650-939f-d8e2551912a7	1
+aml1:eff50f8d-bc86-403b-a17b-08356b15485a	aml2:eff50f8d-bc86-403b-a17b-08356b15485a	1
+aml1:acf9f51b-3fbd-4f30-891d-f8daca50ed17	aml2:c56f14f2-9a68-43f2-b0a2-46204ed2a21c	1
 
+aml1:InPort2	aml2:Conveyor001	0
+aml1:InPort2	aml2:Conveyor002	0
+aml1:InPort2	aml2:InPort	0
+aml1:Conveyor002	aml2:Conveyor001	0
+aml1:Conveyor002	aml2:InPort2	0
+aml1:Conveyor002	aml2:InPort	0
+aml1:Conveyor001	aml2:InPort2	0
+aml1:Conveyor001	aml2:Conveyor002	0
+aml1:Conveyor001	aml2:InPort	0
+aml1:Connection	aml2:Conveyor001	0
+aml1:Connection	aml2:Conveyor002	0
+aml1:Connection	aml2:InPort	0
+aml1:Performance unit	aml2:Offerer/supplier ID	0
+aml1:Performance unit	aml2:Performance unit	0
+aml1:ConveyorSystem	aml2:ConveyorSystem	0
+aml1:51e272d6-0252-4ebd-b865-2ca7a202a68e	aml2:c50f79eb-6634-4c7e-a32f-54bdef05cace	0
+aml1:51e272d6-0252-4ebd-b865-2ca7a202a68e	aml2:51e272d6-0252-4ebd-b865-2ca7a202a68e	0
+aml1:eff50f8d-bc86-403b-a17b-08356b15485a	aml2:11b59bf6-44f6-4650-939f-d8e2551912a7	0
+aml1:eff50f8d-bc86-403b-a17b-08356b15485a	aml2:45e20f8e-7351-4af9-bdfd-3c019674de55	0
+aml1:eff50f8d-bc86-403b-a17b-08356b15485a	aml2:c56f14f2-9a68-43f2-b0a2-46204ed2a21c	0
+aml1:Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml	aml2:Libs/InterfaceClass Libraries/AutomationMLInterfaceClassLib.aml	0
+aml1:PortLink	aml2:PortLink	0
+aml1:acf9f51b-3fbd-4f30-891d-f8daca50ed17	aml2:11b59bf6-44f6-4650-939f-d8e2551912a7	0
+aml1:acf9f51b-3fbd-4f30-891d-f8daca50ed17	aml2:45e20f8e-7351-4af9-bdfd-3c019674de55	0
+aml1:acf9f51b-3fbd-4f30-891d-f8daca50ed17	aml2:eff50f8d-bc86-403b-a17b-08356b15485a	0
+aml1:11b59bf6-44f6-4650-939f-d8e2551912a7	aml2:45e20f8e-7351-4af9-bdfd-3c019674de55	0
+aml1:11b59bf6-44f6-4650-939f-d8e2551912a7	aml2:c56f14f2-9a68-43f2-b0a2-46204ed2a21c	0
+aml1:11b59bf6-44f6-4650-939f-d8e2551912a7	aml2:eff50f8d-bc86-403b-a17b-08356b15485a	0
+aml1:45e20f8e-7351-4af9-bdfd-3c019674de55	aml2:11b59bf6-44f6-4650-939f-d8e2551912a7	0
+aml1:45e20f8e-7351-4af9-bdfd-3c019674de55	aml2:c56f14f2-9a68-43f2-b0a2-46204ed2a21c	0
+aml1:45e20f8e-7351-4af9-bdfd-3c019674de55	aml2:eff50f8d-bc86-403b-a17b-08356b15485a	0
+aml1:InPort	aml2:Conveyor001	0
+aml1:InPort	aml2:InPort2	0
+aml1:InPort	aml2:Conveyor002	0
+aml1:c56f14f2-9a68-43f2-b0a2-46204ed2a21c	aml2:11b59bf6-44f6-4650-939f-d8e2551912a7	0
+aml1:c56f14f2-9a68-43f2-b0a2-46204ed2a21c	aml2:45e20f8e-7351-4af9-bdfd-3c019674de55	0
+aml1:c56f14f2-9a68-43f2-b0a2-46204ed2a21c	aml2:eff50f8d-bc86-403b-a17b-08356b15485a	0
+aml1:Offerer/supplier ID	aml2:Offerer/supplier ID	0
+aml1:Offerer/supplier ID	aml2:Performance unit	0
+aml1:c50f79eb-6634-4c7e-a32f-54bdef05cace	aml2:c50f79eb-6634-4c7e-a32f-54bdef05cace	0
